@@ -1,0 +1,86 @@
+.steps {
+    width:100%;
+    aspect-ratio: 900/80;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.text-posts {
+    color: #ED1619 !important;
+}
+
+.text-articles {
+    color: #009935 !important;
+}
+
+#rogueplanetoid-navbar .nav-link.active {
+    font-weight:600;
+}
+
+#rogueplanetoid-breadcrumb .breadcrumb-item.active {
+    font-weight:600;
+}
+
+#rogueplanetoid-breadcrumb .breadcrumb-item a {
+    text-decoration: none!important;
+}
+
+.steps-black {
+    background-image: url('../images/steps-black.svg');
+}
+
+.steps-posts {
+    background-image: url('../images/steps-posts.svg');
+}
+
+.steps-articles {
+    background-image: url('../images/steps-articles.svg');
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-posts {
+    background-color: #ED1619;
+}
+
+.bg-articles {
+    background-color: #009935;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.btn-articles {
+    color:#ffffff!important;
+    background-color:#009935!important;
+    border-color:#009935!important;
+}
+.btn-articles:hover{
+    background-color:#35b44e!important;
+    border-color:#35b44e!important;
+}
+
+.btn-articles-inverse {
+    color:#009935!important;
+    background-color:#ffffff!important;
+    border-color:#ffffff!important;
+}
+.btn-articles-inverse:hover{
+    background-color:#35b44e!important;
+    border-color:#35b44e!important;
+    color:#ffffff!important;
+}
+
+.text-fg-black a {
+    color:#000000!important;
+    text-decoration: none!important;
+}
+
+.link {
+    text-decoration: none!important;
+    color:#000000!important;
+}
