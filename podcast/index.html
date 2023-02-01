@@ -25,7 +25,7 @@
         <link rel="icon" href="../favicon.ico"/>
         <link href="../css/style.css" rel="stylesheet">
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <title>RoguePlanetoid - Articles</title>
+        <title>RoguePlanetoid - Podcast</title>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
         <script>
@@ -45,21 +45,21 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <a class="navbar-brand" href="../">
-                        <img src="../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                        <img src="../images/header-podcast.png" alt="RoguePlanetoid" height="25px">
                     </a>
                     <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link text-articles" href="../">Home</a>
+                                <a class="nav-link text-podcast" href="../">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-articles" href="../posts">Posts</a>
+                                <a class="nav-link text-podcast" href="../posts">Posts</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-articles active" href="../articles">Articles</a>
+                                <a class="nav-link text-podcast" href="../articles">Articles</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-articles" href="../podcast">Podcast</a>
+                                <a class="nav-link text-podcast active" href="../podcast">Podcast</a>
                             </li>
                         </ul>
                     </div>
@@ -72,60 +72,55 @@
             <!-- Section -->               
             <section class="text-center text-black container">
                 <!-- Hero -->
-                <img class="d-block mx-auto mt-2" src="../images/articles.png" alt="Articles" height="120px">
-                <h1 class="display-4 mx-auto">Articles</h1>
+                <img class="d-block mx-auto mt-2" src="../images/podcast.png" alt="Podcast" height="120px">
+                <h1 class="display-4 mx-auto">Podcast</h1>
                 <p class="lead">
-                    <strong>RoguePlanetoid</strong> has <strong>articles</strong> that go in-depth for many subjects
+                    <strong>RoguePlanetoid</strong> has a <strong>podcast</strong> with interesting insights to listen to
                 </p>
                 <!-- /Hero -->
-                <!-- Articles -->
-                <div class="row row-cols-1 row-cols-md-3 g-3">
+                <!-- Embed -->
+                <iframe style="border-radius:12px" src="https://open.spotify.com/show/2emlLsByzU2krtfBgo5yQ9" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <!-- /Embed -->
+                <!-- Episodes -->
+                <div class="row row-cols-1 row-cols-md-2 g-2 p-2">
                     <div class="col position-relative">
-                        <a href="podcast-launch" class="link">
+                        <a href="episode-one" class="link">
                             <div class="card">
-                                <img src="assets/rogueplanetoid-podcast.png" class="card-img-top" alt="Launching RoguePlanetoid Podcast">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Launching RoguePlanetoid Podcast</h5>
-                                        <p class="card-text">Launching RoguePlanetoid Podcast about Microsoft platforms, related technology and more</p>
-                                        <p class="card-text"><small class="text-muted">1st February 2023</small></p>
+                                <div class="card-header">
+                                    <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-podcast">LATEST</span> 
+                                    <small class="text-muted">Episode One</small>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="assets/artwork.png" class="card-img-top" alt="Welcome to the RoguePlanetoid podcast!"/>
                                     </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body text-start">
+                                            <h5 class="card-title">Overview of 2022 and Content Creation with AI</h5>
+                                            <p class="card-text">Listen to the very first episode of the RoguePlanetoid podcast, a brand-new podcast for 
+                                            Microsoft platform developers and about related technology and so much more!</p>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">1st February 2023</small>
+                                </div>
                             </div>
                         </a>                         
                     </div>
                     <div class="col position-relative">
-                        <a href="nebytes-smart-notes" class="link">
-                            <div class="card">
-                                <img src="assets/nebytes.png" class="card-img-top" alt="Smart Notes for Developers - NEBytes January 2023">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Smart Notes for Developers - NEBytes January 2023</h5>
-                                        <p class="card-text">Sam Hogarth's talk for NEBytes in January 2023</p>
-                                        <p class="card-text"><small class="text-muted">25th January 2023</small></p>
-                                    </div>
-                            </div>
-                        </a>                         
-                    </div>
-                    <div class="col position-relative">
-                        <a href="2022-overview" class="link">
-                            <div class="card">
-                                <img src="assets/rogueplanetoid.png" class="card-img-top" alt="RoguePlanetoid">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Overview of 2022</h5>
-                                        <p class="card-text">Check out this overview of 2022 along with a sneak peek at what's coming in 2023!</p>
-                                        <p class="card-text"><small class="text-muted">1st January 2023</small></p>
-                                    </div>
-                            </div>
-                        </a>
+
                     </div>
                 </div>
-                <!-- /Articles -->
+                <!-- /Episodes -->
             </section>
             <!-- /Section -->      
         </main>
         <!-- /Main -->
         <!-- Footer -->
         <footer class="footer mt-auto">
-            <div class="steps steps-articles"></div>  
-            <nav class="navbar bottom navbar-light p-2 bg-articles">
+            <div class="steps steps-podcast"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-podcast">
                 <a href="../"><img src="../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
                 <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
             </nav>
