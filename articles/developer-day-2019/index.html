@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - Smart Notes for Developers - Developer Day 2019</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../developer-day-2019">Developer Day 2019</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">Developer Day 2019</h2>
+                        <p class="blog-post-meta">26th November 2019</p>                
+                        <img src="../assets/developerday.png" class="img-fluid" alt="Developer Day 2019"/>
+                        <p class="text-center fw-light">
+                            This article was originally published 26th November 2019 on <a href="https://www.linkedin.com/pulse/developer-day-2019-peter-bull/">Linkedin</a>
+                        </p>
+                        <p>
+                            Developer Day is the UK's premier free developer conference held at Microsoft's UK HQ in Reading with many people attending from all 
+                            parts of the UK and I was lucky enough to be sent by tombola and have my own talk selected. There were many people and sessions to 
+                            learn from, these were the ones I attended at Developer Day 2019 on 12th October 2019
+                        </p>
+                        <h3>Blazor : The future of front end is here - Chris Sainty</h3>
+                        <p>
+                            Chris Sainty talked about Blazor which is a front-end single-page application framework, the brainchild of Steve Sanderson, 
+                            which uses Razor from ASP.NET MVC, HTML and CSS and works in all modern browsers, including mobile.
+                        </p>
+                        <h4>What do you get with Blazor?</h4>
+                        <p>
+                            Blazor allows you to create forms with validation, share code, perform authentication, leverage server-side rendering, support 
+                            dependency injection, perform interop with JavaScript, support component libraries such as Razor class libraries and use many 
+                            .NET Standard 2.0 NuGet packages. Blazor separates how changes are calculated from how they're applied, by including a browser 
+                            renderer that can update the browser DOM, which is built to be extensible and can even run independently.
+                        </p>
+                        <h4>Blazor Webassembly</h4>
+                        <p>
+                            Is based on WebAssembly, the byte-code format web standard supported in all major browsers - including mobile, offers near 
+                            native performance of .NET code to run client-side within a web browser using the Mono .NET runtime. Applications are not 
+                            compiled to WebAssembly but are just-in-time interpreted by the runtime and are just static files so you can host your 
+                            application anywhere such as GitHub pages. The runtime only needs to be downloaded once as it will be cached by the browser 
+                            and you can even run your application offline or distribute as a Progressive Web Application but are limited by the browser 
+                            sandbox. Blazor WebAssembly is in preview and will be available in May 2020.
+                        </p>
+                        <h4>Blazor Server</h4>
+                        <p>
+                            There's no WebAssembly as applications run on the server with everything that is possible to do in .NET Core available to your application. 
+                            There is a client-side script to manage communication between the client and the server using a SignalR connection. Client-side events will 
+                            be transferred using this to the server and will perform any action need then any information is then sent back to the client using a render 
+                            batch which will only send the necessary changes to the client. Blazor Server is available now.
+                        </p>
+                        <h3>Spotify for Developers - Peter Bull</h3>
+                        <p>    
+                            I talked about Spotify for Developers, which was my first full presentation at a major event. I have experience with music services as a 
+                            developer having worked with Zune from Microsoft and created my own Zune Social application for Windows Phone 7 back in 2010 which got 
+                            over 330,000 downloads. I've used Xbox Music which became Groove Music to bring back the core features of that original app and made the 
+                            transition to Spotify with Spotify for Developers.
+                        </p>
+                        <h4>developer.spotify.com</h4>
+                        <p>
+                            developer.spotify.com is where to find out more about using Spotify as a developer, try out API calls with the online Web API console and more. 
+                            The dashboard is where you can create and manage Spotify integrations, create a Client Id and Secret to use with the Spotify API and Edit Settings 
+                            to set the Redirect URI for authentication.
+                        </p>
+                        <h4>Authorisation Guide</h4>
+                        <p>
+                            You can authorise an application to get data or to allow a user to approve your application to access their Spotify data, this can be controlled 
+                            with Authorisation Scopes for Listening History, Library, Playlists, User Information, Spotify Connect, Playback - for iOS, Android and Web Playback SDKs and Follow.
+                        </p>
+                        <ul>
+                            <li>Authorisation Code Flow can be used for long running applications where a user grants permission just once and provides a token that can be refreshed - 
+                            with a request to the accounts service where the user can authorise access followed by any requests to the API to return requested data or new access tokens.</li>
+                            <li>Implicit Grant Flow is for clients that are implemented such as those using JavaScript and run in a web browser - 
+                            with a request to the account service where the user can log in and authorise access passing across a short-lived token followed by any requests to the API to return requested data.</li>
+                            <li>Client Credentials Flow is used in server-to-server authentication however only endpoints that do not access user information may be accessed - 
+                            with a request to obtain a token followed by any requests to the API to return requested data.</li>
+                        </ul>
+                        <h4>Spotify Web API</h4>
+                        <p>
+                            Spotify Web API App Authorisation is where you authorise an application to access the Spotify platform and can retrieve data from the following 
+                            endpoints of Search, Browse, Playlists, Artists, Albums and Tracks. Get All New Releases is where you can get the New Releases as shown in the 
+                            Browse tab of Spotify by just providing Client Credentials Flow token and some parameters.
+                        </p>
+                        <p>
+                            Spotify Web API User Authorisation is where as well as authorisation the user you grant your application permission to access or modify their 
+                            data on Spotify and you can retrieve data from the following endpoints of Follow, Playlists, Library, Player, Personalisation and User Profile. 
+                            Get User's Followed Artists is where you can get Followed Artists as shown in the Artists section of Your Library of Spotify by providing an 
+                            Authorisation Code Flow or Implicit Grant Flow token and some parameters.
+                        </p>
+                        <h4>Spotify SDKs</h4>
+                        <ul>
+                            <li>
+                                Web Playback SDK is a client-side JavaScript library allowing you to create a new player in Spotify Connect and play any 
+                                audio track from Spotify in a web browser.
+                            </li>
+                            <li>
+                                Spotify iOS SDK allows access to the Spotify API, play tracks using the Spotify App and respond to playback state.
+                            </li>
+                            <li>
+                                Spotify Android SDK allows access to the Spotify API, play tracks using the Spotify App and subscribe to player state.
+                            </li>
+                            <li>
+                                Spotify.NetStandard is my own Spotify SDK available on NuGet and can be used with any .NET Standard 2.0 compatible runtime 
+                                such as .NET Core and Xamarin with full source code, unit tests and documentation.
+                            </li>
+                        </ul>
+                        <h3>Internationalising your applications - Pete Vickers</h3>
+                        <p>
+                            Pete Vickers talked about internationalising applications, which allows an application to be more attractive to non-native English speakers 
+                            by using resource files to display everything that needs to be shown on screen in different languages.
+                        </p>
+                        <h4>Microsoft Multilingual App Toolkit</h4>
+                        <p>
+                            Microsoft Multilingual App Toolkit is a Visual Studio Plugin and can be used to translate up to two million characters to month using 
+                            automatic translation powered by Bing Translator then export these files for manual translation. Any newly added translations can be 
+                            reviewed from generated ELF files from a source RESX file using the Multilingual Editor allowing a native speaker to easily look at 
+                            the original English, machine translated version and comments to correct and finalise any translations, and can even support right-to-left 
+                            languages such as Arabic correctly. You can then load these translations back into Visual Studio easily and generate the relevant resources 
+                            that can be used by your application, it is also possible to use applications such as Excel to do any reviewing of translations but using 
+                            the Multilingual Editor is easier.
+                        </p>
+                        <h3>Microsoft Azure IoT Hubs with Raspberry Pi and Node.js - Peter Gallagher</h3>
+                        <p>
+                            Peter Gallagher talked about Microsoft Azure IoT Hubs using a Raspberry Pi and Node.js. Software needed includes Visual Studio Code, 
+                            SSH client, a web browser and an Azure Subscription. Hardware needed includes Raspberry Pi B+ upwards with Node.js 6.0, plus a few wires, 
+                            a breadboard, Raspberry Pi GPIO with board numbering, wiring Pi numbering or BCM numbering plus have some LEDS and sensors - you can even 
+                            check the wiring is working by flashing an LED.
+                        </p>
+                        <h4>What is an Azure IoT hub?</h4>
+                        <p>
+                            Is like a switchboard for IoT messaging and provides device-to-cloud and cloud-to-device messaging using a variety of endpoints using any 
+                            message queue technology, you can create a free IoT hub on Azure where you can send up to 8,000 messages of 0.5KB. Based on event hubs but 
+                            allows for two-way communications and allows for a million simultaneous connections, you can store a registry of each IoT device, support 
+                            device “twin” functionality and libraries you can take advantage of in .NET, JavaScript and Node.js and send messages back and forth from 
+                            Azure to an IoT device.
+                        </p>
+                        <h4>What are Service Bus and Logic Apps?</h4>
+                        <p>
+                            Service Bus is an enterprise scale messaging broker which decouples services and apps used for async data transfer, you can use either Queues 
+                            (FIFO) for a single recipient or Pub/Sub with topics for multiple recipients. Logic Apps provide a graphical user interface to hook together 
+                            a bunch of applications, services and workflow easily in Azure.
+                        </p>
+                        <h3>.NET Configuration is Easy ... Right? - Steve Collins</h3>
+                        <p>
+                            Steve Collins talked about introducing the complexity of configuration to new developers and food-for-thought for existing developers. 
+                            Configurations is for values that don't want to hard code, may change in the future, sensitive values in source code and values that 
+                            may enable or disable functionality. 
+                        </p>
+                        <h4>.NET Framework - web.config</h4>
+                        <p>
+                            web.config has a very rigid schema, easy to get wrong, not very extensible without a lot of work, requires transforms for different 
+                            environments, very hard to unit test and requires a lot more code to do more than just simple handling of settings. There is also the 
+                            risk of configuration drift between servers if not controlling this though automated deployments, plus usually only read when the 
+                            application starts so any changes require an app restart, they can become large an unwieldy to manage in a single file, plus you 
+                            can have hard-to-find errors in the configuration or even leak secrets into source control.
+                        </p>
+                        <h4>.NET Core - web.config is no more!</h4>
+                        <p>
+                            web.config and configuration manager is not in .NET Code by default, configuration is not limited to files as you could use any source of settings, 
+                            applications don't need to be restarted to use changed config values and can have sources of different types including JSON, INI or even XML. 
+                            You can also pass in settings with environment variables, key per file with Docker Secrets, User Secrets and even take advantage of secure 
+                            configuration providers such as Azure Key Vault or AWS Key Management Services.
+                        </p>
+                        <h4>Configuration Sources and Providers</h4>
+                        <p>
+                            A config source is how the settings are actually read in a specified format and this is what a provider is generate from, what you end up with is a 
+                            hierarchical structure of key value pairs, that can be compounded into colon-delimited strings to read them. You can also have a layered approach 
+                            such as configuration for different environments like production and development. It is possible to write your own configuration source using 
+                            technologies like gRPC, GraphQL or even a REST API.
+                        </p>
+                        <h4>Configuration with Binding</h4>
+                        <p>
+                            You shouldn't use the IConfiguration interface the same way as configuration manager as if you use magic strings these are still vulnerable to typos, 
+                            however you could encapsulate your settings with a class. You can map a configuration section to a class instance and listen to changes in the underlying 
+                            configuration with dependency injection using the options pattern, this registers three generic interfaces dependant on the scope options, IOptions&lt;T&gt; - 
+                            a singleton when the application loaded, IOptionsMonitor&lt;T&gt; - latest value and IOptionsSnapshot&lt;T&gt; - for a scoped lifetime.
+                        </p>
+                        <h4>Protect Settings</h4>
+                        <p>
+                            You should be protecting any secrets in the configuration but don't roll your own encryption or use Base-64 encoding or use the Data Protection APIs - 
+                            these have their keys rotated every ninety days. You should instead use a strong algorithm such as AES256 with a SHA2 hashed key, but don't store the 
+                            Key/IV pairs in source control but consider putting these in an environment variable and use different salt/hashes for different purposes if you have 
+                            multiple encrypted values. You should create an interface for decryption keys where you can pass in an algorithm so this can easily be changed later 
+                            and could validate your configuration values with Data Annotations.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
