@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - DDD North 2020</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../ddd-north-2020">DDD North 2020</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">DDD North 2020</h2>
+                        <p class="blog-post-meta">1st March 2020</p>                
+                        <img src="../assets/ddd-north.png" class="img-fluid" alt="DDD North 2020"/>
+                        <p class="text-center fw-light">
+                            This article was originally published 1st March 2020 on <a href="https://www.linkedin.com/pulse/ddd-north-2020-peter-bull/">Linkedin</a>
+                        </p>
+                        <h3>The Monolith of Microservices - Ian Johnson</h3>
+                        <h4>What is a Monolith?</h4>
+                        <p>
+                            A tightly coupled architecture where each component and its associated components must be present to be executed. How we got here? 
+                            We started with big machines, then desktops were low power and single core and there is then the internet with server-based computation 
+                            and rendering on the desktop with networked computers - does the monolith still work here? People have fast internet and multiple CPUs 
+                            and there's huge demand and ever more complex demands.
+                        </p>
+                        <h4>Monolith Advantages</h4>
+                        <p>
+                            Easier to refactor, plenty of tools to help, compiles will tell you what's wrong, all the code is co-located the refactored code is deployed 
+                            in a single unit, centralised logging, reduced distance between components with faster per operation and reliability compared to inter-process. 
+                            Debugging allowing complex processing is traceable live and capture the “global” app state and they have fewer moving parts and layers of complexity. 
+                            Don't have to worry about many network hops, and there's no chance of an individual component being available or worry about things like eventual 
+                            consistency.
+                        </p>
+                        <h4>Monolith Disadvantages</h4>
+                        <p>
+                            Easier to make highlight coupled codebases DRY overuse and refactoring can suggest the wrong thing. Can be hard to scale onto multiple boxes 
+                            but this depends on what the monolith is doing, hard to share useful features between monoliths, limits the effectiveness of multiple teams 
+                            including conflicts, dependencies, cadence and lack of ownership and slow release cycles if it is highly coupled. DRY makes you put many 
+                            things in an object even if only used by one part of the service. Dependencies being different can make it difficult to share functionality.
+                        </p>
+                        <h4>The Monolithic Database</h4>
+                        <p>
+                            Every component is bound to multiple tables in the database - coupling with data and application bound so must be deployed together. One model 
+                            to rule them all - data driven design tells us there never one true model, multiple reasons to change data increases chances of locking, acts 
+                            as a “source of truth” and a “view model”. Not just relational databases you can have monolithic document databases too where they're used like 
+                            tables with relationships. Services require multiple documents to function. Data is slow to change, can take you whole system down until a schema 
+                            change is complete. Once schema of an entire application can be a major problem. Need to know how our code relates to the database.
+                        </p>
+                        <h4>Microservices</h4>
+                        <p>    
+                            Building a large app from a suite of modular components, each service owns its own data, use public APIs with each service is a bounded context 
+                            with their own database, they only talk by publishing and receiving events with a shared messaging infrastructure. You could even use multiple 
+                            languages to implement different microservices.
+                        </p>
+                        <h4>Microservices Advantages</h4>
+                        <p>
+                            Easier for teams to work independently, smaller more isolated code and a loosely coupled architecture. Deployed & scaled independently. 
+                            You don't have to fit the whole world in your head. Technology agnostic - the right tech for the right job. You could just receive and 
+                            send events and makes it easy to test. Easier to compose new workflows and functionality and testing is easier.
+                        </p>
+                        <h4>Microservices Disadvantages</h4>
+                        <p>
+                            They are way more complex operationally than a monolith with many moving parts. Observability is an issue - what services are running and 
+                            how many services are there, centralised logging. Issues like eventual consistency become a problem, versioning and fault tolerance can be 
+                            an issue - should services depend on each other this way? Security can be an issue with zero trust or trust external services like external 
+                            user trust. Services should not call each other they should communicate via event; it should be that if part of the system goes down users 
+                            don't notice otherwise it is just a distributed monolith. If you can't build a well structured monolith what makes you think that microservices 
+                            are the answer, can have shared data with hidden coupling or breaking changes to message formats plus fault tolerance could make multiple things 
+                            go down if done wrong.
+                        </p>
+                        <h4>A monolith of microservices</h4>
+                        <p>
+                            Shared infrastructure bringing logging and routing with entry points brings loosely coupled services together, micro services are loosely coupled 
+                            and cannot talk directly to each other - you could force messages to be serialised to aid interoperation. Just do a shared database with a schema 
+                            per microservice and use permissions to hide other data. No cross-schema structures and if services need to duplicate data then duplicate it! 
+                            Normalise only within the schema. Even if doing reporting follow the same patterns.
+                        </p>
+                        <h4>Monolith of Microservices Advantages</h4>
+                        <p>
+                            Multiple teams can still work quite easily in the monolith - like a monorepo, working on one vertical slice at a time, the compiles finds issues 
+                            early and versioning can be unnecessary as all events are internal. Can ship more frequently if services are loosely coupled as soon as they're ready. 
+                            New ideas or services can be easily supported by the infrastructure and by messaging design. Fewer moving parts allow fewer things to go wrong and is 
+                            operationally easier and is easier to debug.
+                        </p>
+                        <h4>Disadvantages of Microservices Advantages</h4>
+                        <p>
+                            Is still might not scale well - individual services don't scale. It is still a distributed workflow, requires discipline as it is easy to directly 
+                            couple microservices to expose code that should be internal. Microservices enforce boundaries that a monolith cannot.
+                        </p>
+                        <h4>Technology Ideas</h4>
+                        <p>
+                            Use the actor model - the universal primitive of concurrent computation, communicate via messages only, can modify internal state, 
+                            process one message at a time aka akka.net.
+                        </p>
+                        <p>
+                            Mediator/message bus using MediatR or Brighter Command - internal message bus within program to pass decoupled messages between 
+                            multiple parts of the system
+                        </p>
+                        <h4>Becoming structured from legacy code</h4>
+                        <p>
+                            You have a lot of understanding about the domain from a successful, if evil, system. Pull each service into assemblies and modules, 
+                            no messaging yet but assemblies may reference each other. Refactor to break these dependencies between the services and introduce share 
+                            infrastructure such as messaging, routing etc. Messaging becomes the primary means of communication and can take one service at a time.
+                        </p>
+                        <h4>Moving to microservices</h4>
+                        <p>
+                            Switch internal message bus onto an external message bus, you solve one problem at a time. Start listening to these external events then 
+                            you deploy this service as an independent thing. Once at a point you've solved a lot of the operational problems - you solve them as and 
+                            when you need to, then you split the database out and deploy the service independently as this makes sense, so you can reduce the monolith 
+                            down but it doesn't have to be all microservices.
+                        </p>
+                        <h3>Secure by Design: How to Harden Your Applications Using Threat Modelling - Mike Goodwin</h3>
+                        <p>
+                            Why do I think it's so awesome? The basics - what is it, SRIDE and Beyond the Basics. It is one of the most effective and important things 
+                            you can do to help you harden your applications.
+                        </p>
+                        <h4>What is it and why?</h4>
+                        <p>
+                            It's great for defence in depth, avoid a hard perimeter - the aim the game is to limit damage or prevent anyone getting further. 
+                            It forces/encourages you to think hard about your security. It works best when done as a team with different perspectives in play.
+                        </p>
+                        <h4>Decompose your application</h4>
+                        <p>
+                            Usually done with some form of diagram, even on a piece of paper or a whiteboard but can be difficult to iterate unless using a tool. 
+                            External Actor - anything that is at the boundary of the application you're modelling e.g. client app, a person or another system. 
+                            Process - simply a process within the system. Data Store - any kind of persistent data storage e.g. database, file or parameter/secret store. 
+                            Data Flow - any transmission of data from one model element to another, is directional e.g. web request and response, read/write to file system 
+                            and an inter process communication. Trust Boundary - a transition between model elements that is associated with a change of trust level e.g. internet, 
+                            network boundary, process-to-process boundary or storage access where how do you know the data is valid or hasn't been changed or intercepted.
+                        </p>
+                        <h4>Identify Threats</h4>
+                        <p>
+                            Try to put yourself in the mindset of an attacker - ask question about what bad stuff you could do in the different elements of the diagram 
+                            with the answer giving you the threats. Remember to question your assumptions and expectations, need to get into the mindset of how someone 
+                            would subvert the system and what bad things could happen to this. What assumptions could one make about a web application with incoming 
+                            requests, what if they are wrong. An attacker could send a request pretending to be another person and access their data. What could an 
+                            attacker do if they got access to a message queue - an attacker could place a poison message on the queue causing the receiving process to crash. 
+                            What could an attacker do if they were able to change the data in the database - they could modify a bank account number to divert payments into 
+                            their own account. Helpful to think of specifics to design the correct mitigations.
+                        </p>
+                        <h4>Design Mitigations</h4>
+                        <p>
+                            Find ways to block, avoid or minimise the threats, some of these mitigations might change the design, might have to accept some low risk unmitigated threats. 
+                            To mitigate web application requests, you could identify the requestor using a session cookie and apply authorisation logic. For the message queue you could 
+                            digitally sign messages and validate the signature or maintain a retry count on messages and discard them after 3 failures. To mitigate changes to the database 
+                            you could restrict access to the database using a firewall and log changes to bank account numbers and audit these, potentially validate these changes.
+                        </p>
+                        <h4>STRIDE</h4>
+                        <p>
+                            Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service and Elevation of Privilege. These are Pretending you're someone you're not, 
+                            changing something, doing something and denying you did it, giving information to an unauthorised person, degrading/preventing access to a service and 
+                            doing something you're not authorised to do. These could be Cross site request forgery, inject malware or backdoor into code, exploit lack of logging, 
+                            man in the middle attack, flooding a service with more requests than it can handle and exploiting a direct object reference vulnerability.
+                        </p>
+                        <h4>Top Tips</h4>
+                        <p>
+                            Aiming to address - don't have time, doing a lot of repeat work, talking about model semantics, don't know how to mitigate, how do you start threat modelling?
+                        </p>
+                        <ol>
+                            <li>Focus on trust boundaries - get this right first then justify the trust yourself and determine how the trust is established? Across a trust boundary how 
+                            is the flow authenticated, how is it authorised, what validation is needed, opportunities for denial of service and automated threats and don't forget to look at responses too!</li>
+                            <li>Don't stress about model grammar - ENISA thread taxonomy, SRIDE, SWE etc. You don't need to classify the threat accurately, more important to know it exists than 
+                                to attach to correct element, model doesn't have to be 100% complete to be useful, if part of the model confuses then can just remove it and if need to add extra things 
+                                for it to make sense then do it! You can model the parts of your system that are security critical or feel most nervous about if have limited time.</li>
+                            <li>Do incremental threat modelling - can do it a bit of at a time, if not feasible to unpick a system, you can think about the new web application layer 
+                                and deal with the interface between this and the legacy system and make new features more secure if can't do the whole thing.</li>
+                            <li>Detection can be a mitigation too - if you detect a threat, log it even if you can't mitigate it, exploits of known vulnerabilities, digital signature check fails, 
+                                invalid input, unauthorised access attempts and “unusual” activity. Document your application log events and decide which events need to generate alarms 
+                                and what the run-book is - when it happens what do you do?</li>
+                            <li>Not all mitigations need to be in your code - DDoS mitigation services, multi-factor authentication, FIM or similar e.g. OSSEC, rotate encryption keys, access control 
+                                audits and segregation of duties and least privilege. To be most effective think holistically about the service, your processes and even your organisation design.</li>
+                        </ol>
+                        <h3>Azure App Services: Containers - Andrew Westgarth</h3>
+                        <h4>Azure App Service</h4>
+                        <p>
+                            High productivity framework to allow developers to add value to their applications without worrying about the underlying platform. Is Fully Managed where 
+                            everything is taken care of including scaling, load balancing and patching. It is enterprise grade with high level security compliance. Languages and 
+                            Operating Systems are ASP.NET, PHP, Node.JS, .NET Core, Python and Ruby on Windows and Linux. You can host any custom container however, but those 
+                            languages are first class images with the runtime already available.
+                        </p>
+                        <h4>Build and deploy options</h4>
+                        <p>
+                            CLI support for deployment, have built in build capabilities on Azure App Service to create a Runnable web app, Git deployment directly from 
+                            local or even GitHub deployment plus support for Bitbucket and Mercurial & Git compatible (on Windows only).
+                        </p>
+                        <p>
+                            You can Deploy directly from Visual Studio, you can publish a zip file for Azure Pipelines, the application is run directly from the zip 
+                            and not unpacked at runtime. OneDrive, Dropbox and FTP available for content sync/regular file copying.
+                        </p>
+                        <p> 
+                            Deploying containers can be deployed from docker hub or the Azure or Private Container Registry. You can docker push to those and the 
+                            container image will be pulled in.
+                        </p>
+                        <h4>Windows Container Support Public Preview</h4>
+                        <p>
+                            Windows Server 2029 Host Support for smaller containers, higher density of apps, faster pull and start times. Support lift and shift to PaaS, 
+                            don't allow applications which have dependencies but can package all dependencies inside containers. Low-level libraries such as GDI, PDF 
+                            generation are blocked so these can't be exploited and are disabled by default.
+                        </p>
+                        <h3>TDD and the Terminator: An introduction to Test Driven Development - Layla Porter</h3>
+                        <h4>TDD Successes</h4>
+                        <p>
+                            Acceptance criteria - hard to write tests with woolly requirements.
+                        </p>
+                        <p>
+                            Interfaces - you can write the single focused piece of information as a coding contract and allows you to get on with stuff.
+                        </p>
+                        <p>
+                            Asynchronous Development - when someone implements your stuff, nothing is going to break. Cleaner Code - only writing enough code to fulfil your test.
+                        </p>
+                        <p>
+                            Safe refactoring - don't have to worry as unit tests will fail if you break anything and fewer bug.
+                        </p>
+                        <p>
+                            Increasing returns - allow new features to be implemented without undoing previous development work and living documentation as unit tests allow someone to see what your code should be doing.
+                        </p>
+                        <h4>Process of programming our Terminator</h4>
+                        <p>
+                            Gather the requirements - scan subjects and determine if they require further investigation. Scan subjects and determine if they fail the requirements.
+                        </p>
+                        <p>
+                            Start with failing tests - if you don't you've written code. You need to make sure your tests aren't fitted to the code.
+                        </p>
+                        <p>
+                            Red/green refactor pattern - start with failing test, write just enough code to get the test to pass and refactor (as a cycle).
+                        </p>
+                        <p>      
+                            When writing tests - clearly label your class as an “sut” or subject under testing and can name tests like “SubjectShould_”. Then have arrange, 
+                            act and assert - can use fluentassertions e.g. result.Should().BeTrue(). Can also use TestCases to cover many eventualities in the same test if 
+                            the outcomes are being asserted is the same.
+                        </p>
+                        <h4>Change of Requirements</h4>
+                        <p>
+                            Once this is done you can continue to refactor but may get new requirements such as with the terminator which is to protect from threats and learn. 
+                            You need to design your application to be more robust to requirement changes by using design patterns like SOLID principles.
+                        </p>
+                        <ul>
+                            <li>
+                                Single responsibility principle - Every class or module in a programme should have responsibility for just a single piece of that programme's functionality.
+                            </li>
+                            <li>
+                                Open/close principle - software entities (classes, modules, functions etc) should be open for extension but closed for modification
+                            </li>
+                            <li>
+                                Liskov substitution principle - objects of their subtype should be replaceable.
+                            </li>
+                            <li>
+                                Interface Segregation Principle - split interfaces that are very large into smaller and more specific ones so that implementation 
+                                will only have to know about the methods that are relevant to them.
+                            </li>
+                        </ul>
+                        <p>
+                            Ideally need to make something extensible without having to be modified internally, you could add a rule for the example, so you can create a rule to 
+                            match a subject as the implementation of a new interface with this functionality. You could implement a list of rule implementations and could check 
+                            over all of those. If you need to make a private method in order to test it, it's time to refactor - if you have these then this is a code smell!
+                        </p>
+                        <p>
+                            With good practices, code management becomes infinitely easier. How to write more robust code, if find yourself going to the same code then 
+                            you can write it in a robust maintainable way.
+                        </p>
+                        <h4>TDD Failures</h4>
+                        <p>
+                            Underestimating the learning curve - is a complete culture shift and doesn't come naturally but if change mindset you can more productive. 
+                            Confusing TDD with unit testing. Thinking TDD is enough testing - you need those integration tests as well. Not starting with failing tests 
+                            is a warning you've written too much code. Not refactoring enough - want the least amount of code to fix it but also make sure developing the 
+                            interfaces needed and not actually doing TDD!
+                        </p>
+                        <h4>Implementation with your organisation</h4>
+                        <p>
+                            Can be controversial and is a significant culture change and need to think how to make it easy for you and your teammates - let people find their way. 
+                            Initial drop in productivity can be disconcerting - slowing down to begin with. Productivity will go up and reworks are reduced - don't have those regression bugs. 
+                            Increased understanding of requirements and their acceptance criteria - you have things clear and precise as were able to write tests and if not good enough you 
+                            need more details to write tests and can push back and take more control.
+                        </p>
+                        <h3>Zero to Mobile Hero - Intro to Xamarin and Cognitive Services - Luce Carter</h3>
+                        <h4>Mobile Development with Xamarin</h4>
+                        <p>
+                            Thin C# wrapper around the native APIs for Android, iOS and Windows UI with a shared C# backend.  You can use Xamarin.Forms to share the UI between iOS, 
+                            Android and UWP, it is not the same as XAML but there was talk of XAML standard but there hasn't been any movement on this. Apps on each platform support 
+                            the native features and UI so don't need to know about the UI.
+                        </p>
+                        <h4>How do you get started?</h4>
+                        <p>
+                            You can use Visual Studio with the Xamarin Workloads - however you need the XCode build tools on a Mac to develop Xamarin apps on iOS. 
+                            You could use MacInCloud.com to rent space or you can use Visual Studio for Mac (formally MonoDevelop and Xamarin Studio) but you won't 
+                            be able to build and run UWP applications on a Mac either. You can develop also with F# and can use Fabulous for the layout and can use 
+                            MVU (Model, View & Update) pattern.
+                        </p>
+                        <h4>Cognitive Services</h4>
+                        <p>
+                            Set of APIs and SDKs to make apps more intelligent, you can create Machine Learning based experiences, there are services for making Q&As or 
+                            Immersive Reader, Speech to Text, Speech Recognition and services for Vision for recognition of images. Some examples include their own sentiment 
+                            nalysis and emotion analysis app, plus there is an X-ray analysis app to look at images and decide what is wrong in the image, also a skin cancer 
+                            prediction app with Azure Machine Learning.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
