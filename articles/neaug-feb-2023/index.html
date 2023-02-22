@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - North East Azure User Group February 2023</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../neaug-feb-2023">North East Azure User Group February 2023</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">North East Azure User Group February 2023</h2>
+                        <p class="blog-post-meta">22nd February 2023</p>                
+                        <img src="../assets/azure.png" class="img-fluid" alt="North East Azure User Group February 2023"/>
+                        <h3>Azure Virtual Desktop - Jim Moyle</h3>
+                        <p>
+                            What's new with Azure Virtual Desktop? Recent updates and what's generally available and what's in public preview.
+                        </p>
+                        <h4>Generally Available</h4>
+                        <p>
+                            Availability Zones for Azure Virtual Desktop with three zones you can select these when creating host pools for Azure 
+                            Virtual Desktop available in the GUI. There is also new Global Infrastructure so you can keep information in certain 
+                            territories and have more regions than any other cloud.
+                        </p>
+                        <h5>RDP Shortpath for public networks</h5>
+                        <p>
+                            Have an express route into Azure using STUN/ICE protocols which will use the shortest possible path between your location and the VM.
+                        </p>
+                        <h5>Single sign-one and Passwordless Authentication for Azure Virtual Desktop</h5>
+                        <p>
+                            Supports Windows Hello and can log into a VM straight through first time every time and just need to enable this in the Microsoft Azure Portal.
+                        </p>
+                        <h5>FXLogix profiles disk compaction</h5>
+                        <p>
+                            Dynamically expanding VHDX will expand but they don't contract and these disks will stay at the highest amount they were at the maximum amount 
+                            of data so having to pay for storage space were not using, this disk compaction feature could use a community script which compact these but 
+                            for larger disks it needed a maintenance window but now at log off the disk is being compacted at that point and is scalable across hundreds 
+                            of VMs. This feature saved even more space than the community scripts did, this does mean people are paying less for storage in Azure. If you 
+                            trust Microsoft to do the right thing then customers are more likely to put more trust in Azure.
+                        </p>
+                        <h5>Azure Virtual Desktop for Azure Stack HCI</h5>
+                        <p>
+                            If have an app that you need to be close to the VM. For on prem you can have database and client close to each other to reduce latency 
+                            but need a way to put Azure Virtual Desktop VMs right next to the data, it extends Azure into your datacentre and can have VMs in your datacentre.
+                        </p>
+                        <h4>Public Preview</h4>
+
+                        <h5>FSLogix profiles on Azure AD-joined VMs for Hybrid Users</h5>
+                        <p>
+                            People don't want a triad-AD they just want Azure AD, or want to set up Azure AD in the cloud with their on-prem. SMV needs UNC path. They are 
+                            doing Kerberos ticketing and SMV with a cloud identity only.
+                        </p>
+                        <h5>Confidential VMs for Confidential VMs</h5>
+                        <p>
+                            Supports TPMv2 and other features such as encrypted memory and can live encrypt data for high security environments.
+                        </p>
+                        <h5>Azure Virtual Desktop Insights Update</h5>             
+                        <p>There are more analytics available and get app attach data into log analytics.</p>
+                        <h5>User Policy support Intune for Multi-session</h5>
+                        <p>
+                            If have on-prem multi-session environment it is on-server. In-tune only works on a client OS and multi session works but only on Azure but 
+                            there has been work done in Intune to make it work in this environment. Can use Intune to manage both virtual and physical assets with 
+                            integration with Azure Virtual Desktop.
+                        </p>
+                        <h4>Roadmap</h4>
+                        <h5>Azure Virtual Desktop integration with Private Link</h5>
+                        <p>
+                            Nothing is exposed on the internet but is only available in the subscription to help keep everything within the network with a private 
+                            endpoint available and don't need to hit any public IP address to make a connection.
+                        </p>
+                        <h5>New Web Client</h5>
+                        <p>
+                            Looks like the Windows App and want the look-and-feel and features to be as close as possible on all the platforms but may not release 
+                            all features at the same time on all clients.
+                        </p>
+                        <h5>Watermarking</h5>
+                        <p>
+                            Can put QR codes on the screenshot so can find out the connection id of any sessions, can change how big they are and how transparent they 
+                            are and can see from any screenshots where they came from. Will work for Desktop but will work for Remote App in the future.
+                        </p>
+                        <h5>Custom Image Templates</h5>
+                        <p>
+                            Azure Image Builder has been integrated with Azure Virtual Desktop so can create a custom image template with things like a language, 
+                            time zone etc and can have your own custom scripts and based on Packer.
+                        </p>
+                        <h4>Teams</h4>
+                        <p>
+                            Teams 2.0 will be half as resources and support multiple identities and support multiple desktop identities, old version is built on Electron 
+                            and new version is written in React using the Edge browser.
+                        </p>
+                        <h3>VMware workloads on Azure - Toby Brown</h3>
+                        <p>
+                            The cloud journey has many different endpoints. Cloud migration strategies which help accelerate migration and mitigate risk, meet the customers 
+                            where they are. Redeploy as-is to cloud with Rehosting which is the least risky move to migrating existing applications. These are private and 
+                            not exposed to the general internet, it is all about network and how you connect these private networks together with own datacentres where needed.
+                        </p>
+                        <h4>Azure VMware Solution</h4>
+                        <p>
+                            Gives you feature parity with an on-prem VMware stack, is essentially a VMware stack running as a first-party solution built by Microsoft and 
+                            gives you the same look-and-feel as VMware workloads and use the Azure backbone to get in there. You can host your VMware workloads and puts 
+                            you closer to Azure services and can deliver less than 1ms latency to those services.
+                        </p>
+                        <p>
+                            Don't have to adopt a new set of skills to manage this, you can use the same VMware tools and can continue to use VMware and services 
+                            such as vSphere Client, vRealise Suite, VMware Tanzu Standard Edition and VMware SRM are being cloud-enabled by VMware.
+                        </p>
+                        <h4>Management via Azure Portal</h4>
+                        <p>
+                            Scale up and down via the Azure Portal and CLI and can simplify policy creation, drive VM performance and reduce complexity and administration 
+                            and coming soon is the ability to reduce the number of cores on a host.
+                        </p>
+                        <h4>SKUs and Software</h4>
+                        <p>
+                            AV36, AV36P (Refresh SKU) and AV52 (Heavy SKU) and there are not many workloads that AVS that it won't take and runs on industry standard Dell hardware. 
+                            It isn't the latest software but is as recent as possible and this is looked after by Microsoft and the hosts are updated with version 7.0 being supported 
+                            and version 8 coming soon. There is not support for GPU but this may change in the future.
+                        </p>
+                        <h4>Networking</h4>
+                        <p>
+                            Microsoft have AVS runs in Azure Network it does need express route but can do site-to-site VPNs but using this in production is not recommended. 
+                            Can also enable public IP of the NSX edge to pick own IPs in the components of AVS.
+                        </p>
+                        <h4>Storage</h4>
+                        <p>
+                            vSAN is used which is quite capable and can stretch a cluster of vSAN clusters over two separate availability zones so if have customers with need 
+                            of high availability with stretch clusters but then may need to double up capacity. If need to add storage you add another node and this will give 
+                            you extra capacity and can use Azure NetApp files which is a highly scalable solution.
+                        </p>
+                        <h4>Security</h4>
+                        <p>
+                            Certified datacentres, hardware and cloud environment along with network edge security and DDoS protection. VMware security such as data encryption 
+                            at rest. vSANs can have customer data protected with encryption at rest and can bring and manage own master encryption being managed via Azure Key Vault.
+                        </p>
+                        <h4>Migration</h4>
+                        <p>
+                            VMware has a tool called HCX which provides true workload mobility and can do bulk and live migration to move workloads from on-prem to Azure with 
+                            no downtime. Once VM is migrated the network is extended but keep the same IP addresses so VMs can talk to each other and can migrate and shutdown 
+                            on-prem and users would be unaware of this.
+                        </p>
+                        <h4>Disaster Recovery
+                        <p>
+                            Support on-prem to AVS and AVS to AVS providing cloud disaster recovery and AVS to Azure Services for advanced cloud disaster recovery options.
+                        </p>
+                        <h4>Hybrid and Changes</h4>
+                        <p>
+                            Can have front-end of apps in Azure to be nearer database tier if there or can consolidate or retire datacentres plus can have app modernisation 
+                            where can use Azure functionality where needed and could provide additional capacity for an application in Azure if need extra load for your 
+                            datacentre which can also be worldwide if needed. Can also transition from VDI on AVS to Azure Virtual Desktop. Hardware end-of-life then 
+                            can move into Azure and can pay as you go and get rid of outdated hardware.
+                        </p>
+                        <h4>Benefits</h4>
+                        <p>
+                            Get predictable pricing or can lock in pricing for 1 or 3 years, can have workloads on-prem and IVS don't need extra licences as long as 
+                            transition within 90 days and can take advantage of the Azure Hybrid Benefit along with free security updates for three years and can use #
+                            existing VMware licenses to save on Azure VMware Solution.
+                        </p>
+                        <h3>Defender for IoT - Dean Ellerby</h3>
+                        <p>
+                            Security is a serious topic!<br/>
+                            Don't let your elevator take you down!
+                        </p>
+                        <h4>What is IoT?</h4>
+                        <p>Internet of Things. Network of physical devices that exchange data such as Smart Home Devices. Smart Wearable Devices.</p>
+                        <h4>Operational Technology</h4>
+                        <p>
+                            Hardware or software which the purpose is to monitor the performance of physical devices. We rely on OT. It isn't necessarily 
+                            connected to the internet but can talk to each other.
+                        </p>
+                        <h4>What is the risk?</h4>
+                        <p>
+                            Could try a ransomware attack on an elevator but it hasn't happened yet. Case of a spear phishing attack for a Steel Mill and 
+                            caused a shutdown of the blast furnace and caused massive damage. There was also a target of Bowman Dam which was small and 
+                            offline at the time. There was also a ransomware of pipeline but were able to disconnect. Water System where Sodium Hydroxide 
+                            levels were 100x higher than normal.
+                        </p>
+                        <h4>Microsoft Defender for IoT</h4>
+                        <p>
+                            Want to be alerted to devices talking where they shouldn't be talking. Defender for IoT for OT is agentless. Can use Deep Packet 
+                            Inspection from data being routed using SPAN port for Passive Monitoring (Network Traffic Analysis) and OT-aware behavioural analytics 
+                            which can learn what it does so can let you know when stuff has changed. To monitor assets, you need capable hardware such as C5600 
+                            with 16 CPUs and 32GB RAM and 5.6TB storage but can't use L60 as this does not work. 
+                        </p>
+                        <p>
+                            Can select the Monitor interfaces with an IoT sensor to receive traffic and other settings then via the IP address you can log in, 
+                            you can get some information about the environment along with traffic monitoring. It can identity devices based on packets going 
+                            through the network and can also do alerts such as Firmware changes but can also say that these things are okay so when something 
+                            different happens it will alert you.
+                        </p>
+                        <h4>Microsoft Defender for IoT in Azure</h4>
+                        <p>
+                            You can go into the Azure portal and can see the information there more easily and amalgamate IoT sensors into one. You don't need 
+                            to go to the Sensor and can publish the information to Azure and grant access to this information. You pay $140 per month per 100 
+                            monitored devices or $1680 per year per 100 monitored devices but this pricing will probability change.
+                        </p>
+                        <h4>IoT/OT Risk Assessment</h4>
+                        <p>
+                            You can play PCAP files of up to 2GB and upload a capture of the network to a server that is nowhere near and can play this in the 
+                            environment and can also generate a risk assessment and this contains CVEs. Everything is alerted out of the box and learning mode 
+                            is 2-6 weeks and know what happens in the environment and you can get event timelines with general analytics but the local sensor 
+                            will have more information about timelines with the Event timeline to show when events took place.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
