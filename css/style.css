@@ -66,6 +66,27 @@
     background-color: #ffffff;
 }
 
+.btn-posts {
+    color:#ffffff!important;
+    background-color:#ED1619!important;
+    border-color:#ED1619!important;
+}
+.btn-posts:hover{
+    background-color:#f25053!important;
+    border-color:#f25053!important;
+}
+
+.btn-posts-inverse {
+    color:#ED1619!important;
+    background-color:#ffffff!important;
+    border-color:#ffffff!important;
+}
+.btn-posts-inverse:hover{
+    background-color:#f25053!important;
+    border-color:#f25053!important;
+    color:#ffffff!important;
+}
+
 .btn-articles {
     color:#ffffff!important;
     background-color:#009935!important;
