@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - NE-RPC 2020</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../ne-rpc-2020">NE-RPC 2020</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">NE-RPC 2020</h2>
+                        <p class="blog-post-meta">19th June 2020</p>                
+                        <img src="../assets/ne-rpc.png" class="img-fluid" alt=">NE-RPC 2020"/>
+                        <p class="text-center fw-light">
+                            This article was originally published 19th June 2020 on <a href="https://www.linkedin.com/pulse/ne-rpc-north-east-remote-programming-conference-peter-bull/" target="_blank">Linkedin</a>
+                        </p>
+                        <h3>CSS Grid - What Is This Magic?! - <a href="https://www.twitter.com/amys_kapers" target="_blank">Amy Kapernick</a></h3>
+                        <p>
+                            In the beginning there was darkness and emptiness then there was the web, there was just initially text and links but later there was positions and fonts then later to 
+                            CSS and more features were added to this, with CSS grid you are able to control layout in both directions and control how elements within the grid behave, and reduce the 
+                            thinking to make the layout responsive. Grid != Tables - these are specifically designed for this use, tables aren't bad, they are good for displaying tabular data. 
+                            CSS Grid can help you write semantic HTML.
+                        </p>
+                        <p>
+                            An example using just semantic HTML, you can set display:grid on the body of the mark-up. There is a new unit with CSS grid, which is the “fr” unit which replaces 
+                            percentages and helps define columns that can be resized. The columns can be numbered from left to right with positive numbers and right to left as negative numbers 
+                            and can easily positioned. You can also define grid template areas and assign names to each areas and define where elements should span columns, then you set simply 
+                            set grid areas for each elements to make them span more easily rather than using complex definitions. Created a basic layout for an app in just a few lines of CSS. 
+                            You can also create subgrids to help arrange elements, but this is relatively new so refer to the documents. You can use auto-fit to put in as many elements as needed 
+                            but auto-fill puts in implicit columns if there are not enough columns to fit, like a placeholder element. You can use minmax to define the minimum and maximum width 
+                            of a column in a layout, you can also have the same control over rows and can also define gaps between columns and rows as well.
+                        </p>                        
+                        <p>
+                            Sound too good to be true? Browser support - it is better than what you might think, Chrome from 57, Firefox since 52, Safari 10.01 Edge 16 and IE 10.1 so has good 
+                            support for the majority of browsers used however the subgrid feature is only supported in Firefox. You have a supports property which allows you to check if a feature 
+                            is supported, however Internet Explorer thinks it fully supports the current standard but can use a feature of this that it doesn't know about to make sure it will not 
+                            try and process these properties. There's not enough support? 90.86% of browsers supported and don't have to deliver unsupported code. Does your website already support 
+                            current browsers - this can be your fall back, you don't have to use grid everywhere you can pick somewhere to start using it and go from there, it's just CSS - there 
+                            is no framework, you don't have to continue to maintain this. CSS Grid is Awesome! There is a free online CSS Grid course at cssgrid.io, there is a book by Rachel Andrew 
+                            - The New CSS Layout. There is also the cssgridgarden.com where you can learn about CSS grids.
+                        </p>
+                        <h3>No SOLID Evidence - <a href="https://twitter.com/deejaygraham" target="_blank">Derek Graham</a></h3>
+                        <p>
+                            SOLID? Why they don't think they are a good idea, based on their experience of being annoyed by SOLID. Someone at an event will say they know all about SOLID and what 
+                            it stands for but not anything else, they think SOLID is oversold and confused by itself - some of it is advice and some of it is strategy. It is not really appropriate 
+                            anymore and the principle is more full or tautology with regards to cohesion and coupling and connascence. SOLID is like exercise, we all know we should do it but no 
+                            one ever does. They once worked on a function with 7,000 lines of C code so are not pointing figures.
+                        </p>
+                        <p>
+                            Code is hard - writing software is difficult and want to make sure that can continue working into the future easily without making the design harder to use and add to 
+                            in the future and need to make it easy to add things, every choice you make means the future you and team work can be harder or easier depending on what you choose, 
+                            but do more reading than writing. Making a good job of this requires experience and discipline and is more of an art than science and need to make sure that your 
+                            code is maintainable. Need to maintain two forms of complication, Essential and Accidental, the first where you try to model something in the real world and the second 
+                            is where your knowledge or tooling makes it harder to create good code.
+                        </p>
+                        <p>
+                            What is SOLID? Robert Martin discussed the 10 commandments about object oriented programming, or in fact 11 to invoke the classic off-by-one issue in programing and 
+                            wrote articles and books based on the clean code concept of using SOLID to define how you can help write software with the five principles. At the time the object 
+                            oriented code was mostly written in Java and SOLID fitted in with this quite well, it is not so appropriate to the world we're living in. SOLID is five principles: 
+                            Single Responsibility, Open Close, Liskov Substitution, Interface Desegregation and Dependency Inversion.
+                        </p>
+                        <p>
+                            Single Responsibility - each item of code should have one responsibility, but originally described as each software module has one, and only one reason to change, 
+                            but this is not one single responsibility but really means cohesion.
+                        </p>
+                        <p>
+                            Open-Closed - open for extension but closed for modification and depend on abstractions so don't have to make lots of changes to other code and relates to coupling 
+                            where tightly coupled code may have to change constantly due to small changes elsewhere in the code. It can encourage hierarchies of code where it might not be needed 
+                            or ever needed, but really means coupling.
+                        </p>
+                        <p>
+                            Liskov Substitution - one subclass can be swapped out for another. Liskov is a woman who's an American computer science researcher. Objects in a programming can be 
+                            replaced with instances of their subtypes and not being able to tell that it has happened from the outside and came from a time before we had abstract data types, 
+                            but really also about coupling.
+                        </p>
+                        <p>
+                            Interface Segregation - Many small specific interfaces are better than one general-purpose interface. Don't want to accidently use several things in an 
+                            interface, keep them small and tightly focused on what you're doing and is really about cohesion.
+                        </p>
+                        <p>
+                            Dependency Inversion - don't depend on concrete types, depend on abstractions. Want to move things that we need to out constructor and have them passed 
+                            in by whatever is invoking the code and is really coupling.
+                        </p>
+                        <p>
+                            The five SOLID principles can be reduced down to coupling and cohesion and can be unclear when talking about them in computer science. Connascence means 
+                            a change in one would require the other to be modified in order to maintain the overall correctness in the system. Start with the static nature of the 
+                            code through to the dynamic nature of the code, to call something in code means you need to know the name of it, this is the weakest form of coupling, 
+                            need to agree on the type of something, what is returned and what's needed to use something. The degree of coupling is increasing when work through the 
+                            static nature of code - static code is fairly easy to detect and refactor. Static parts of the code are Name, Type, Convention, Algorithm, and Position. 
+                            Dynamic parts of the code is the Execution Order, Timing, Value and Identity. Often when trying to improve the structure of the code we're moving down 
+                            the structure of connasence. More than one form of connascence can occur in the same piece of code. Is it coherent, is it coupled or decoupled to help 
+                            identify the type of connascence the code has.
+                        </p>
+                        <p>
+                            There's the four rules of Simple design, Appropriate, Factored with no duplication of structure, Communitive with every idea that needs to be communicated 
+                            should be represented somewhere in the code and Minimal. Passes all the Tests - it should have tests as making these can help improve cohesion, reduce 
+                            Duplication, improve Clarity and make the code the smallest it can be but enough to maintain the other rules and this is more of a cyclic approach, 
+                            making things clearer can also improve naming, and structure and help discover more about the code and also improve the tests and these should keep 
+                            themselves passing if you run them frequently enough. Duplication and Clarity where you have names that don't describe what they're doing or mixing 
+                            concepts together are hints that the code is not in the correct structure or the names aren't correct and is important, so challenging these and 
+                            finding better names helps make you understand what the software is trying to do. Noticing and improving the name of things can help improve the 
+                            other elements of the design of your code.
+                        </p>
+                        <h3>Prototype it with SAT! - <a href="https://twitter.com/SteWaterman" target="_blank">Steven Waterman</a></h3>                        
+                        <p>
+                            SAT or the Boolean Satisfiability Problem - is a simple a problem, given a set of Boolean variables where all the clauses are satisfied, but is 
+                            default to know what to set variables to make sure that the outcome is satisfied. SAT is NP complete, hard to find an answer and easy to check 
+                            an answer. An SAT solver can solve anything that is easier than SAT, you can use a linear programming solver to perform Boolean satisfiability. 
+                            In SAT you have clauses in linear programming you have constraints where you can check if any or all constraints are satisfied allows you to 
+                            check that a solution is valid you can find which one is the most valid, and the most optimal. You can also find the optimal solution to make 
+                            sure constraints are satisfied and also make sure the outcome is also the type you want and the most optimal.
+                        </p>
+                        <p>
+                            In an example for meals per week, and the user will define the constraints are for example Breakfast for meal and Monday for day, you can define 
+                            the bounds of variables such as 0 and 1 to create a Boolean but you can then add additional constraints to reduce the amount of items to be only 
+                            one for per day and meal where you have at least one and at most one then define which variables apply to that constraint, but initially the recipes 
+                            aren't appropriate for every meal but you can add additional constraints to reduce the number of items, you can define the coefficient of how 
+                            these constraints are applied and take advantage of the meta data for the values accordingly. You can also make some meals optional based on a 
+                            factor, where you can define for a given day whether the meal is required or not and define the ranges of items such as the number of calories 
+                            in the meal and can also take into the account the number of portions have had per meal you can define the minimum and maximum of portions also 
+                            based on constraints and can define whether partial portions are allowed or whole number portions. You can also create semi-continuous variables 
+                            that can have a minimum and maximum but they can also be zero.
+                        </p>
+                        <p>
+                            There was a lot of code but was quite easily understandable and digestible and things can be added or removed without having a knock-on effect and 
+                            allows for an iterative and modular approach to software development, you can set time limits for solvers as the time grows exponentially as the 
+                            code grows, SAT based solvers can be very slow compared to general purpose algorithms for example for checking Sudoku, most problems have a bigger 
+                            solution and take longer to solve as they become complex, specific algorithms have been optimised over years and many iterations to create an algorithm. 
+                            But it is quicker to create SAT-based solvers and these are easy to find and actually work - shouldn't use them if you need maximum performance and have 
+                            many researchers - but if developer time is precious then SAT is perfect for this and for prototyping, if using SAT based solvers then you may create 
+                            something that is not as fast but is faster to create than a handmade algorithm but can then compensate by running the SAT-based solution on more or 
+                            better hardware but once this is validated you can then write a custom algorithm later and only spend the time when you need to.
+                        </p>
+                        <h3>A Gentle Introduction to WebAssembly - <a href="https://www.twitter.com/ColinEberhardt" target="_blank">Colin Eberhardt</a></h3>
+                        <p>
+                            Why do we need WebAssembly? JavaScript was described as A rush job that was barely good enough to survive by Brendan Eich - it was designed to add 
+                            a little bit of interactivity to the web, but it has done a fantastic job of this, anything that has tried to replace it has failed so he also has 
+                            said to “always bet on JavaScript”.
+                        </p>
+                        <p>
+                            JavaScript has evolved considerably over the years, despite this there are certain problems that haven't been solved, JavaScript is a compilation 
+                            target of things like TypeScript with transpilation and optimisation and optimised version of the original application is delivered to the browser. 
+                            The browser receives the JavaScript as a collection of characters, then into an Abstract Syntax Tree, then converted to Bytecode to be interpreted, 
+                            the browser will make certain assumptions about your applications and make certain optimisations to make a faster compiled form, if those assumptions 
+                            are false it will have to go to a lower compilation tier. These days JavaScript is quite fast and is pretty close to native equivalents, but there is 
+                            a long and convoluted route to getting that optimum speed.
+                        </p>
+                        <p>
+                            WebAssembly is a new portable size and load time efficient format suitable for compilation to the web, it is a binary format that is more size efficient, 
+                            and is more readily compiled and optimised and is designed to be a compilation target. The browser will decode the WebAssembly file but the compilation
+                            and optimisation time is much shorter and more efficient than JavaScript.
+                        </p>
+                        <p>
+                            What is WebAssembly? JavaScript is fast but the path to speed is convoluted and inefficient, the web is ubiquitous so why should JavaScript be the only 
+                            language the web supports. It is now a W3C standard alongside JavaScript, CSS & HTML. However WebAssembly or Wasm is a binary instruction format for a 
+                            stack-based virtual machine, Wasm is designed as portable target for compilation of high-level languages like C, C++ and Rust and enables deployment on 
+                            the web for client and server applications. There is a WebAssembly Text Format which is the low-level assembly-like language of WebAssembly itself with 
+                            only a few types and it is possible to write at this level, this just needs to be compiled into a binary module to convert WebAssembly Text Format to 
+                            WebAssembly Modules. You can't load Wasm files directly in a browser as it needs to be loaded by JavaScript at the moment so it can then be loaded an 
+                            executed by the browser. You can use the WebAssembly API in the browser to instantiate one or more modules, data is communicated via exports and imports.
+                        </p>
+                        <p>
+                            WebAssembly you write and then you can use a runtime, then has glue code specific to your application and communicate to the glue code which allows that 
+                            code to be accessed with the JavaScript Host to then work with the JavaScript Host app. You write your application using your runtime and you access this 
+                            in JavaScript but the tooling takes care of this complexity. To do anything meaningful you need additional tooling and frameworks, WebAssembly becomes an 
+                            invisible part of the platform and don't need to have any understanding of WebAssembly, the tooling and approach varies based on language such as Rust, 
+                            AssemblyScript, C# with Blazor - this runtime is quite large but allows you to use the full power of .NET in the browser.
+                        </p>
+                        <p>
+                            WebAssembly brings many new languages to the web and is the main motivation to using it. WebAssembly is compact, performant and secure although additional 
+                            runtimes, frameworks and tooling are required but will get smaller and improve over time. WebAssembly it is getting traction beyond the web including 
+                            blockchain, serverless and IoT to bring the same language and framework support to those platforms. You can't execute WebAssembly directly but there 
+                            will be a WebAssembly System Interface (WASI) to allow it access to the file system with permission based access to features and it will continue to 
+                            evolve and its abilities will increase over time.
+                        </p>
+                        <h3>Pride & Prejudice & C# - <a href="https://twitter.com/madSimonJ" target="_blank">Simon Painter</a></h3>                        
+                        <p>
+                            Breakfast Cereal, try to model the process the selection of this is done, and collected which choices were made throughout a month. 
+                            The simplest model would be something weighted by probability and then produce a prediction of a pattern but then you don't see the 
+                            pattern that the real collection data showed, have lost the memory built into the system, need to think about the state of the system, 
+                            then can think about the choices, whether to remain with the same choice or change the choice, so for three different items you can 
+                            have three states to stick with one or change to one of the other two.  Need to preserve some of the information about the changes 
+                            of state as go around, make choices by looking at the current state, or could alter the probability of the changes to then produce 
+                            the patterns you expect to capture the style of the original data.
+                        </p>
+                        <p>
+                            This technique is a Markov Chain, about the changes of state and about the probability of state changes, these changes need to be 
+                            Markovian and can only be in one state at a time, one thing or the other thing not both. It does not have any memory as such only 
+                            the previous state and what is going to happen next - Markov Chains only show the changes in state, you have captured all the states 
+                            of the system together to represent all of the options.
+                        </p>
+                        <p>
+                            You can use a matrix, which is a 2-dimensional array of values, you can have the columns represent the states to change to and the 
+                            rows are the ones to change from. In order to start running Markov Chains you need to represent the initial distribution, which 
+                            would be the initial probabilities of the cereals from the example and then represent the possible transformations. You have to 
+                            do some matrix multiplications, you multiple the initial distribution with the probabilities that it might happen, so you can 
+                            choose the column and row that represents the transformation and then can add these probabilities together to produce the value 
+                            that means the probability for the new day based on the previous day and can do this for the various combinations possible to 
+                            then indicate what the new state should be, based on the likelihood of changing from one state to another, and whether that 
+                            state has ever been an option.
+                        </p>
+                       <p>
+                            You use these probabilities to set the initial distribution for the next day and run through the transformation again, and so on 
+                            for all the days needed. You can then see over the days these have been generated the cereals that are more likely, that is see 
+                            the tendency in moving in a particular direction for the probabilities, then there is a point where the Markov Chain where they 
+                            reach a point of equilibrium where they stay the same values day, after day - where the probability of changing doesn't change 
+                            again, but can be useful for knowing when that point is, you can iterate over the values until you reach that to know when that 
+                            will be and can be useful for getting useful data out of the system.
+                       </p>
+                        <p>
+                            How does any of this relate to Jane Austin? She only ever wrote six complete novels, how we can use this technique for her to write 
+                            posthumous novels based on this technique. We can analyse sentences to see what the particular instance of a word is followed by 
+                            another word, can treat these words as states on a Markov chain and then make the choices based on a weighted probability of the 
+                            words that followed, then can you do this with the next word and see what this was followed by and by knowing how many instances 
+                            of this there were in the novel to produce the weighted probabilities of those and so on. You can produce something that looks 
+                            on the whole right but would be better to consider two words as a state, as two-word pairs so not to have words on their own 
+                            that won't make sense such as “and” or “Mr” etc to produce the Markov Chains needed.
+                        </p>  
+                        <p>
+                            Within C# this involves reading all the books in as text then treating the punctuation as a word, then will split by new line 
+                            characters for each line and use a paragraph break to keep paragraphs together and then collapse the array into a single array 
+                            where each word and punctuation mark is in an array. Then create the two word chains from the list of words in the list, by 
+                            adding these to a dictionary and if the same combination is found again it will be a structure to show how many times that 
+                            two-word pair with all the things that could possibly follow that combination. The convert each possible combination that 
+                            can follow that by repeating that after that as many times as it is follows that letter and also shows the biasing for more 
+                            common letters to be represented. Then you need to decide how long to go on for which you can do by how many paragraphs and 
+                            start with the first two words of every chapter, one of these will the first state of the chain, then go through all the 
+                            paragraphs to generate and format this correctly and the output seems like something that Jane Austin would have wrote 
+                            but it has no memory except for what the previous two words are but has no state beyond that.
+                        </p>
+                        <p>
+                            The system that Google uses for ranking websites, PageRank, is based Markov Chains, as are predictive text, the processes 
+                            of how markets and customers will behave in the future those can be done using Markov chains. You could use this in testing, 
+                            to generate as much random test data which will have all of the same structure and behaviour of the system that you are 
+                            going to test as needed.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
