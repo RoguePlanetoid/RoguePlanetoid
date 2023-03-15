@@ -1,0 +1,218 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - DevOps North East March 2023</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../devops-north-east-mar-2023">DevOps North East March 2023</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">Dev Ops North East March 2023</h2>
+                        <p class="blog-post-meta">15th March 2023</p>                
+                        <img src="../assets/devops-north-east.png" class="img-fluid" alt="DevOps North East March 2023"/>
+                        <h3>Self-Service Cloud Infrastructure</h3>
+                        <h4>The Problem</h4>
+                        <p>
+                            New Development, Development Teams to New Private Managed Cloud with an Infra Team. Client has Existing Services on their existing Infrastructure and 
+                            needs to be moved into a new Private Managed Cloud and this needs to be done quickly and dev team needs access to the cloud infrastructure.
+                        </p>
+                        <h4>Requirements</h4>
+                        <p>
+                            Security Sizes, Enable, Efficiency, Policies and Control. 
+                        </p>
+                        <p>
+                            Need to have VMs to have certain level of security. Each of the teams may be working on larger projects and need to have the resources available only to 
+                            people on that project and not accessible to people outside of this project. Want to have the credentials and permissions that configure the hardware to 
+                            be kept away for the developers and the rights to the machines should only be kept with the infra team but the developers should be able to create the VMs 
+                            as needed. The efficiency of this process needs to be high with 90 applications needing to be migrated quickly with a couple of services taking a few months. 
+                            Need to have standardised virtual machines within a certain range. Organisation has many policies such as naming policies and how resources are tagged and need 
+                            to have agents to monitor services and to allow monitoring on things like performance. Infrastructure team should be able to give development teams access to 
+                            resources, provisioning a VM can be a blocker where this would have to have been a manual process to get something provisioned which would take days so the 
+                            infra team should be able to allow the dev team to easily create VMs. Infra team retains control and should not need to give developers master passwords and 
+                            also be able to control the estate itself.
+                        </p>
+                        <h4>Solution</h4>
+                        <p>
+                            SSI (Self-Service Infrastructure) which has YAML, DevOps Pipeline and IaaS and is owned by the infra team and allow the development team to create whatever 
+                            resources they need on the infrastructure. The developers create a YAML file to describe their requirements and then after this it is submitted and pushed 
+                            to a repo to dev ops which goes through several pipelines to go through terraform files with the infrastructure using VMWare and vSphere-based environment. 
+                            Once these artefacts are processed will have the infrastructure that is needed created. YAML files contain details about the requirements such as networking, 
+                            CPUs and cores needed, memory required along with the database such as MongoDB with details needed to access this.
+                        </p>
+                        <h4>Actions</h4>
+                        <p>
+                            Portfolio repository with config files and scripts which is owned by the developers which will trigger the SSI template process which will configure what is needed 
+                            using Terraform and other templates which then create the artifacts to the create the infrastructure needed. Applications that are provisioned will have secrets 
+                            that need to be saved these will be placed on a vault namespace. Services can be run such as MongoDB, MariaDB, RabbitMQ and others.
+                        </p>
+                        <h4>Pipelines</h4>
+                        <p>
+                            Portfolio pipeline for the developer YAML files will trigger orchestrator and create artifacts to create the services with the services pipeline will use the 
+                            artifacts to create the infrastructure along with creating results artifacts which will be placed back on the Portfolio pipeline for the developers and can be 
+                            used to access their resources. Developers don't need to destroy and start again as can modify anything such as configuration as needed. It is also possible to 
+                            take advantage of what other developers have created so don't have to create everything from scratch.
+                        </p>
+                        <h4>Impact to the User</h4>
+                        <p>
+                            Simplicity, maintain, Meaningful Alerts, Speed, Vault, Collaboration, Standards, Sight, Choices and Integration
+                        </p>
+                        <p>
+                            With the SSI setup it is easy to customise environment as needed, the hardware itself is taken away from the developers but also the complexity is too so it is 
+                            possible to quickly iterate through changes if needed. It is possible to migrate around five services at a time so makes the migration process even quicker. 
+                            If there is any monitoring software this can be placed onto the server automatically and request that infra can gather this information and this will be 
+                            configured with naming conventions so the information can be obtained more easily. Maintaining system is a lot easier as there could be various changes 
+                            in the implementation and these can be versioned and can run changes with more up-to-date changes to keep up with updates or changes to the infrastructure. 
+                            If a particular error message is returned so need to filter error messages that are being thrown out by the system and have anything that needs to be 
+                            actionable by the developers but have a more reasonable message to allow developers to debug their own processes. Standards, choices and collaboration 
+                            requires projects to follow certain standards and protocols to get integrations working and projects need to confirm with the layout needed by SSI.
+                        </p>
+                        <h4>Future</h4>
+                        <p>
+                            Remote Access, Load Balancing, Continuous Integration. Connection is done via jump boxes at the moment and is not the most convenient way so are working on 
+                            group policy and active directory way of accessing resources. Will be beneficial to have load balancing for many services such as message queues. Various 
+                            projects are being worked on and developers need to be able to access those services easily for continuous integration of projects and need to work to a 
+                            certain standard so things can be integrated. 
+                        </p>
+                        <h3>GitOps</h3>
+                        <h4>What is GitOps?</h4>
+                        <p>
+                            GitOps is a continue delivery approach that emphasises using Git as single source of truth for infrastructure and application configurations.
+                        </p>
+                        <p>
+                            GitOps is a process for automating infrastructure using best practices of software infrastructure using workflow based on Git principals. 
+                            Ensures infrastructure as code, easy to roll back changes, consistency and standardisation, enhances security and compliance, improves 
+                            stability and increased productivity. Starts with creating a Branch then that goes through Pull Requests and Merge Requests and can have 
+                            changes from multiple collaborators and then can be approved by a designated code owner before being merged. This then goes through 
+                            continuous integration pipelines with an approval process and then go through pipeline process to deploy to cloud such as AWS, Kubernetes, 
+                            Microsoft Azure or Google Cloud. Before GitOps things may not have been fuly validated and potentially not being checked correctly with 
+                            things happening in a more haphazard way. 
+                        </p>
+                        <p>
+                            GitOps can help improve things as infrastructure is related to what has been checked into source control and the desired state will be in 
+                            sync with the environments and can also ensure things have gone through proper scrutiny, have been properly reviewed by dedicated code owners. 
+                            Once things have been merged and things have been deployed to lower environments integration tests can be performed before being pushed to 
+                            production. For containerised applications the applications will be put into a container and this can be deployed with Kubernetes and can 
+                            have manifest files that can also be stored in source control such as being able to change version numbers where needed. Deployments are 
+                            done with semantic versioning and can easily roll back to previous versions if there are any issues and the same code is always being 
+                            deployed to all environments to ensure that what is expected to be deployed is deployed, along with being checked for any security issues 
+                            before being promoted and any issues and errors can be identified early before being put into production.
+                        </p>
+                        <h4>Key Components</h4>
+                        <p>
+                            Infrastructure as Code (IaC) along with Configuration as Code, Network as Code and Security as Code then this can be used with CI/CD pipelines 
+                            with workflow from Code, Build, Test, Release, Deploy, Operate, Monitor, Elaborate then back to Code along with having Merge Requests and Approvals.
+                        </p>
+                        <h4>Push and Pull Workflows</h4>
+                        <p>
+                            Push-based approach where CI/CD tools push changes to environment, where applying GitOps is more consistent with the approach used for application 
+                            deployment and these targets are not limited to Kubernetes.
+                        </p>
+                        <p>
+                            Pull-based approach where agent in cluster pulls changes wherever there is a deviation from the desired configuration. In the pull-based approach 
+                            deployment targets are limited to Kubernetes and an agent needs to be installed in each Kubernetes cluster.                        
+                        </p>
+                        <h4>Pillars and Principles</h4>
+                        <p>
+                            Pillars - Single source of truth from Git, treat everything as code, operations performed though Git workflows.
+                        </p>
+                        <p>
+                            Principles - Declarative model, versioned and immutable, pulled automatically where agents automatically pull the desired state and continuously 
+                            reconciled where agent keeps applying the desired stage.
+                        </p>
+                        <h4>Secure Git</h4>
+                        <p>
+                            Access control for Git, GPG signed commit, block sensitive data, enforce branching policy, dedicated code approvers, linear commit history, 
+                            static code analysis for security checks, keeping Git and CI/CD tools up-to-date, rotate SSH keys and access tokens and backup git repositories.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
