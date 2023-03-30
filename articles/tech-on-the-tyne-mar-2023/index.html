@@ -1,0 +1,211 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - Testing at both ends of the triangle</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../tech-on-the-tyne-mar-2023">Testing at both ends of the triangle</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">Testing at both ends of the triangle</h2>
+                        <p class="blog-post-meta">30th March 2023</p>                
+                        <img src="../assets/cypress.png" class="img-fluid" alt="Testing at both ends of the triangle"/>
+                        <h3>About</h3>
+                        <p>
+                            <a href="https://www.twitter.com/deejaygraham" target="_blank">Derek Graham</a> is a Principal Developer for 
+                            <a href="https://www.sage.co.uk" target="_blank">Sage</a> and runs <a href="https://ne-bytes.github.io" target="_blank">NEBytes</a> 
+                            and spoke about <a href="https://cypress.io" target="_blank">Cypress</a> for <strong>Tech on the Tyne</strong>.
+                        </p>
+                        <h3>The Testing Triangle</h3>
+                        <p>
+                            Is a metaphor of the types and proportions we should have in the project from Unit Tests, Integration Tests and end-to-end tests with increasing 
+                            integration and complexity towards the top of the  pyramid but with fewer of them but are more complex. Unit Tests are quick to right and give 
+                            good feedback and give this feedback quickly.                            
+                        </p>
+                        <p>
+                            Test code is code - Code that is as simple as possible to write, it is also the code we don't test.
+                        </p> 
+                        <p>
+                            Microtests - these are something that are meant to give precise feedback about a small chunk of the code such as single function or class, don't 
+                            separate things out for the sake of it. Unit Tests is not a unit test if it talks to database, network filesystem or can't be run at the same time as other unit tests.
+                        </p>
+                        <p>
+                            End-to-end tests - Take longer to write, change and debug and they tend to be slower and fail for more reasons but check that your application 
+                            is wired together correctly. You might have a webserver so may need to have configuration and database which can be the worst kind of thing to 
+                            test as has to be in the right place and have right data and be kept up-to-date.
+                        </p>
+                        <p>
+                            Integration tests in the middle is where you tend to have the worst trouble, longer to run than unit tests and prone to breakage by changes to the application. 
+                            They can often be used to test too large a piece of functionality. You might have a fake API and database and might not know which is which but might not have 
+                            enough context but might also have too much about the system in the test, they also require much more maintenance can also check out J B Rainsberger video about 
+                            Integration Tests are a Scam.
+                        </p>
+                        <h3>Both ends of the Triangle</h3>
+                        <p>
+                            Lots of microtests at the bottom, as isolated as possible where each thing works and at the top everything is wired right and have maximum realism with nothing 
+                            in the middle. Derek has written websites many years ago and have done testing using Powershell to make the web requests and check if the links work in their 
+                            website but didn't check if they rendered. Later they had more web projects that need more testing they converted lots of Word HTML along with the NEBytes website 
+                            to Eleventy instead but needed tests to be able to make sure this worked correctly using Cypress.
+                        </p>
+                        <h3>Cypress</h3>
+                        <p>
+                            Productive and easy to use than a lot of web testing products and can be used with JavaScript, makes tests easy to write and reason about compared to Selenium tests in C#.  
+                            Have good documentation at <a href="https://docs.cypress.io" target="_blank">docs.cypress.io</a> and can also debug or log during tests when needed.
+                        </p>
+                        <h4>Good Things</h4>
+                        <p>
+                            Cypress “runs” inside the browser, automatic waiting once something has happened, debuggability, takes snapshots so can step through what the test is doing, spies 
+                            where you can spy on event handlers. You can also do network interception so don't have to do network requests and fake those out and component doesn't need to know 
+                            about that, it takes screenshots and videos so if something fails you can have a look at the screenshots or video and see what it did. It also supports hot reload 
+                            and if you change a test, it will run it again along with automatic retry as it understands what the browser is doing it will wait for things to be displayed in 
+                            the browser and take away things you don't want to be dealing with.
+                        </p>
+                        <h4>Bad Things</h4>
+                        <p>
+                            Doesn't support multiple tabs, not as established as Selenium, JavaScript online, doesn't support Safari and iframes support is limited. Multi-site is not allowed 
+                            although there is an origin command so can sign into something where get taken to another auth provider and then when come back do the tests again. Login is still 
+                            an issue if have a website that is authenticated with another provider and this is seen first Cypress will see this as your website and can be difficult to work 
+                            with but this may be resolved in a future version.
+                        </p>
+                        <h3>Jest</h3>
+                        <p>
+                            Jest is another test library which will run tests in rspec format and can describe something then have the tests themselves that are actually running. Jest is one 
+                            of the more popular frameworks for testing where can see if something happens and see what is expected and if something doesn't happen the test will fail.
+                        </p>
+                        <h3>Writing Cypress Tests</h3>
+                        <p>
+                            All files begin with cy.* and you can chain commands together with a fluent style of writing tests. E2E tests can be picked up fairly easily and Cypress will 
+                            find whatever tests there are and will run them for you, extension needs to be .cy.js for them to be found. 
+                        </p>
+                        <h4>Arrange, Act & Assert</h4>
+                        <p>
+                            Arrange - Arranging things would be to visit a website, it will either fire up a browser and won't return until the page has loaded, you can also do tiding up 
+                            before doing any tests such as clearing local storage by using the event “before” which is triggered before a test is run to do this or can do “beforeEach” 
+                            which will happen before each test and there is also “after” and “afterEach”.
+                        </p>
+                        <p>
+                            Act - You can get Cypress to get a control by id, class or X-path expression. You can find elements with data-cy-attributes which is the most reliable, 
+                            visible text although this can change, element ids, class names but the markup can change, and these can be changed from what was intended or use a generic 
+                            control name such as button or link as could have many items and could return a random item. Get will wait for something to be on screen within four seconds.
+                        </p>
+                        <p>
+                            Assert - You can check if something contains a value, this can also use matchCase if don't want this to be case-sensitive, you can get fields and see if they don't 
+                            contain a value, or a set of values. You don't have to add delays to get values as Cypress will wait correctly.
+                        </p>
+                        <p>
+                            Should - All assertions live with this or can check things with be.visible, have.attr, have.value, have.text and not.exist to see that something shouldn't be there 
+                            which doesn't require a delay.
+                        </p>
+                        <h3>Component Tests</h3>
+                        <p>
+                            These are new to Cypress and can sandbox components such as those in React or Vue, you don't need to run the whole application and the component can be tested 
+                            and it won't know that it is not in a real webpage. Can have component level tests, sandboxes, with time travel and have before and after with the same developer 
+                            experience as the end-to-end tests and can get an example for a <a href="https://github.com/deejaygraham/calendar" target="_blank">Calendar</a>.
+                        </p>
+                        <h3>Its & Invoke</h3>
+                        <p>
+                            If there is something you can't get access to for Its for properties of objects and invoke for functions on objects, so you can use this to look at session 
+                            storage in the browser, or redux store and even dispatch objects to redux that a component might be reading.
+                        </p>
+                        <h3>Custom Commands</h3>
+                        <p>
+                            In the support folder you can add your own commands such as reading data from storage, so these are methods that can invoke the functionality you need 
+                            within your tests and minimise the amount of code that is needed in the tests and re-use functionality across tests.
+                        </p>
+                        <h3>Spies & Stubs</h3>
+                        <p>
+                            You can inspect how often something has been called and can stub out methods where needed. With spy you could monitor if something was clicked and 
+                            stub allows you to substitute a function to mock some behaviour in the test where needed.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
