@@ -1,0 +1,255 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - BBC North East Technology Hub Meetup</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../dev-hub-north-april-2023">DevHub North - April 2023</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">DevHub North - April 2023</h2>
+                        <p class="blog-post-meta">26th April 2023</p>                
+                        <img src="../assets/dev-hub-north.png" class="img-fluid" alt="DevHub North - April 2023"/>
+                        <h3>Developing in a Data Rich Future - Gareth Williams - Verisk</h3>
+                        <p>
+                            Verisk build insure tech for a large global customer base and their UK operations have a few offices around the UK including Newcastle and 
+                            if you have a car then may have used one of their systems when making a claim.
+                        </p>
+                        <p>
+                            More than 10 years ago - you would have a policy holder and an insurer handler and would have to call insurer which would send letters and would 
+                            have a backwards and forwards process with lots of phone calls and letters. Very manual, development activity focuses on handlers and related to 
+                            data capture for financial positions and letter / form templates, there wasn't much investment in the development practices. 
+                        </p>
+                        <p>
+                            An evolution over the last 10 years - some automation mostly in recovery of loss, cloud migration over data centre investment. Data input from 
+                            policy holders / claims handlers, data becoming more structured with some use of SQS, SNS, Lambda and S3 on AWS with lots of very big SQL servers 
+                            needing to be replaced with object storage for structured and unstructured data. They developed a solution to share data between the parties 
+                            with a portal to share information and this saved £9 per policy holder in the whole country with the verify subrogation portal to enable 
+                            frictionless claims. With older methods would take months to settle claims, and had automated rules where just need to present invoice, 
+                            determine liability and then pay out which would then take only 48 hours.
+                        </p> 
+                        <p>
+                            With information being entered in the same format could allow bulk upload services that could ingest information from spreadsheets. They needed 
+                            to be able to scale with support for auto scaling and elastic beanstalk to handle traffic and scale back down again where needed, they were also 
+                            able to horizontally scale through APIs.
+                        </p>
+                        <p>
+                            Develop models such as computer vision to determine the damage of a vehicle to see what needed to be paid out and would train this model with their 
+                            existing data set to allow people to provide photos and know if a vehicle needed to be written off or not. They would use NLP on statements provided 
+                            in an unstructured format and structure this data but want to be able to get things right with the intelligent vehicle inspection system, they are 
+                            working on horizontally scaling this now but it is vertically scalable.
+                        </p>
+                        <p>
+                            Development mostly focused on data capture and improving automating existing processes and being more aligned with the customers and would work along 
+                            side other teams and have the tools available to pick the right tools and services to provide the solutions they needed to meet their business needs 
+                            along with being able to store more data.
+                        </p>
+                        <p>
+                            Today and the near future - accidents haven't disappeared and still happen, but they are down since pre-pandemic times. The cost of accident damage has 
+                            gone up as parts are more expensive and they aren't as available as they used to be. Vehicles have telematics collecting data with devices people have 
+                            added like cameras or OEM services will have a huge amount of data that is being captured around 20GB data every five minutes for devices people have 
+                            added but is mostly video and a rolling transactional loop of 30 seconds and can determine a lot of information from the data but with OEM devices would 
+                            get over 180GB per five minutes. Ideally they don't want the policy holder to contact them anymore and get the data at the point of impact, but there is 
+                            no universal standard but could run rules or transform it to get the information you need, did seatbelts or airbags fire, they have to ask policy holders 
+                            to upload this information or sent it themselves. If they could get this information, could use event drive architecture running things asynchronously to 
+                            get them a recovery vehicle or get them the help they needed or predict a particular injury and need to be able to have a reserve and notify them what is 
+                            going on with the claim - contact the driver on the state of their case. They have models to look at the data in cases to see if someone is likely to have 
+                            a personal injury and set a reserve where needed.
+                        </p>
+                        <p>
+                            Will also need information from witnesses and need to work with the data they need and work with data scientists along with legal teams and others for a claim. 
+                            Considerations are to ensure design of systems is done by following the data, make decisions around data lakes or data warehouse, do they need to transform the 
+                            data. Design systems with analytics at the forefront, decoupling and loosely coupling their systems with smaller services that do few things as possible. 
+                            Storage is cheap but consider usage, frequency and cost don't just need a massive relational database might want object storage or both, follow the data - is 
+                            it fixed format, is it relational? AI isn't the solution for all but automation like GitHub Copilot, having the right tools at the right point, but practical 
+                            application and cost may rule it out for now, what is the ownership of the data to build models. Data governance and privacy compliance are linked but not the 
+                            same thing with data being key if can get more information and allow analysts to do less but if don't have right permissions or compliance in place you won't be 
+                            running for very long but may need to tokenise the data and anonymise to protect and secure it. Separate business from processing logic - business rules are 
+                            changed more than processing rules and don't want to pull things together. Embrace cloud such as AWS, Azure and Google and toolsets that are there to develop 
+                            cloud-native applications including cost savings and improvements and can do this slowly to pick off the savings you need to make.  Multiple integration points 
+                            for data sources that need to work together from various sources and the more you have the more holistic the answer, you need to get the right data sources 
+                            together and process these separately and pull this together to get your answer.
+                        </p>
+                        <p>
+                            Retail example with cameras above doors that track people as blobs of heat and if they are close together, they are a shopping unit and counts how many go in and 
+                            how many go out but this data is streamed into a data store and generates events. From this this tells the store how many people are active in each department 
+                            in the store and track where everyone is whether they are cleaning, filling shelves, working trolleys or on the tills. As you walk around the store know you 
+                            are walking around with the app it will provide targeted apps. Where there aren't enough people where needed it can identify this along with how many people 
+                            are expected at the till to determine if have enough people. A proof of concept was developed within a couple of weeks and improved upon to provide the information 
+                            that is needed.
+                        </p>
+                        <h3>Automating the hard part of AWS account management with a Step Function driven vending machine offering - Peter Carr - CEF</h3>
+                        <h4>Who are CEF and what are they doing?</h4>
+                        <p> 
+                            They are currently improving on the IT side of the company with their own dedicated office in Durham. They are on a bit of a journey from being a big 
+                            on-premises legacy application to split this up and put it into the cloud with serverless-first approach with domain driven design for a micro service 
+                            offering. They have a number of engineering teams across the business and embed a member of their cloud platform engineering team into their software 
+                            engineering teams to set standards across all domain teams.
+                        </p>
+                        <h4>What Automating the hard part of AWS account management with a Step Function driven vending machine offering?</h4>
+                        <p>
+                            The pains of creating multiple AWS accounts increases when need to create hundreds of accounts. What are AWS accounts and why so many? Accounts are 
+                            ways to group resources together in a logical fashion and wrap service and access management policies along with putting them in organisational units. 
+                            It is a container for AWS services to create and manage resources in AWS for admin, access and billing. AWS Accounts are free, they can be used in AWS 
+                            organisations to apply logical grouping and policies and allow controlled access to certain resources.
+                        </p>
+                        <p>
+                            What are we talking about? Registering AWS accounts using control tower- this offers the easiest way to govern a secure multi-account AWS environment with 
+                            best-practice blueprints and enables governance using guardrails you can choose from a list of pre-packaged solutions.
+                        </p>
+                        <p>
+                            Why not just use AWS account factory? You can! AWS Console Access must be provided to users to do this, you need some kind of access into the AWS environment. 
+                            It is click-ops, want to get away from data input and trying to automate the world, plus this is time consuming.
+                        </p>
+                        <p>
+                            Time Consuming - how long does it take per account to provision, it takes up to 35 minutes to create and provision an account in AWS Control Tower's Account Factory. 
+                            If it is around 38 minutes to create an account for 20 accounts can be over 12 hours but if wanted 150 accounts this would be over 95 hours to fill in the form and 
+                            wait for the accounts to be created.
+                        </p>
+                        <p>
+                            Concurrency Limit - how many accounts can you provision at once? You can create five accounts at once then have to wait before can set more off, this support for five 
+                            accounts at time is a recent addition before it was one.
+                        </p>
+                        <p>
+                            So, what can we do about it? Created a Step Function driven vending machine offering but won't go over how to build the solution or how every stage works, just how this 
+                            could work for your team but everywhere has different needs and requirements and is not a finished product or solution.
+                        </p>
+                        <h4>What are Step Functions?</h4>
+                        <p>
+                            AWS Step functions are a visual workflow that helps developers to use AWS services to build distributed applications. These can use function orchestration, branching, 
+                            error handling and human in the loop where need to fill something in along with parallel processing and dynamic parallelism.
+                        </p>
+                        <p>
+                            What does it look like? This can be for a workflow with decisions - what happens depending on a condition in the step such as is it create or a delete account. Can also 
+                            have loops where these are waiting for a status and if this has not changed go around and check again. You don't have to read hundreds of lines of code or YAML to see 
+                            what is happening. Account creation path for example will call an account factory which is a service catalogue product so can make use of the APIs that come with this. 
+                            When an account is created it is empty so it will need more things in this so they have integrated their CI integration to run a pipeline for an account from a GitLab 
+                            Pipeline to deploy things that are needed for an account in the path and can collect information from the state machine and pass it into the next tool. They can check 
+                            the status of the pipeline and see if it is done, if not then can go again.
+                        </p>
+                        <p>
+                            What is the account already exists? It can see if the account exists and it can then get the account information for the account that would need then be updated with 
+                            things that are needed by the account, so can search provisioned products and pass this to the GitLab Pipeline.
+                        </p>
+                        <p>
+                            Account deletion path - Searches for provisioned product and describe records to get information it needs and will find any current OU and then move this to the suspended 
+                            organisational unit, close the account and delete the provisioned product. You don't need to go into the main account and delete the account manually. If the account is 
+                            already in the suspended organisational unit this doesn't need to fail the process it can just continue down. It is possible to get this back from AWS within 30 days by 
+                            contacting support if it is deleted by mistake.
+                        </p>
+                        <p>
+                            Call account factory - uses a task token that is placed into DynamoDB and then call an AWS lambda, and this will invoke the account creation which could take unknown amount 
+                            of time but once completed it will raise an event and this will trigger the next part of the process, to know if this should be the next step the task token is used to make sure. 
+                        </p>
+                        <p>
+                            Wait for Task Token? This is dynamically created and can have the pipeline wait for a particular task token returned in an event. How do you trigger this? Use a CSV file that 
+                            is uploaded by a user to an S3 bucket that will then trigger an event that will invoke a step function near instantly. This will contain the account details needed and if it 
+                            is a create or delete.
+                        </p>
+                        <h4>How does this help us?</h4>
+                        <p>
+                            Benefits of Step Function Account Factory? Time saved, fire and forget where can enable this with CSV file upload then leave it alone no matter if doing one, one hundred or a
+                             thousand and could add anything to alert user it is done or notify if there has been an issue, could even send a notification to the user that the account has been created 
+                             using their email address. You could inform them it is going to be created and then later with details of account when it has been created. Less AWS access is required and 
+                             is a low skill / no skill job to put the CSV together. Allows integration with CI/CD - the offering from AWS doesn't do anything more that create an account. Have multiple 
+                             options for triggering the solution as Account Factory only has a UI but could use CSV / S3 or CI / CD, third-party options such as Retool or Custom UI. Think of the 
+                             possibilities beyond what AWS can do out of the box and expand upon this.
+                        </p>
+                        <h4>How have they improved the solution?</h4>
+                        <p>
+                            They parse each CSV entry and run these in parallel with up to five at a time or more if this increases later. Everything is handled within the Step Function where have added 
+                            account tags so these can be grouped or know what environment they have been pushed in. They trigger the pipeline with a GitLab API key and there has been a whole lot of 
+                            optimisations that have improved the process.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
