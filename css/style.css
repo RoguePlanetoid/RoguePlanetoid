@@ -46,6 +46,10 @@
     background-image: url('../images/steps-podcast.svg');
 }
 
+.bg-cespage {
+    background-color: #830088;
+}
+
 .bg-black {
     background-color: #000000;
 }
