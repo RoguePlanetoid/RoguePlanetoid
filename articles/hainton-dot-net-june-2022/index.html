@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - HaintonDotNet - IoT on Raspberry Pi</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../hainton-dot-net-june-2022/">HaintonDotNet - IoT on Raspberry Pi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">HaintonDotNet - IoT on Raspberry Pi</h2>
+                        <p class="blog-post-meta">21st June 2022</p>                
+                        <img src="../assets/hainton-dot-net.png" class="img-fluid" alt="HaintonDotNet - IoT on Raspberry Pi"/>
+                        <p class="text-center fw-light">
+                            This article was originally published 21st June 2022 on <a href="https://www.linkedin.com/pulse/haintondotnet-iot-raspberry-pi-john-staveley-peter-bull/" target="_blank">Linkedin</a>
+                        </p>
+                        <h3>Introduction</h3>
+                        <p>
+                            <a href="https://twitter.com/johnstaveley" target="_blank">John Staveley</a> for <strong>HaintonDotNet</strong> talked about IoT on Raspberry Pi 
+                        </p>
+                        <p>
+                            John Staveley is an MVP, IT Contractor in C#, MVC, SQL Server and more along with organising  LeedSharp and IoTNorth and uses Microcontrollers but admits 
+                            they're not an electronics expert.
+                        </p>
+                        <p>
+                            You can run .NET 6 on Linux as well as previous versions like .NET Core. You can programming with C# on a Raspberry Pi, control hardware, control hardware 
+                            from the outside world and receive updates from a device.
+                        </p>
+                        <h3>Hardware Overview</h3>
+                        <p>
+                            Raspberry Pi 40b, WiFi, Camera Port, GPIO, SPI, USB 2/3, Ethernet, HDMI etc. MicroSB card and USB-C power can also use Meadow and .NET Nanoframework on ESP32. 
+                            Prepare to launch, so will need USB-C power supply supporting 3A, need Noobs software which is a flavour of Rasbian on MicroSD card. You also need a Screen, 
+                            Keyboard and Mouse.
+                        </p>
+                        <h3>Basic Raspbian Setup</h3>
+                        <p>
+                            Install .NET 5, also install VS Code on the Raspberry PI if needed and set any security settings as everything is switched off by default. When you log into 
+                            it for the first time you will get a welcome splash screen and then can go to the Raspberry Pi Configuration for example need to enable SSH.
+                        </p>
+                        <h3>Control the things</h3>
+                        <p>
+                            Digital Input/Output, Analog input, pulse-width modulation for hardware such as lights, I2C and Camera. Docs for C# and use System.Device.Gpio and Iot.Device.Bindings 
+                            namespaces and can get inputs and outputs in code. Digital Output examples include LED, Buzzer, Infrared LED, Laser, Relay to switch high-voltage appliances, Multi-LED 
+                            and so much more. To control some items, you will need special chips or need to deal with different voltage levels. There is support for pull up / down and anti-short
+                            and anti-back EMF diodes which makes it easier to integrate with Raspberry Pi.
+                        </p>
+                        <p>
+                            You can use the Azure IoT Hub, which is free for less than 8,000 messages per day, can control hundreds of devices, supports Event Hubs, supports HTTP, AQMP, MQTT, can 
+                            have Device Twins which is a JSON representation for the setup of the device, can run Edge software such as IT Edge. You can connect a device to Azure IoT Hub with a 
+                            Device Client using an IotHubConnectionString and can have it handle messages and perform any actions.
+                        </p>
+                        <h3>Development Experiences</h3>
+                        <p>
+                            Develop in Visual Studio, publish to directory - deployment self-contained, target runtime - linux-arm and target framework .NET 5/6. You will need a fixed IP address and 
+                            can SFTP files using FileZilla and then can use VNC and update permissions for files where needed.
+                        </p>
+                        <h3>Digital Input</h3>
+                        <p>
+                            Push button, reed switch, magnetic sensor, tilt switch, ball switch, knock sensor, light blocking, infrared receiver and motion sensor. You can also use Pulse-width modulation 
+                            (PWM) to control devices, depending on width of signals can control devices in different ways such as with Servos, Lamps/LEDs, motors, pumps, fans, display dials, audio effects 
+                            and more. Just need a positive, negative and signal connection and can use either software PWMs to use any pins or can use the hardware PWM with the dedicated pins for this 
+                            purpose.
+                        </p>
+                        <h3>I2C</h3>
+                        <p>
+                            Inter-Integrated Circuit (I2C) uses two wire communication on Pin 3 and 5 and 27 and 28, short range about one metre, can control multiple devices but need to enable this on 
+                            hardware. I2C examples include Relay controller, PWM controller, digital IO expansion, LCD screen, analogue inputs, GPS, RFID, rotary encoder for things like volume dials, 
+                            temperature pressure, humidity, accelerometer or EEPROM and more! 
+                        </p>
+                        <h3>Prototyping</h3>
+                        <p>
+                            For Prototyping you can use jumper cables, din rail mounting, connector blocks, breadboards for multiple components or could use something called totem maker which allows 
+                            you to mount components to them. You can also choose hardware and get items from <a href="https://pimoroni.com" target="_blank">pimoroni.com</a>. However not everything you can use you can use in C#, what you can use is in 
+                            System.Device.IO to see what devices you can work with. If there is not a driver for C# you can often take a Python library and convert this to C#, although is more difficult 
+                            from C++. I2C Relay Hat can control high voltage items, solenoids, high ampage lamps and more.
+                        </p>
+                        <h4>Blazor</h4>
+                        <p>
+                            Blazor is a SPA application framework, example is to use server side with push updates with SignalR and then can perform actions on the Raspberry Pi. Can wire up events to 
+                            perform actions and update values in code and then can set messages to Azure IoT Hub using a Service Client with the relevant connection string.
+                        </p>
+                        <h4>Camera</h4>
+                        <p>
+                            Raspberry PI supports cameras such as Normal, Hi-definition and infra-red and can interact with this using .NET code, by setting the correct security settings first and then
+                            can capture images from camera hardware.
+                        </p>
+                        <h4>Analogue Input</h4>
+                        <p>
+                            Potentiometer, thermistor, atmospheric pressure sensor, light dependent resistor, force sensitive resistor, distance sensor, hall magnetic, sound sensor, flame sensor and more. 
+                            So can have code that responds to changes in analogue inputs and can convert analogue to digital with additional hardware if needed.
+                        </p>
+                        <h4>Event Hubs</h4>
+                        <p>
+                            Event Hubs in Azure can define where messages can be routed using Azure Event Hubs. Messages can be routed to blob storage / service bus or other methods then can use IotHub 
+                            and Message Routing to receive messages from Event Hub.
+                        </p>
+                        <h4>Summary</h4>
+                        <p>
+                            You have power to use C# to control lots of types of hardware, digital I/O, analogue input, PWM, I2C and Camera. However, not everything you can buy can be controlled via C# - 
+                            yet!
+                        </p>
+                        <p>
+                            Azure IoT Hub can be used to connect to and control your device from the internet and receive live events from it.
+                        </p>
+                        <p>
+                            There are also resources about Raspberry Pi including starter kits, how to books and more.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
