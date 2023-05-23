@@ -496,6 +496,52 @@
                         custom policies with IAuthorizationRequirementData. You have the identity manager which are some APIs you interact with 
                         to manage an identity along with an Identity Store and have added Endpoints so the Client UI can interact with these.
                     </p>
+                    <h3>What's new in C# 12 and beyond - Mads Torgersen & Dustin Campbell</h3>
+                    <p>
+                        You can check out the C# documentation which has a what's new in C# 12 section which will be filled out as features are announced 
+                        before it launches in November. Most updates to the language have been removing boilerplate.
+                    </p>
+                    <p>
+                        Something that wasn't fleshed out since C# 1.0 when doing static usings you can use a keyword type without having to spell it out, you 
+                        can also use other syntactic constructs such as tuple syntax with named tuples.  You could use Pointers, but these must be used in an 
+                        unsafe context so can add unsafe to be able to use this in the using.
+                    </p>
+                    <p>
+                        There is something that Records have that Classes don't have which is primary constructors which would automatically show up as properties, 
+                        but this isn't what you want to do this with a class on whether you want to expose these, so you can use primary constructors in classes but 
+                        these don't autogenerate exposed properties but you can use them as parameters throughout the instance members of the class, these values are 
+                        captured into something after the enclosing things have occurred and will be in scope in these other places, they would be captured as parameters 
+                        assigned to members if you implemented this yourself. When you chain constructors, you must always get to the primary constructor and the primary 
+                        constructor then calls base so would work as expected, this had to be less of a feature than it is for records, but this was harder to design than 
+                        it was for records. Primary constructors would have been added in C# 6 but there was a choice between that and interpolated strings which were 
+                        added instead.
+                    </p>
+                    <p>
+                        When creating new lists can be hard as arrays have an empty for those but you can initialise a list with a collection literal with square brackets around 
+                        the items and the target type is inferred and you can use [] for an empty list as a collection literal which can also be used with Arrays. Pattern matching 
+                        also supports this same syntax already for using square brackets for the way objects are created and the way they are consumed in a pattern but have started 
+                        with a pattern and put this into the syntax for a collection. You can also use .. when defining lists and merge something into a collection literal and where 
+                        it is the same syntax to get this out with a pattern match. Being able to assign collection literals to var is still something that is being figured out. 
+                        What about a Dictionary being assigned to with a collection literal by using a colon but this is still in active development and is as yet undecided.
+                    </p>
+                    <p>
+                        It is more common for features to be added in stages to C#, something that it is high value and then see how it is used and then feature more addons to the 
+                        language for example lambda expressions didn't have a natural type but this was eventually added, if something isn't there yet it can be added in the next 
+                        or a future release. Pattern matching was made as efficient as it possibly could and can be more efficient than something you would write yourself and the 
+                        collection literals when they have a target type will be the most efficient way of creating them so these shouldn't be something you don't use because of 
+                        performance reasons.
+                    </p>
+                    <p>
+                        Extension methods were introduced in C# 3, and these are amazing and been a very big hit and allow code to be layered differently and can have other domains 
+                        that augment a class without changing the original class, but you can only do this is instance methods but have been trying to extend this with other methods. 
+                        You could declare an explicit extension for an object and then add methods to perform functionality, so this is like a transparent wrapper, this is something 
+                        you do with something specific with and could have different methods that do something different such as parse as XML and parse as JSON. So can thinly wrap values 
+                        with this “extension” and extend it with extra things. You could also have an implicit extension where all objects will have the extra members you could have 
+                        extension methods, you can have extension everything, you don't need to wrap a new thing on the old thing, but it is the same object underneath. The real power 
+                        of this is you can dot into it and see the intellisense and has discoverability. You could also allow something to implement an interface such as IParseable, 
+                        the underlying object doesn't need to know this exists. This is the thinking around Extensions and it hasn't been fully decided how to implement this but can 
+                        have the expressive power to do the separation of concerns and layering of software to give the next breakthrough in software composition.
+                    </p>
                 </article>
             </div>
             <!-- /Article -->
