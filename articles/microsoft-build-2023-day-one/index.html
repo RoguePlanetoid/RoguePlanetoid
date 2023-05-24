@@ -83,7 +83,7 @@
             <div class="text-start">
                 <article class="blog-post">
                     <h2 class="blog-post-title mb-1">Microsoft Build 2023 - Day One</h2>
-                    <p class="blog-post-meta">23rd May 2023</p>
+                    <p class="blog-post-meta">23rd May 2023 <i>Updated 24th May 2023</i></p>
                     <img src="../assets/microsoft-build-2023.png" class="img-fluid"
                         alt="Microsoft Build 2023 - Day One" />
                     <h3>Microsoft Build Opening - Satya Nadella</h3>
@@ -409,6 +409,87 @@
                     </p>
                     <p>
                         We have an exciting future ahead by using Azure to build solutions and innovate using AI!
+                    </p>
+                    <h3>Getting started with generative AI using Azure OpenAI Service - Dom Divakaruni & Pablo Casto</h3>
+                    <p>
+                        The journey continues with Generative AI which started in 1956 with the idea of Artificial Intelligence, 
+                        through tom Machine Learning, Deep Learning to Generative AI. ChatGPT has had unprecedented grown taking 
+                        two months to reach 100 million users, showing how useful it is in people's daily lives.
+                    </p>
+                    <p>
+                        Azure AI building these innovations so they can be integrated into applications, application platforms, scenario 
+                        services and allow developers to build applications on AI. OpenAI service has large pretrained foundation AI models 
+                        such as GPT-3, DALL-E 2, ChatGPT and GPT-4 from OpenAI that are custom-tunable with your parameters and your data. 
+                        It helps light up use cases that were not possible before including summarisation reasoning over data, writing tools 
+                        for code generation and supports ChatGPT and the era of Copilots with a foundation of enterprise security, privacy, 
+                        and compliance. 
+                    </p>
+                    <p>
+                        GPT4 is achieving human level performance in text generation with improved alignment and can generate complex documents, be turned and steered with nuanced instructions, 
+                        and can instruct and annotate in any language, slang or dialect. What you are able to do with it is really remarkable, prompt engineering used to be an art but now what 
+                        you can create with it is phenomenal. There is enterprise development with the Azure OpenAI service, such as interactive learning experiences that are personalised. 
+                        It is also being embedded into products such as search and making it fundamentally better along with helping write emails and other tasks, it can also help novices 
+                        learn things and be a copilot to guide people along with their tasks. It can also help experts be more efficient in what they do or help the knowledge workers be 
+                        more effective in what they do. It can also help workers make use of their time more effectively, and create things faster and more accurately than ever, this can 
+                        also help create more models and help put AI into more places.
+                    </p>
+                    <h4>Announcements</h4>
+                    <p>
+                        Announcements for Azure OpenAI service where you can apply your own data, create plugins for the OpenAI Service, configurable content filters and support provisioned 
+                        throughput. Innovations are providing more control on how you integrate into your solutions. 
+                    </p>
+                    <p>
+                        Chat Completions API is a versatile interface use for all scenarios, not just chat, model adheres to instructions in “system” message, it sets the behaviour guidelines 
+                        for the model including responsible AI steering. You can steer the models for your particular application or use case, you could provide examples to help steer it and 
+                        helps get you a long way compared to fine tuning at a low level, this is a tough way of doing things to break. Increasingly with each generation of model you are not 
+                        having to fine tune as much as you had to. 
+                    </p>
+                    <p>
+                        Using your own data - I want to reason over very long documents but token limits aren't sufficient so could build vector database to retrieve relevant data and construct 
+                        prompt at runtime, this has worked for quite a while so Microsoft has made this easier with Azure OpenAI service on your data so can combine a model with your own data 
+                        and build an assistant that reasons over your own data and does this security and this is not shared or not used to train the models and this will be expanding with 
+                        new data sources in the weeks and months to come. You can have system messages in Azure AI Studio that you can use to help craft responses to help make them do what 
+                        you want them to do.
+                    </p>
+                    <h4>RAG: LLMs + your data</h4>
+                    <p>
+                        Integrating large language models with your own data is one of the key challenges in AI. The aim with Retrieval Augmented Generation or RAG is to separate the large 
+                        language model from an externalised knowledge base and all coordinated with an Orchestrator that mediates this. May be building your own experience with UX, orchestrator, 
+                        calls to retrieve and LLM such as Copilots and in-app chat or are extending other app experiences or building plugins for OpenAI, ChatGTP etc. We use the model for 
+                        the capability for it to reason, but we don't want it's knowledge we want it from our knowledge base. 
+                    </p>
+                    <p>
+                        Externalising knowledge - find the most relevant snippets in a large data collection using unstructured input as a query, these are search engines. Azure Cognitive Search 
+                        is the complete retrieval solution with data ingestion, scaling and support for many written languages. Traditional methods for search are often very effective for this but 
+                        can also use representation-based methods or Vector databases and these are complementary supporting semantic based retrieval. Retrieval using semantic similarity uses vector 
+                        representations such that “close” vectors represent items with a similar meaning and may encode works, sentences, images, audio etc and some map multiple media types into the 
+                        same space. If vectors are close together then you have found something that is similar. 
+                    </p>
+                    <p>
+                        Vector-based retrieval - have to think about encoding including pre processing and encoding during ingestion then need to od vector indexing where you store and index lots of 
+                        n-dimensional vectors, quickly retrieve closest neighbours. Vector Search is native supported in Azure Cognitive Search with a new vector type for index fields, support for 
+                        pure vector search or hybrid search and combines well with the L2 re-ranker which is powered by models used by Bing that combine keyword and vector-based search and is 
+                        enterprise grade.
+                    </p>
+                    <h4>Azure Cognitive Search</h4>
+                    <p>
+                        Vector search - Revolutionising indexing and retrieval for large language model powered apps, power your retrieval-augmented generation application 
+                        with support for images, audio, video, graphs and documents. You can use vector or hybrid search, use Azure OpenAI embeddings, or bring your own, 
+                        can deeply integrate with Azure, scale with replication and partitioning and use this to build generative AI apps and retrieval plugins.
+                    </p>
+                    <h4>Plugins</h4>      
+                    <p>
+                        Expanding potential withs challenges to be addressed include accurate translation for a wider range of languages including support for Asian and African languages, 
+                        integrate vector databases and cloud data stores and use up-to-date information. Azure OpenAI Service Plugins will allow you to build powerful AI Copilot with secure 
+                        access to Microsoft services, you can security access your data in various data stores, vector databases and the web, data path access controlled via Azure AD and 
+                        Managed Identities and admin roles to choose what plugins to enable. You could retrieve data with Azure Cognitive Search, Translate with Azure Translator, ground 
+                        with recent info with Bing search or extract structured data from Azure SQL.
+                    </p>
+                    <h4>Provisioned Throughput</h4>
+                    <p>
+                        Azure OpenAI Service Provisioned Throughput is a model processing capacity for high volume production workloads, with predictable performance including stable latency 
+                        and throughput for uniform workloads, reserved processing capacity to ensure capacity is available to meet demand and with cost savings for high throughput workloads 
+                        vs token-based consumption.
                     </p>
                     <h3>What's new in .NET 8 for Web, frontends, backends, and futures? - Jeremy Likness & Daniel Roth</h3>
                     <p>
