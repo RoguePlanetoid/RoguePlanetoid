@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="RoguePlanetoid" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rogueplanetoid" />
+    <meta name="twitter:creator" content="@rogueplanetoid" />
+    <meta name="twitter:title" content="RoguePlanetoid" />
+    <meta name="twitter:description" content="Posts, Articles and Podcast" />
+    <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png" />
+    <meta name="twitter:image:alt" content="Posts, Articles and Podcast" />
+    <!-- /Twitter -->
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RoguePlanetoid" />
+    <meta property="og:site_name" content="RoguePlanetoid">
+    <meta property="og:description" content="Posts, Articles and Podcast" />
+    <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="630" />
+    <!-- /Open Graph -->
+    <link rel="icon" href="../../favicon.ico" />
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>RoguePlanetoid - Articles - TechNExt - HaintonDotNet</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8038JPY7YN');
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- Main -->
+    <main>
+        <!-- Navigation -->
+        <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../../">
+                    <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                </a>
+                <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../posts">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../articles">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-articles active" href="../technext-hainton-dot-net-2023">TechNExt - HaintonDotNet - Mike Stephenson</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://www.comentsys.com" target="_blank">
+                    <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                </a>
+            </div>
+        </nav>
+        <!-- /Navigation -->
+        <!-- Section -->
+        <section class="text-center text-black container">
+            <!-- Article -->
+            <div class="text-start">
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">TechNExt - HaintonDotNet - Mike Stephenson</h2>
+                    <p class="blog-post-meta">22nd June 2023</p>
+                    <img src="../assets/tech-next.png" class="img-fluid"
+                        alt="TechNExt - HaintonDotNet - Mike Stephenson" />
+                    <p>
+                        HaintonDotNet User Group for <a href="https://www.technext.co.uk" target="_blank">TechNExt</a> with
+                        Azure Integration Services - Where should I use what? and A bit of fun with Logic Apps and ChatGPT by
+                        <a href="https://www.mikestephenson.me" target="_blank">Mike Stephenson</a> on 21st June 2023
+                    </p>
+                    <p>
+                        Mike Stephenson has been a Microsoft MVP for 14 years and based in Newcastle and is <a href="https://www.twitter.com/Michael_Stephen" target="_blank">Michael_Stephen</a> 
+                        on Twitter, they act as a product advisor. They have also worked on dozens of projects for a multi-year investment in Microsoft IPaaS which has over a thousand Logic apps. 
+                    </p>
+                    <h3>Azure Integration Services - Where should I use what?</h3>
+                    <p>
+                        Biggest thing people struggle with is have so many technology choices how do you pick which one to use, 
+                        will see some common design choices and will go over some of those choices.
+                    </p>
+                    <h4>What is Azure Integration Service and why should I care? Where do I use what?</h4>
+                    <p>
+                        History of Microsoft Integration, historically there was BizTalk for messaging and Orchestration or SSIS which was DBA driven or could have custom .NET API maybe using WCF. 
+                        History of integration trends have included Mainframes, EDI, EAI, XML, SOAP / Web Services, API / REST / JSON, Internet of Things etc. Microsoft has different options for 
+                        integrating Azure services can have Logic Apps, Durable Messaging with Service Bus.
+                    </p>
+                    <h4>Usage Scenarios</h4>
+                    <p>
+                        Real World Journey - may seem like you can use Logic Apps for everything but can almost seem like a hammer and try to make everything work with a Logic App. Problem can be 
+                        doing too much in Logic Apps and were rebuilding and repeat rather than reuse and extent and implementation was becoming complex. Service Bus, API Management and Functions. 
+                        Do a piece of work and have some data available to other places, had a lot of data going onto the event hub and used service hub to take advantage of pub sub and were seeing 
+                        where message needed to be sent. They had a service bus that listens for messages for loaded railcars of pellets and would enrich and format message and would then integrate 
+                        this with a CRM to sell fully loaded railcars to customers, also needed to take the same message to put this into SAP and also had one that would integrate with the transport 
+                        system for railway using legacy technologies including flat files. They could also have manually loaded railcars which were ones that came from other customers and could input 
+                        the details and this would be placed on the event hub allowing all the other steps to be reused. Gone from monolithic system to single responsibility interfaces. They could 
+                        pull the data from service bus and place data in synapse and had batch type reporting by having subscriptions for all the messages and have this process the data for a data 
+                        lake. Get a lot of value from this extensible platform. Can build out a data platform with Synapse including bulk imports along with the messages and have data lake to build 
+                        these data sets, but can have an event when something interesting happens or may have one that can do something with the data such as creating a file. Required integration 
+                        capabilities - messaging, batch, events, API, workflow, and data.
+                    </p>
+                    <h4>Services Bus vs Event Hub</h4>
+                    <p>
+                        Service Bus - pub / sub durable messaging, transactional message processing and each message is read and completed once, sender / receiver concept. Message 
+                        will be committed to a queue if something goes offline the message will still be there can publish once and receive many. You delete the message when you're finished with it. 
+                        Sender is a Topic then Receive from one or more Queues which is the best way and more like a transactional message.
+                    </p>
+                    <p>
+                        Event Hub - Event stream, re-read from point in time, multiple concurrent readers, sender / receiver concept. Have a list of events can read over stream or go over it again if needed. 
+                        You may have a couple of apps reading a stream both can read the stream until they get to the end and then wait for the next message, they can even read it out of sync. Can have multiple 
+                        senders and then can have something read from the messages, they stay on the stream until reach the expiry of the stream and could re-read messages if different so more like telemetry. 
+                    </p>
+                    <h4>Service Bus vs Event Grid</h4>
+                    <p>
+                        Service Bus has message on a queue, and it is persisted will stay there until it is obtained. If building cloud native app will have huge scalability but may work with apps that don't 
+                        work like that such as one at a time and cans just listen to the queue one at a time.
+                    </p>
+                    <p>
+                        Event Grid is event driven reactive programming model with pub / sub “the state of something has changed, just letting you know if you want to do something about it”, event based, 
+                        subscription can push message to an endpoint, system topic / custom topic / event grid domains and sender / receiver concept. If wanted to write application and have a specific event 
+                        and have an event grid domain which is a container for different kinds of event. Delivery model is different, event comes in and it will be pushed to an Azure Function for example, 
+                        and it would process it. Event Grid can't do one at a time as it would just push this so would need to throttle it but you could push them to a Service Bus queue. There will be a 
+                        feature to pull events in the future but currently it is pushing events.
+                    </p>
+                    <h4>Event Hub vs Event Grid</h4>
+                    <p>
+                        Event Hub is Event Stream you can read multiple times and Event Grid is Event driven where can push events. For example will have GPS on Railcars and each time they stop and start 
+                        and get an event where it is and how fast it is going, so may mark a well known location so will know where they are, they have a function behind the railcar GPS API so would get 
+                        dozens of events from these so will get the messages written onto an Event Hub and there is a capture file feature that automatically writes events to a file and then can have it 
+                        when there is a new file and run a data job and have some custom code to process the data into a dedicated data warehouse.
+                    </p>
+                    <h3>A bit of fun with Logic Apps and ChatGPT</h3>
+                    <p>
+                        Wait what, why? People have been going on about ChatGPT and Microsoft have been talking about their Copilots. Microsoft were talking about a visual data mapper, they had built one 
+                        in Biztalk but has been same mapper but have been building a new one that looks pretty but has some usability challenges that are being worked through. Why use a solution that is older 
+                        and why not think about how can do it differently.
+                    </p>
+                    <p>
+                        Logic Apps is a workflow / visualisation thing and ChatGPT is an AI natural language model, you ask it something you want to know, and it fill figure it out. You can get it to write some 
+                        code for you, get it to write something in .NET or want to get something in Terraform.
+                    </p>
+                    <h4>Why can just get AI to do something, give it some data and ask what you want to do with it?</h4>
+                    <p>
+                        You can call ChatGPT from a Logic App with the API with an input message such as converting something from XML to JSON. Or can do something more complex to ask it to combine fields or 
+                        change the name of a field with natural language along with other requests to change the data and perform some calculations. You could also get it to generate a Liquid Map which could 
+                        be used to create the same information. As an extended example get it to do lookups of information such as country codes to country without having to write that. ChatGPT is not meant 
+                        to be used for this, if rethink problem of integration and have the AI be an integration AI and give it a context so it knows what data mapping is and could train it with examples on 
+                        how to better do mapping. The data is not reliable, but it would get better at that if it knew what to do. 
+                    </p>
+                    <p>
+                        The idea was not just to build a Copilot for coders but produce something that could do mapping. Another example is to convert a HL7 message for healthcare and convert this to Json then 
+                        convert field names and other values such as date of birth. EDI message could be used as a source such as a purchase order then convert this to Json and replace some field names. 
+                        You could document a Logic App by getting it to explain what actions there are along with being able to create flow charts and diagrams. Ideally would be able to provide what you want 
+                        it to look like and what you feed in then have this mapping happen, it is code no one likes doing. Challenge is it is not reliable and if send something to ChatGPT does it save it, but 
+                        if had a model built in Azure specifically for this purpose then this would better.
+                    </p>
+                </article>
+            </div>
+            <!-- /Article -->
+        </section>
+        <!-- /Section -->
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="steps steps-articles"></div>
+        <nav class="navbar bottom navbar-light p-2 bg-articles">
+            <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+            <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png"
+                    height="45px" alt="@RoguePlanetoid"></a>
+        </nav>
+    </footer>
+    <!-- /Footer -->
+    <!-- Scripts -->
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- /Scripts-->
+</body>
+
+</html>
