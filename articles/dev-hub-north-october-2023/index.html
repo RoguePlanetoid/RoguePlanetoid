@@ -160,9 +160,91 @@
                             or try out Spotazor online at <a href="https://rogueplanetoid.github.io/spotazor" target="_blank">rogueplanetoid.github.io/spotazor</a>.
                         </p>
                         <h3>Agile IT Architecture Design: Building Efficient and Effective Systems for AWS and Beyond - Gary Brown</h3>
+                        <h4>Introduction</h4>
                         <p>
-
+                            Gary Brown is a Cloud Architect who specialises in AWS Cloud platforms, Java and Spring but they also used to be a technical lead for NHS Pensions. 
+                            AND Digital are on a mission to close the world's digital skills gap. They are a team of 1,700 digital specialists who work across the country and abroad. 
+                            They Guide businesses to ensure they have right strategy to move forward, they build to help business to build what they need and equip them with the skills 
+                            to move on without them and have training. Gary Brown is part of Club Hawking who are architects and platform engineers to deliver platform needs.
                         </p>
+                        <h4>What is Architecture?</h4>
+                        <p>
+                            What happens when there is no architecture, you can get disjointed systems and have lots of different apps in a siloed workforce and can have difficult decision 
+                            making, consistency can break down due to lack of direction. The bigger the organisation the worst they get but the best ones have an ecosystem that works 
+                            together and a strategy where they blend and work together. Architecture is design but not all design is architectural - talk about what decisions should be 
+                            made but not something we should be taking through the process. Is a mechanism to document and communicate with our business and ensure that we are building 
+                            what we can deliver. Knowns are well established within an organisation, such as programming language etc, but also need to understand known unknowns and 
+                            understand how to drive things forward and unknowns are things you don't know are there with things such as legislation.
+                        </p>
+                        <h4>What are Standards?</h4>
+                        <p>
+                            Programming languages, tooling, code standards, platforms, entities and naming conventions.  Interoperability to make sure services can communicate and work 
+                            with each other, compliance such as GDPR as this protects user data and make us mindful of what can be done with data. Innovation - looking at horizon of new 
+                            capabilities such as generative AI and looking backwards to make sure keeping things up to date. When creating systems that work together and automation makes 
+                            sure that solutions that work to same standards are understood. Reduce risks with standards as understand.
+                        </p>
+                        <h4>Architecture Patterns</h4>
+                        <p>
+                            Layered Architecture - in codebase create separate layers to handle a single responsibility and each layer communicates with layer below it and there is no 
+                            jumping layers. With layered architecture is is simple, often a single deployment and don't need much infrastructure and if it does grow it can be harder to 
+                            work with so then need to move to other architecture types. You could run something in Docker or your favourite management services.
+                        </p>
+                        <p>
+                            Event Driven Architecture - is broken down into broker and mediator topologies and can be good for performance, elasticity, scalability, decoupling, and reliability. 
+                            You can break down a system from one large application and create asynchronous messaging based on events and scale them as needed. These services have retry mechanisms 
+                            and can have a simple example where have an S3 bucket to trigger an event on an SQS Queue and a Lambda will poll this queue for any messages. You can delay processing of 
+                            a message and then the consumer reads the message and is then successful then it can remove this message. Lambda continues to poll for messages and due to delay it 
+                            can't read the message, you don't want to read the same message so need some time between getting the message and deleting it and then to remove it so don't get duplicate 
+                            data, the timeout should be six times longer than the duration of the Lambda. Another example is what happens if a message is read and it fails, when the timeout 
+                            visibility finishes it can be read again for the lambda. What happens if it continues to fail, there is the idea of a dead letter queue where if it has failed multiple 
+                            times and will add this to a dead letter queue for about four to fourteen days for the message to then be picked up once the reason behind the failure has been discovered. 
+                            Once you have worked out an issue, you can then replay those messages as if nothing has happened. Mediator Toplology provides a single point to dispatch messages to the 
+                            appropriate place based on filters
+                        </p>
+                        <p>
+                            Serverless - Backend as a Service where you could put the front-end website as a static website and then have this talk via an API gateway and could split apart the functionality 
+                            via a contract between the front and the back, could have one lambda function for one specific piece of functionality so if need to make a change you are lowering that blast radius. 
+                            Functions as a Service you could have many devices streaming data and then use this. Serverless gives scale, reduce overhead as no longer worry about infrastructure, discrete 
+                            functionality, cost effectiveness as you pay for what you use. Increased availability.
+                        </p>
+                        <p>
+                            Modular Monolith - Remember layered architecture, a modular monolith takes this with the one deployable service and could still be deployed just like layered architecture but handles 
+                            growth better as everything is split into specific modules within that application.
+                        </p>
+                        <p>
+                            Microservices - could have an API gateway that abstracts maybe serverless and traditional layered and these can be technically agnostic such as a .NET component, what is important 
+                            is getting the bounded context correct. If deploying a change for multiple services then you may have the size of them and the bounded context wrong, monitor what is going on with 
+                            changes and keep an eye on this. Could have three services and may have a team building these services but this adds more complexity to manage as if need to build a feature they 
+                            will do that in one service, the structure of software mirrors structure of the team, so may build these services in a tightly coupled way. Due to the extra complexity to build 
+                            larger services needs more people so as a consequence, communication is more difficult, and prioritisation is harder to manage. There is the notion of where structure teams around 
+                            the services that are to be built, create two teams that can be fed by two pizzas. Teams are responsible for a service so can have less complexity and less communication. 
+                            Coupling can be a problem for getting that right and if they are too tightly coupled then have to change other services and have to do a larger deployment and a more coordinated 
+                            deployment but if get service boundary right then you have services that work together with loosely coupled well contracted services. With low cohesion an application has many 
+                            different elements, if it is a small application this can be fine but larger ones can be hard to maintain much like a monolith. With high cohesion you break them down into each 
+                            service area and the complexity is reduced and quality and agility improves. There are no ACID transactions between services, this has to be handled yourself, if messages need 
+                            to go across this needs to be right. Microservices are scalable, you can scale what you need, are flexible and can use different tech and can be resilient and critical systems 
+                            don't get impacted, can have rapid development where can split work and work on services independently but don't split them too small as it creates more work. Microservices are 
+                            easier to deployable and to communicate this could be REST or gRPC along with making sure there is low cohesion. If have two services, one dependant on another, so if need to add 
+                            something to an API but then make it compatible with the current ones and then once a change has been full made then can make additions required. You could wrap functionality 
+                            around a feature flag until it is available.
+                        </p>
+                        <h4>How do you make it Agile?</h4>
+                        <p>
+                            With Waterfall each part goes onto the next stage but beware Ivory Tower Architecture that could take time with big up-front requirements and can be slow to change with no feedback. 
+                            There is a manifesto for Agile development and agile is about finding the right solution through analysis, design, experiment, and feedback. Through time the window of uncertainty 
+                            should grow smaller and should be reduced. Test your design and understand it more with proof of concepts and this gives courage to estimate the work when needed. The architecture 
+                            runway is to guide teams to do the right thing at the right time. Make those data driven decisions and can have the balance of architecture between intentional architecture and 
+                            emergent design as want to have some design up front such as constraints and platform but the emergent design is how the services are structured and communicate with each other. 
+                            But if rely too much on emergent design can increase test debt so it is a balance, but have light architectural artifacts, don't want to spend too much time writing documents. 
+                            Architecture models could be UML with use-case diagrams, you could have diagrams to show the zoom level of the services and what other services may apply and see the interactions 
+                            and understand how the system operates then can have a zoom level further in to show the sizes of the containers that are deployed and show how all the services connect to each 
+                            other such as HTTP requests or JSON and shape the documentation around the architecture, then can zoom in another layer and see how the service is architected for developers. 
+                            Data Architecture can ensure how services interoperate with each other. What does the architecture workflow look like, in the initial sprint would analyse the next feature and 
+                            update design documents including what it is supposed to do and what it looks like and then the second sprint will be stakeholder updates and making product owners aware of what 
+                            is happening and then have backlog refinement, then in the next stage can look at started delivering of the features. The final artifact would be the physical architecture diagram 
+                            but split this into the functions it is responsible for, so decouple your documentation as well.
+                        </p>
+
                     </article>
                 </div>
                 <!-- /Article -->
