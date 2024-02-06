@@ -132,8 +132,12 @@
     color:#000000!important;
 }
 
-.posts .nav a, .nav .posts a:link, .nav .posts a:visited, .nav .posts a:hover, .nav .artpostsicles a:active {
+.posts .nav a, .nav .posts a:link, .nav .posts a:visited, .nav .posts a:hover, .nav .posts a:active {
     color: #ED1619!important;
+}
+
+.articles .nav a, .nav .articles a:link, .nav .articles a:visited, .nav .articles a:hover, .nav .articles a:active {
+    color: #009935!important;
 }
 
 .podcast .accordion a, .accordion .podcast a:link, .accordion .podcast a:visited, .accordion .podcast a:hover, .accordion .podcast a:active {
