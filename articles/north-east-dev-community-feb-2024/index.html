@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="RoguePlanetoid" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rogueplanetoid" />
+    <meta name="twitter:creator" content="@rogueplanetoid" />
+    <meta name="twitter:title" content="RoguePlanetoid" />
+    <meta name="twitter:description" content="Posts, Articles and Podcast" />
+    <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png" />
+    <meta name="twitter:image:alt" content="Posts, Articles and Podcast" />
+    <!-- /Twitter -->
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RoguePlanetoid" />
+    <meta property="og:site_name" content="RoguePlanetoid">
+    <meta property="og:description" content="Posts, Articles and Podcast" />
+    <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="630" />
+    <!-- /Open Graph -->
+    <link rel="icon" href="../../favicon.ico" />
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>RoguePlanetoid - Articles - North East Dev Community - February 2024</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8038JPY7YN');
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- Main -->
+    <main>
+        <!-- Navigation -->
+        <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../../">
+                    <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                </a>
+                <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../posts">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../articles">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-articles active" href="../north-east-dev-community-feb-2024">North East Dev Community - February 2024</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://www.comentsys.com" target="_blank">
+                    <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                </a>
+            </div>
+        </nav>
+        <!-- /Navigation -->
+        <!-- Section -->
+        <section class="text-center text-black container">
+            <!-- Article -->
+            <div class="text-start">
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">North East Dev Community - February 2024</h2>
+                    <p class="blog-post-meta">28th Feb 2024</p>
+                    <img src="../assets/north-east-dev-community.png" class="img-fluid" alt="North East Dev Community - February 2024" />
+                    <h3>What can we learn from Python in C# - Andrew Buckingham</h3>
+                    <h4>Collections</h4>
+                    <p>
+                        Collections are the mainstay of most applications, and everyone has their favourite IEnumerables or Arrays. In Python you can just pass in 
+                        arrays with square brackets e.g. ProcessData([1,2,3]) which looks like Python but is C#, we can also use the .. spread syntax. So, what's going on? 
+                        A new language feature is collection expressions which has a lot of magic under the hood to make this work. There are lots of different ways to 
+                        initialise a list you can use a Span but with this syntax it will do that for you and an efficient way of passing around collections.
+                    </p>
+                    <h4>Classes</h4>
+                    <p>
+                        If you have a simple class that performs a calculation, that takes a list and stores it in a variable and can express this in C# and you can do 
+                        this in Python where can declare things in the constructor but can also split apart some variables, so do get more like Python is we can use the 
+                        new .NET 8 format to create a shorter programme that the equivalent Python programme, you can use an expression bodied method and can destruct 
+                        the values directly in C#, it is more compact now than the equivalent Python syntax. What's going on? Some magic syntax includes 
+                        Primary Constructors.
+                    </p>
+                    <h4>Clocks</h4>
+                    <p>
+                        If you're not Unit Testing your time calculations then your programme is not production ready, for example there are a lot of assumptions such as 
+                        server and client clocks are the same and it will be on local time etc. If you write some code that deals with time you cannot prove it is correct 
+                        until you have written a unit test for it. You could create a simple example to perform a simple time calculation such as something that tells you 
+                        that it is tomorrow it would have to test things in real time, it would have to delay for a day to then check it works. There is now a Time Provider 
+                        that decouples the code from the System Clock and can inject this dependency which is passed in from outside the application and this can be provided 
+                        by a Unit Test, so you can advance the fake time to tomorrow instead of waiting for a day. It is the equivalent of opening up the system clock and 
+                        moving it on a day and can then write the unit tests you need which will solve many of the problems when dealing with time in Unit Tests.
+                    </p>
+                    <h3>Take a Note of XAML with .NET 8 - Peter Bull</h3>
+                    <h4>.NET & XAML</h4>
+                    <p>
+                        .NET started as .NET Framework in 2002 but now .NET is the free, modern, and unified open-source cross platform framework from Microsoft 
+                        that can be used to build apps and services for Cloud, Web, Desktop, Mobile, Gaming, IoT or AI.
+                    </p>
+                    <p>
+                        XAML is eXtensible Application Markup Language and is an XML-based declarative markup language that can define objects with rotations, animations, 
+                        or other effects along with vector-based controls using styles or templates and more. XAML allows developers to decouple the design and user interface 
+                        of an application from the implementation of an application including events, business objects and other code. XAML supports databinding from source 
+                        values to target properties including converting values to present data to users or to allow interaction with data from users.
+                    </p>
+                    <h4>XAML & .NET Platforms</h4>
+                    <p>
+                        XAML and .NET Platforms include Windows Presentation Foundation, codenamed Avalon, first introduced XAML in 2006 part of .NET Framework 3.0 but today is still a 
+                        major part of .NET 8. Windows App SDK, codenamed Project Reunion, first released in 2021 using WinUI 3 with XAML and leverages the power of .NET 8. 
+                        .NET MAUI or .NET Multi-platform App UI first released in 2022 enables cross-platform development using XAML with .NET 8.
+                    </p>
+                    <h4>XAML & .NET Toolkits</h4>
+                    <p>
+                        Toolkits available from NuGet providing additional functionality for projects using .NET and XAML such as Comentsys Toolkit for .NET Standard supporting .NET 8 
+                        includes cross-platform functionality used for databinding useful in all XAML-based .NET applications. ModernWpfUI by Kinnara brings modern styles and controls 
+                        to Windows Presentation Foundation although built-in support for modern controls is coming to WPF in .NET. Windows Community Toolkit is a collection of helper 
+                        functions, custom controls and services for applications using WinUI 3 such as Windows App SDK. NET MAUI Community Toolkit is a collection of common elements 
+                        that tend to be replicated across apps created using .NET MAUI.
+                    </p>
+                    <h4>Windows Presentation Foundation - WPF Application</h4>
+                    <p>
+                        Windows Presentation Foundation was the first platform to introduce XAML and allows .NET 8 developers to create a WPF Application that targets 
+                        Windows desktop from Windows 7 to Windows 11 with the .NET Desktop development workload installed for Visual Studio 2022.
+                    </p>
+                    <p>
+                        You can find out more about getting started with Windows Presentation Foundation and more at <a href="https://github.com/dotnet/wpf" target="_blank">github.com/dotnet/wpf</a>.
+                    </p>
+                    <h4>Windows App SDK - Win UI 3 in Desktop</h4>
+                    <p>
+                        Windows App SDK is the successor to Universal Windows Platform available as the Microsoft.WindowsAppSDK NuGet package and updated every six months 
+                        with XAML like Windows Presentation Foundation. Windows App SDK combined Universal Windows Platform with Win32 using WinUI 3 as the user interface 
+                        layer that features modern controls that use Microsoft's Fluent Design system,. Windows App SDK allows .NET 8 developers to create a WinUI 3 in Desktop 
+                        application for Windows from Windows 10 1809 to Windows 11 by installing the .NET desktop development workload along with the Windows App SDK C# templates 
+                        for Visual Studio 2022. 
+                    </p>
+                    <p>
+                        You can find out more about getting started with Windows App SDK and more at <a href="https://github.com/microsoft/WindowsAppSDK" target="_blank">github.com/microsoft/WindowsAppSDK</a>.
+                    </p>
+                    <h4>.NET MAUI - .NET MAUI App</h4>
+                    <p>
+                        .NET MAUI or .NET Multi-platform App UI is based on Xamarin using Mono which was first released in 2011 and then was acquired by Microsoft in 2016 to later 
+                        become part of .NET as .NET MAUI. .NET MAUI uses XAML like Windows Presentation Foundation or Windows App SDK, but it has many significant differences 
+                        control names, supported controls and property names. .NET MAUI allows developers using .NET 8 to create a cross-platform .NET MAUI App targeting desktop 
+                        on Windows using WinUI 3 and macOS using Mac Catalyst, along with mobile on Android and iOS plius Tizen from Samsung by installing the .NET Multi-platform 
+                        App UI development workload for Visual Studio 2022.
+                    </p>
+                    <p>
+                        You can find out more about getting started with .NET MAUI at <a href="https://github.com/dotnet/maui" target="_blank">github.com/dotnet/maui</a>.
+                    </p>
+                    <h4>Overview</h4>
+                    <p>
+                        .NET 8 is the latest version of .NET that was released in November 2023 and allows developers to build modern applications and services for any platform. 
+                        XAML allows developers to create modern applications with decoupled user interfaces including support for data binding for interaction with values from code. 
+                        Windows Presentation Foundation allows developers to build a WPF Application targeting Windows 7 to Windows 11 using XAML, .NET. Windows App SDK allows 
+                        developers to build a WinUI in Desktop application using XAML and .NET for Windows 10 1809 to Windows 11 and .NET MAUI allows developers to build cross-platform 
+                        applications for desktop on Windows and macOS or mobile on Android and iOS.
+                    </p>                
+                    <p>
+                        You can get all the slides along with a demo of XAML using Windows Presentation Foundation, Windows App SDK and .NET MAUI at <a href="https://github.com/rogueplanetoid/takeanoteofxaml" target="_blank">github.com/rogueplanetoid/takeanoteofxaml</a>.
+                    </p>
+                </article>
+            </div>
+            <!-- /Article -->
+        </section>
+        <!-- /Section -->
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="steps steps-articles"></div>
+        <nav class="navbar bottom navbar-light p-2 bg-articles">
+            <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+            <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png"
+                    height="45px" alt="@RoguePlanetoid"></a>
+        </nav>
+    </footer>
+    <!-- /Footer -->
+    <!-- Scripts -->
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- /Scripts-->
+</body>
+
+</html>
