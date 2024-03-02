@@ -179,6 +179,54 @@
                             document which is broken up with chunking and vectors are created from the document and then can search for information using the vectors to then 
                             obtain a response based upon those documents.
                         </p>
+                        <h3>May the Forms Be With You: A New Hope with Blazor Hybrid on WinForms - Don Wibier</h3>
+                        <p>
+                            Don Wibier works for DevExpress they are from Holland to present their talk about a new hope with Blazor Hybrid on WinForms. DevExpress are component 
+                            vendor with components for WinForms, Blazor, WPF and many other languages.
+                        </p>
+                        <p>
+                            There are a lot of Win Forms / WPF applications that have been developed in the past and people are looking to move forward with Blazor, Web API 
+                            endpoints and other stuff. You can start using Blazor in an existing application.
+                        </p>
+                        <p>
+                            There are help documents on creating a Windows Forms Blazor App, along with doing the same with Windows Presentation Foundation. You can create an 
+                            application that takes advantage of a WebView3 which can be used in either a Win Forms or WPF project and you can also change your application to 
+                            use dependency injection which you can get the package for this from NuGet to then set this up for the application. Then this can be used to provide 
+                            functionality to the application which includes the Blazor Web View and can then either drag the WebView from the Toolbox using the Designer or can 
+                            dynamically insert it into the application. Then you also need to change the project type to add Razor then add the wwwroot folder which is where the 
+                            Blazor resources and assets can be placed including the Razor pages and the index.html.
+                        </p>
+                        <p>
+                            Blazor Hybrid pages will be run natively on your machine and won't use WebAssembly, you can reference any CSS for any components that you are using 
+                            such as the DevExpress components in the index.html and this will also include the blazor.webview.js to make sure it will work as expected. You can 
+                            then include any Blazor components / files as needed including the _Imports.razor and any Blazor packages being used such as the DevExpress components 
+                            can be referenced the same way as for a normal Blazor project so you can have everything you have in a Blazor project in a WinForms project.
+                        </p>
+                        <p>
+                            When using the WebView with Blazor you need to use Dependency Injection there so can provide the Service Provider from the dependency injection 
+                            provider used in the WinForms application along with registering any services required for any DevExpress components you may be using. Once setup 
+                            you can get a Blazor application running in a WinForms application but will need to set up the Router component first rather than use the Index 
+                            so this will take care of the routing used in the application but also need to make sure that you use the correct render mode for the application 
+                            as interactive mode is not supported for example.
+                        </p>
+                        <p>
+                            WinForms interaction with the Blazor components would be nice, so you could use some JavaScript methods to help with for example getting the width of 
+                            the window for the Blazor application which can then be invoked from the Blazor application and then have a Button that will call this method to 
+                            invoke the JavaScript to view the width of the window. You can also register a .NET Object Reference that can be invoked from JavaScript to call a 
+                            method in C# and you can set this up from the JavaScript and have this attached on the first render of the page in Blazor.
+                        </p>
+                        <p>
+                            Within the WinForms application it would be nice to navigate between items in the Blazor application so need a mechanism to connect them together as 
+                            the WinForms application is merely hosting the Blazor application but not doing anything with it, so you can create a bridge which can be a class with 
+                            a reference to the Blazor Layout and Main Form which can be registered as a service and register to the main form and main layout and then reference 
+                            these within the bridge class so will have a single reference for both and then can communicate between the Blazor and WinForms either way with this 
+                            class that is referenced from both, so you could have a local data store for the WinForms application and could expose this to the Blazor application 
+                            and have it deal with this data store.
+                        </p>
+                        <p>
+                            Blazor state management is also possible with Blazor Hybrid so can use a state machine that can be injected into the application to perform state 
+                            management to track if the state has changed and then indicate this state or change the state for example using a CheckBox.
+                        </p>
                     </article>
                 </div>
                 <!-- /Article -->
