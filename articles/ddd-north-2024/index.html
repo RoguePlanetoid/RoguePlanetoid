@@ -227,6 +227,125 @@
                             Blazor state management is also possible with Blazor Hybrid so can use a state machine that can be injected into the application to perform state 
                             management to track if the state has changed and then indicate this state or change the state for example using a CheckBox.
                         </p>
+                        <h3>Take a Note of XAML with .NET 8 - Peter Bull</h3>
+                        <h4>.NET</h4>
+                        <p>
+                            .NET started as .NET Framework in 2002 but now .NET is the free, modern, and unified open-source cross platform framework from Microsoft 
+                            that can be used to build apps and services for Cloud, Web, Desktop, Mobile, Gaming, IoT or AI. .NET 8 is the latest version of .NET released 
+                            in November 2023 and is a Long-Term Support release supported for three years until November 2026 with thousands of performance improvements 
+                            across the stack from code generation to just-in-time compilation. C# 12 is the latest version of C# released alongside .NET and introduced 
+                            primary constructors which allow a class to be initialised using a simpler declaration of values and Collection Expressions were also added 
+                            where lists of values can be set using square brackets to common collection values.
+                        </p>
+                        <h4>XAML</h4>
+                        <p>
+                            XAML is eXtensible Application Markup Language and is an XML-based declarative markup language that can define objects with rotations, animations, 
+                            or other effects along with vector-based controls using styles or templates and more. XAML allows developers to decouple the design and user interface 
+                            of an application from the implementation of an application including events, business objects and other code. XAML supports databinding from source 
+                            values to target properties including converting values to present data to users or to allow interaction with data from users.
+                        </p>
+                        <h4>XAML & .NET Platforms</h4>
+                        <p>
+                            XAML and .NET Platforms include Windows Presentation Foundation, codenamed Avalon, first introduced XAML in 2006 part of .NET Framework 3.0 but today is still a 
+                            major part of .NET 8. Windows App SDK, codenamed Project Reunion, first released in 2021 using WinUI 3 with XAML and leverages the power of .NET 8. 
+                            .NET MAUI or .NET Multi-platform App UI first released in 2022 enables cross-platform development using XAML with .NET 8.
+                        </p>
+                        <h4>XAML & .NET Alternatives</h4>
+                        <p>
+                            XAML and .NET is also supported in Uno Platform, which is a free open-source platform for quickly building polished cross-platform native mobile, web, 
+                            desktop and embedded apps with .NET using a modern WinUI 3-based XAML syntax. Avalonia UI which is another open-source UI framework to create 
+                            multi-platform apps with .NET for desktop, mobile, web and browser using XAML based on Windows Presentation Foundation. OpenSilver is an open-source 
+                            plugin-free framework for apps with .NET that run in any browser or device using XAML based on Silverlight and Windows Presentation Foundation.
+                        </p>
+                        <h4>XAML & .NET Toolkits</h4>
+                        <p>
+                            Toolkits available from NuGet providing additional functionality for projects using .NET and XAML such as Comentsys Toolkit for .NET Standard supporting .NET 8 
+                            includes cross-platform functionality used for databinding useful in all XAML-based .NET applications. ModernWpfUI by Kinnara brings modern styles and controls 
+                            to Windows Presentation Foundation although built-in support for modern controls is coming to WPF in .NET. Windows Community Toolkit is a collection of helper 
+                            functions, custom controls and services for applications using WinUI 3 such as Windows App SDK. NET MAUI Community Toolkit is a collection of common elements 
+                            that tend to be replicated across apps created using .NET MAUI.
+                        </p>
+                        <h4>Windows Presentation Foundation</h4>
+                        <p>
+                            Windows Presentation Foundation in Visual Studio allows developers to write XAML in the XAML View or developers can drag-and-drop controls, shapes and 
+                            more to compose XAML in the Design View. Windows Presentation Foundation supports media elements such as vector and raster images along with audio and 
+                            video plus can display lines or shapes with a variety of brushes. Windows Presentation Foundation allows developers to build Blazor Hybrid apps that 
+                            run natively on Windows and allow UI to be re-used across different platforms.
+                        </p>
+                        <p>
+                            Windows Presentation Foundation was the first platform to introduce XAML and allows .NET 8 developers to create a WPF Application that targets 
+                            Windows desktop from Windows 7 to Windows 11 with the .NET Desktop development workload installed for Visual Studio 2022. One pro is that it you can more 
+                            easily to modernise legacy WPF applications with .NET 8, but one con is the reputation of being part of the legacy .NET Framework.
+                        </p>
+                        <p>
+                            You can find out more about getting started with Windows Presentation Foundation and more at <a href="https://github.com/dotnet/wpf" target="_blank">github.com/dotnet/wpf</a>.
+                        </p>
+                        <p>
+                            Windows Presentation Foundation in modern .NET is used by IDS CryScan to create a flexible application targeting Windows 7 onwards. 
+                            IDS CryScan is an application where a user scans a QR code to load Lot specific information for the IDS System.
+                        </p>
+                        <h4>Windows App SDK</h4>
+                        <p>
+                            Windows App SDK uses WinUI 3, the native UI platform with modern controls and styles that embody Microsoft's Fluent Design and XAML written in 
+                            Visual Studio can updated in a running project using Hot Reload. Windows App SDK supports new APIs with implementations decoupled from Windows 
+                            and converged APIs that combine the APIs from its predecessor of Universal Windows Platform or UWP with Win32 APIs. Windows App SDK allows you 
+                            to create a Widget provider that can handle operations in Widgets in Windows 11 created using Adaptive Cards.
+                        </p>
+                        <p>
+                            Windows App SDK is the successor to Universal Windows Platform available as the Microsoft.WindowsAppSDK NuGet package and updated every six months 
+                            with XAML like Windows Presentation Foundation. Windows App SDK combined Universal Windows Platform with Win32 using WinUI 3 as the user interface 
+                            layer that features modern controls that use Microsoft's Fluent Design system. Windows App SDK allows .NET 8 developers to create a WinUI 3 in Desktop 
+                            application for Windows from Windows 10 1809 to Windows 11 by installing the .NET desktop development workload along with the Windows App SDK C# templates 
+                            for Visual Studio 2022. One pro of Windows App SDK is that it features the latest functionality from Windows 11 available to developers, but one con is 
+                            that it doesn't support Blazor Hybrid.
+                        </p>
+                        <p>
+                            You can find out more about getting started with Windows App SDK and more at <a href="https://github.com/microsoft/WindowsAppSDK" target="_blank">github.com/microsoft/WindowsAppSDK</a>.
+                        </p>
+                        <p>
+                            Apple was assisted by Microsoft to create apps using WinUI 3 on Windows with Windows App SDK including, Apple Devices to manage your iPhone, iPad or 
+                            other compatible Apple devices, Apple Music to listen to music and discover more music and Apple TV to watch new TV programmes or films.
+                        </p>
+                        <h4>.NET MAUI</h4>
+                        <p>
+                            .NET MAUI in Visual Studio does not have a Design View for XAML but does support Hot Reload which means changes in the XAML View can be displayed and updated in a 
+                            running project on desktop or mobile. .NET MAUI can create cross-platform apps built for performance and extensibility where can define as much of your logic and 
+                            user interface as possible in one place and can even use Blazor Hybrid. .NET MAUI can use the native APIs of target platforms allowing developers define platform 
+                            specific behaviours on each platform to enhance functionality for that platform.
+                        </p>
+                        <p>
+                            .NET MAUI or .NET Multi-platform App UI is based on Xamarin using Mono which was first released in 2011 and then was acquired by Microsoft in 2016 to later 
+                            become part of .NET as .NET MAUI. .NET MAUI uses XAML like Windows Presentation Foundation or Windows App SDK, but it has many significant differences 
+                            control names, supported controls and property names. .NET MAUI allows developers using .NET 8 to create a cross-platform .NET MAUI App targeting desktop 
+                            on Windows using WinUI 3 and macOS using Mac Catalyst, along with mobile on Android and iOS plius Tizen from Samsung by installing the .NET Multi-platform 
+                            App UI development workload for Visual Studio 2022. One pro of .NET MAUI you can target multiple platforms not just Windows, but one con is there may be a 
+                            learning curve for existing XAML developers due to the differences in .NET MAUI
+                        </p>
+                        <p>
+                            You can find out more about getting started with .NET MAUI at <a href="https://github.com/dotnet/maui" target="_blank">github.com/dotnet/maui</a>.
+                        </p>
+                        <p>
+                            NBC Sports Engine allowed NBC to share code between mobile, web and APIs to deliver an app quickly to market with .NET MAUI, Sports Engine is a team management 
+                            application for iOS and Android where users can schedule team related events and can check attendance for events.
+                        </p>
+                        <h4>Demo</h4>
+                        <p>
+                            XAML Notes used a Class Library that used Packages from NuGet including SQL Lite for storing Notes, extensions for dependency injection or configuration, 
+                            and my own Comentsys Toolkit to provide Data Binding for the various platforms. Windows Presentation Foundation used ModernWpfUI to create a modern looking 
+                            experience almost identical to that used in Windows App SDK. Windows App SDK used mostly built-in functionality but did leverage a colour helper from the 
+                            Windows Community Toolkit and .NET MAUI used a cross-platform popup control provided by the .NET MAUI Community Toolkit.
+                        </p>
+                        <h4>Overview</h4>
+                        <p>
+                            .NET 8 is the latest version of .NET that was released in November 2023 and allows developers to build modern applications and services for any platform. 
+                            XAML allows developers to create modern applications with decoupled user interfaces including support for data binding for interaction with values from code. 
+                            Windows Presentation Foundation allows developers to build a WPF Application targeting Windows 7 to Windows 11 using XAML, .NET. Windows App SDK allows 
+                            developers to build a WinUI in Desktop application using XAML and .NET for Windows 10 1809 to Windows 11 and .NET MAUI allows developers to build cross-platform 
+                            applications for desktop on Windows and macOS or mobile on Android and iOS.
+                        </p>                
+                        <p>
+                            You can get all the slides along with a demo of XAML using Windows Presentation Foundation, Windows App SDK and .NET MAUI at <a href="https://github.com/rogueplanetoid/takeanoteofxaml" target="_blank">github.com/rogueplanetoid/takeanoteofxaml</a>.
+                        </p>
                     </article>
                 </div>
                 <!-- /Article -->
