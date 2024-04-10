@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - Rules Engines</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../rules-engines">Rules Engines</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">Rules Engines</h2>
+                        <p class="blog-post-meta">11th April 2024</p>                
+                        <p class="text-center">
+                            <img src="../assets/rules-engines.png" class="img-fluid" alt="Rules Engines"/>
+                        </p>
+                        <h3>What are Rules Engines?</h3>
+                        <p>
+                            Rules Engines are systems that allow a set of actions to be defined based on a set of specific conditions, these could be configured at runtime 
+                            without needing to change the business logic of an application. Often, when implementing an application any business rules are coupled to those 
+                            use-cases present at the time of development. However, requirements can and will change so Rules Engines allow you to create implementations that 
+                            are the same regardless of any use-cases for the application.
+                        </p>
+                        <h3>Why should you use a Rules Engine?</h3>
+                        <p>
+                            Developers will create a rule-based system in their application now, even without realising it when you change the flow of an application with an if 
+                            statement or a switch statement. However, this control flow is hardcoded into the system and ideally you may want to make changes to enforce new rules 
+                            or even remove existing ones, but this can be difficult without impacting the functionality of an application. Implementing Rules Engines that support 
+                            configuration-based rules or that consolidate these rules into one place make it easier to change those rules when they are used in an application, 
+                            and it also makes it easier to test those rules with Unit Tests as conditions can be checked and the outcome can still be an if statement on the resulting 
+                            outcome of a Rules Engine.
+                        </p>
+                        <h3>How should you use a Rules Engine?</h3>
+                        <p>
+                            Rules Engines will usually follow similar patterns and at their heart is the Rule, which is a business policy, it is a set of Conditions that are applied 
+                            where the outcome of these will either Pass or Fail. In the case of the Microsoft Rules Engine each Rule contains a C# Lambda Expression that can be executed 
+                            on Input Data to product a Boolean output and for the Rule to Succeed the expression would need to return true. These expressions will act as the Conditions 
+                            such as only allowing Users of a certain Age to be able to see something or some other criteria that can be expressed in a C# Lambda expression.
+                        </p>
+                        <p>
+                            Microsoft's Rules Engine can support many Rules within a Workflow that can be executed allowing you to chain Rules together, once any input has been executed 
+                            against a Workflow a Collection of RulesResultTree models will be returned. The collection of RuleResultTree models will contain the Rule and a value to say 
+                            if it were successful or not and as a developer you can decide whether to proceed on any or all rules passing, which can be achieved by using an All or Any 
+                            LINQ expression on the resulting output.
+                        </p>
+                        <h3>Who can use a Rules Engine?</h3>
+                        <p>
+                            Rules Engines such Microsoft Rules Engines can be used by developers to implement the workflows for an application in their code and then have the rules either 
+                            be contained in one place if they need that to be part of the code or fully configurable with a JSON based configuration that can even define a workflow itself. 
+                            This flexibility could allow for anyone to be able to configure the Rules and Conditions for an application without needing to change the application at all or 
+                            if as part of the application without affecting the rest of the application. This is especially useful if your domain rules change on a regular basis, you may 
+                            be responding to regulatory changes than means a rule needs to be implemented swiftly or you may just have something you want to be able to easily change in the 
+                            future when requirements change.
+                        </p>
+                        <h3>Where can you learn more about Rules Engines?</h3>
+                        <p>
+                            You can check out the article by Joseph Gefroh on <a href="https://medium.com/swlh/how-to-design-software-rules-engines-adbb098b2d73">How to Design Software - Rules Engines</a> or 
+                            you can check out <a href="https://microsoft.github.io/RulesEngine" target="_blank">Microsoft's Rules Engine</a>. You can also check out the <a href="https://tutorialr.com" target="_blank">tutorialr.com</a> Talk on 
+                            <a href="https://tutorialr.com/talks/rules-engine-with-dot-net" target="_blank">Rules Engine with .NET</a>, which goes over what is a Rules Engine along with how to 
+                            leverage Microsoft's Rule with .NET including a Demo that you can download and try yourself from <a href="https://github.com/tutorialr/rules-engine-with-dot-net-talk" target="_blank">GitHub</a>.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
