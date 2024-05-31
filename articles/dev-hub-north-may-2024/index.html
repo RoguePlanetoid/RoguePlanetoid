@@ -1,0 +1,226 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - DevHub North - May 2024</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../dev-hub-north-may-2024">DevHub North - May 2024</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">DevHub North - May 2024</h2>
+                        <p class="blog-post-meta">26th April 2023</p>                
+                        <img src="../assets/dev-hub-north.png" class="img-fluid" alt="DevHub North - May 2024"/>
+                        <h3>WS CDK for the Developer & the Architect - Steve Morland</h3>
+                        <p>
+                            Steve Morland is CTO of Leigton and is a AWS Community Builder and Leighton specialise in serverless first approach to modernisation of 
+                            application and have been around for thirty-two years and have over 100 people in the company and 80 of those are technical.
+                        </p>
+                        <h4>What's today about? </h4>
+                        <p>
+                            Adopting new technology is moving away from Terraform and just use things that take advantage of AWS and enable them to use the CDK. The CDK 
+                            is a cloud development framework and allows you to define Cloud Formation in a language such as TypeScript. It is not a framework but it can be. 
+                            It is fairly easy and readable to use. What they find because it is in TypeScript you can wrap things up into a Framework, so Leighton have 
+                            created a framework.
+                        </p>
+                        <h4>CDK for the Developer</h4>
+                        <p>
+                            Reduce cognitive load and increase ease of implementation by creating wrappers around the functionality to create more readable and useable code 
+                            for developers, makes it more straightforward and easier to understand and so they don't have to think about infrastructure as code. Creating a Cloud 
+                            Formation template for an API gateway for a lambda function has many layers and have to specify mapping and json schemas along with return types and 
+                            would have to write a lot of code but with CDKs you can wrap a lot of these things up. They have a common lambda interface so can specify these in 
+                            the same way with what they need in a matter of minutes for the public section easily but also have a private section that can define values that are 
+                            needed. You can create the domain records, API gateway, API route with VTL template and JSON scheme with role and policy for the lambda quickly.
+                        </p>
+                        <h4>CDK for the Architect</h4>
+                        <p>
+                            They want consistency and want to know the non-functional requirements are embedded and the easier this can be, the better for the construct. You can 
+                            embed and control NFRs with a script with default values to make sure that it conforms to a specification that an Architect has approved, and that all 
+                            things are all aligned between different development teams. Picking up things from an event bus from an SQL instance or DLQ with rules are the same but 
+                            it easy to mis-specify the configuration of these so by wrapping these up in a state where the developers don't get a choice they can just use a contract 
+                            and specify the source and target and allows them to not think about the values that could be wrong and missed in a code review. Many things can be 
+                            embedded in a construct. 
+                        </p>
+                        <p>
+                            Architects also want documentation so with the code there are documentation in Confluence all the constructs and what they do including the interfaces and 
+                            the diagrams and can have a lot of consistency though this and so everyone knows what is going on and understands it and only need to learn a few things 
+                            and can deliver things quicker and can keep this updated through a central repository and distribute through NPM. From these constructs they can put 
+                            together everything they need but sometimes they may need to build custom stuff but could decide to put that into the functionality as an upgrade to a 
+                            package or keep it custom as needed.  
+                        </p>
+                        <p>
+                            You can enforce compliance with aspects so have all the power of TypeScript and aspects are a cool addon which allow you to add tags to resources without 
+                            having to add them manually and can also make sure that resources are created from the templates specified so that developers aren't circumvented the 
+                            resources to create things such as a DynamoDB database without using the correct method. You can use the CDK constructs from the library, and they also have 
+                            their customers use these libraries and they can extend these if needed but then can gain updates from these where needed.
+                        </p>
+                        <h4>The Architect Developer for Modern Cloud Development</h4>
+                        <p>
+                            They get the most benefit from architect developers who contribute to the CDK library and work as part of the team and understand the projects and services 
+                            and continually make things better, it is a language to making things better and it is the collaboration that makes it work.  They do have people who are 
+                            quite nerdy about the services and collaborate on projects but will have many people supporting the architect developer and have code reviews and will change 
+                            stuff and implementations where needed. 
+                        </p>
+                        <p>
+                            Customers who come to them are on a journey to modernisation such as taking on-prem system to put things in the cloud but then costs the same to run they will 
+                            then have a change in ideology to  migrate to a more cloud-native approach but whatever customers to you would have to force something on them, so they may
+                            need a framework that suits them but they can use the framework that has been developed already, if going to stick with AWS then CDK makes sense, and because 
+                            it is typed and fairly easy to use and TypeScript is relatively straightforward for customers to use. People have been moving away from Terraform for licence 
+                            changes that happened recently, but there are some ill-conceived notions that Terraform allows people to move between clouds easily or be multi-cloud but it 
+                            isn't worth the effort to be multi-cloud sometimes. CDK is a lot faster and cleaner to move things into production that Terraform but a lot of people don't 
+                            like Cloud Formation and CDK is more open source than other solutions but would lock you into AWS.
+                        </p>
+                        <h3>An AI-Enabled Framework? Using LLMs to Put People first - Daniel Roe</h3>
+                        <p>
+                            Daniel Roe is an open-source maintainer and maintains a lot of projects including nuxt for building full-stack web applications. They work on libraries that help 
+                            when loading web fonts to reduce the flicker between the system font and web font when it is loaded. Their website is roe.dev and can find everything they do there. 
+                            They have recently moved to Edinburgh from Durham. 
+                        </p>
+                        <h4>Nuxt</h4>
+                        <p>
+                            They had a real-time survey to show if they used Nuxt and about a third of people have used Nuxt. Nuxt is a progressive framework built on top of Vue.js and Nitro, 
+                            it lets you start simple and lets you grow, it is a zero effort start with a really great developer experience with best practices built in and fully configurable 
+                            and easily extensible, but they loved open source so got sucked into this world. Nuxt is Next.js for Vue which started in October 2016, but they re-wrote the whole 
+                            thing in 2020 for version three but advice not re-writing a framework! They have over 710 contributors, but it is not backed by a major corporation and built by 
+                            people who use it and they are sponsored by companies and individuals.
+                        </p>
+                        <h4>The problem with apps</h4>
+                        <p>
+                            Malleable applications, the problem with apps as the stuff we deploy and ship to the clients and have to have a clear idea of what your users want and this drives what 
+                            the application does, we have a whole industry and academic discipline to build things what users need. Every application is exclusive, if someone wants it different 
+                            there is not much you can do and there are whole groups of people you exclude. Malleable applications are applications that could be changed to suit the needs of the 
+                            users by making user-centric applications. Have a seed of an idea of how to build an app in a different way. You can manipulate an application externally such as with 
+                            the Arc browser where you can create a boost, you can delete elements of a web page and make things different which is one way you can have a malleable application. 
+                            There are other ways to manipulate an application to your needs but for web apps you are dealing with thr styling but you can't get into the logic, so if you designed 
+                            an app where it could be manipulated internally.
+                        </p>
+                        <h4>Nuxt malleable application</h4>
+                        <p>
+                            First create a nuxt application, you get a pretty minimal application including a configuration file, a server directory for server stuff and have a TypeScript 
+                            configuration when you start a Nuxt app you get a welcome screen. Then install PicoCSS which doesn't need any configuration so ideal for demos and OpenAI. Vue 
+                            is ideal for new developers as has the primitives of the web clearly defined. Will have a form to talk to the application to make it different and then have the 
+                            app itself and then use a free GraphQL API as an example.  GraphQL is a way of specifying what you want from the back-end in the response, the shape of the response 
+                            matches the shape of the request which gives a lot of power to the front-end developer. You can then define the query and then Nuxt provides some data query features 
+                            to get information from the API and then in the application you will have a list of the data to show from the API and then can display the values. 
+                        </p>
+                        <p>
+                            Then can enable a feature of Vue that allows the code to be changed at runtime, will create a component that can be manipulated as the malleable component that can use 
+                            AI with. In this malleable component will have a setup function and a template and have the query so those will be the things that can be changed so these would be a 
+                            reactive object and anything that depends on them will be re-run when changed to update the UI. Then can implement a server component using Nitro which can be deployed 
+                            to AWS and Azure in most cases, will have a completion endpoint that responds to POST requests and can return values easily as an object as there a lot of cool things 
+                            built in without having to worry about the infrastructure. You can use OpenAI to then use the API and Nuxt has a way to handle sensitive information with runtime config 
+                            and when you are dealing with the request to the server it will have type safety from the endpoint. When using OpenAI you can simulate a chat and give it enough context 
+                            to get the right response. You can provide system prompt to tell the AI that it is responsible for manipulating the state of a web application and only speaks in JSON 
+                            and then provide the current state of the application, then give user option to say something then have another system prompt to output the user state. 
+                        </p>
+                        <p>
+                            You can then have a form with a handle submit for the user information and bind to a variable including the prompt itself and when submitted the prompt and the current 
+                            state of the application will be passed to the OpenAI API call to see what happens, you can also take advantage of libraries to make it easy to read the body of the 
+                            request and these can also be used by other libraries. Then you can ask the prompt to change the output for example instead of being a list to be in a table. 
+                            You would want to put guard rails into the application, find out things that can be changed in your application that might grant a little bit of power to users 
+                            and help them feel included and looked after, the cost of using OpenAI is very low, you could use your own models and need to make sure the code that handles the 
+                            response knows what to do with it, these are solvable problems and would make our applications less one size fits all and help make it more usable and you could 
+                            make this opt-in so if it doesn't work they will accept that as an experimental feature.
+                        </p>
+                        <p>
+                            LLMs are very good at manipulating GraphQL queries, if you have a GraphQL endpoint a user could hit this anyway but need to be careful to expose this and only let data 
+                            that you care about to be exposed, don't have an API to create any UI they want so need to put guardrails in place, assume what is coming back is untrusted and give users 
+                            to get back to previous state of the application and could have a history of what happened to undo any responses. You could make everything server-side rendered but for 
+                            client-side you get nice behaviour such as loading. Differentiating between what the customer needs and what they want, need to balance control of what users need and 
+                            what we can do, but there is often a constraint that if you make something ultimately configurable, but it can be overwhelming to make it clear and easy to use is too 
+                            much, may have features that a user might benefit from. This could replace configuration in an application as too many features or flags may be difficult to manage but 
+                            can make it simpler for a user to be able to customise their application. AI have issue with hallucinations as they are just a sophisticated completion engine so have 
+                            to be careful but given it is responding for a particular thing and developers could control what parts of an application could be changed, identify the risks of 
+                            changing the user interface of an application and actively hostile outputs are not that worrisome but don't just give LLMs ability to represent your company.
+                        </p>                                                    
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
