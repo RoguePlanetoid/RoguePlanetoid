@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - AioT Hub - June 2024</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../aiot-hub-jun-2024">AioT Hub - June 2024</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">AioT Hub - June 2024</h2>
+                        <p class="blog-post-meta">5th June 2024</p>                
+                        <img src="../assets/aiot-hub.png" class="img-fluid" alt="AioT Hub - June 2024"/>  
+                        <h3>Building a Robot Arm with .NET 8, Raspberry Pi, Blazor and SignalR</h3>
+                        <p>
+                            Pete is an application architect manager at Avanade doing stuff from investment banking and oil companies and was talking about .NET 8 
+                            and getting this onto a Raspberry Pi and more.
+                        </p>
+                        <p>
+                            .NET 8 is a framework is a framework that allows to deploy anywhere, it is ubiquitous, and Pete has been using it since .NET came out in the early 2000s. 
+                            What's new in .NET 8 is Aspire which is an opinionated framework to deploy things to the cloud, there are also JSON enhancements, ASRM64 performance 
+                            improvements and more. .NET Ecosystem momentum shows that 40% of people new to .NET are students, is important for them to be learning it and taking that into industry.
+                        </p>
+                        <p>
+                            Raspberry Pi Install is not straightforward, but Pete has created a single line install script at bit.ly/dotnet8pi which will get the full version of .NET 8 onto 
+                            a Raspberry Pi, it doesn't work on a Raspberry Pi 5 as the architecture was changed so the libraries have not been changed. System.Device.Gpio is a NuGet package 
+                            that supports IO, SPI, PWM and I2C for Raspberry Pi, Beagleboard, Hummingboard, Odroid etc and supports Linux and Windows 10 IoT (although this is not supported) 
+                            but has very limited support for Raspberry Pi 5 but if you want to deploy pretty apps to a Raspberry Pi you can use Uno Platform.
+                        </p>
+                        <p>
+                            Raspberry Pi GPIO has board numbering scheme but there is also a BCM numbering scheme, you can flash an LED on a Raspberry Pi to make sure it is working correctly, 
+                            so connect one side of a resistor to an LED on pin 10 and have pin 26 connected to a button and ground but don't need a resistor to do a pull-up and pull-down but 
+                            can configure this on the Raspberry Pi then can use C# code to interface with the Raspberry Pi to control the pins to turn on the LED and also have delays between 
+                            turning on and off the LED so it can be seen. Then as another example can then take the input from the pin to control the LED instead so when pressed it will be 
+                            high to turn it on and low to turn it off, you can include console output to indicate that it is ready.
+                        </p>
+                        <p>
+                            Iot.Device.Bindings is a NuGet Package, you can have temperature / humidity sensors then use an IO expander to add more pins than the Raspberry PI supports, can then 
+                            use an explorer hat and sense hat and there are two of these along with two Raspberry Pi 4s that are on the International Space Station along with servos that can be 
+                            controlled. Servo Control Board splits the control of servos from their power and connect this to the Raspberry Pi where the first pin is ground and then can connect 
+                            to the hardware PWM ports of the Raspberry Pi but can also connect to a software PWM port which is provided by the NuGet package. 
+                        </p>
+                        <p>
+                            Servos can be connected incorrectly and won't harm them. Servos are controlled with Pulse Width Modulation with different pulses to control the direction of the servo 
+                            with small pulses going one way and larger pulses going another way. Servos can be quite cheap so if anything goes wrong then you can replace them easily and cheaply. 
+                            You can then write code to control the servos by using Iot.Device.ServoMotor which means you don't have to worry about pulse widths and just set the angle along with 
+                            having System.Device.Pwm and System.Device.Pwm.Drivers which will do the low-level control. In the code you create a Pwm Channel for the chip and port from the GPIO 
+                            package and the Iot.Device bindings are done by defining the ServoMotor and control the degrees of freedom which is 180 degrees. With the SoftwarePwmChannel you can 
+                            make sure that it is using the most optimal method so that the performance is the best it can be by setting the last value to true. You can connect many servos to a 
+                            robot arm to make it move as needed using .NET.
+                        </p>
+                        <p>
+                            Blazor for real-time control of the robot arm and Blazor is a single page app framework for building interactive client-side web apps with .NET. Blazor was a pet project 
+                            of Steve Sanderson, is a web UI framework based in C# / Razor and HTML, no JavaScript but still can drop into JS where needed. Blazor support Server Side where DOM changes 
+                            are communicated with SignalR or Client Side with Web Assembly. Supports client-side .NET with no plugins needed
+                        </p>
+                        <p>
+                            SignalR was created by David Fowler and Damian Edwards in 2011 and enables bi-directional real-time communications and supports web sockets but if not supported will use 
+                            long polling and is open source. You can create a SignalR hub to then communicate with other applications such as a Blazor application and when connected it can control 
+                            the robot arm. 
+                        </p>
+                        <p>
+                            Unity and VR, where Unity is a cross-platform game framework from 2002 and is cross platform and supports .NET Standard 2.0 or C# 8 and support for virtual and mixed reality 
+                            and can build and deploy directly to the headset but adding NuGet packages can be painful as have to do this manually. You can combine mixed reality to control the robot arm 
+                            instead of the Blazor as well as being able to see the robot arm in mixed reality. 
+                        </p>
+                        <p>
+                            You can connect other things to the robot arm thanks to the use of the SignalR so can create a .NET MAUI application to control the robot arm which has code almost identical 
+                            to the Blazor application that can run on mobile but can also have a desktop application to control the robot arm but can also control the robot arm with voice using the speech 
+                            service in Azure. 
+                        </p>
+                        <p>
+                            .NET everywhere including on Raspberry Pi and have .NET 8 on it and also have a web app deployed to Azure using Blazor and a .NET MAUI mobile and desktop app with voice controls along with 
+                            mixed reality application. Slides for the talk can be obtained from <a href="https://bit.ly/pjgleedsiot2024" target="_blank">bit.ly/pjgleedsiot2024</a>.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
