@@ -137,13 +137,15 @@
                             the JSON Data to be bound to the widget. Widget Providers need to implement the IWIdgetProvider interface that has six key methods used to communicate with the Widgets Board 
                             which are CreateWidget when the widget has been added, Delete Widget when the widget has been removed from the widget board, OnActionInvoked when an Action for a widget has 
                             been invoked, OnWidgetContextChanged when the size of the widget has been changed, Activate when the Widgets Board is interested in updates from a Widget Provider and 
-                            Deactivate when the Widgets Board is no longer interested in updates from a Widget Provider.
+                            Deactivate when the Widgets Board is no longer interested in updates from a Widget Provider. Widget Providers can also implement the IWidgetProvider2 interface for the 
+                            OnCustomizationRequested method used when the Widget Board requests customisation if enabled.
                         </p>
                         <p>
                             Windows App SDK applications that implement a Widget Provider need to register the Windows 11 Widget, so it is available in the Widgets Board and include information in the 
                             Package.appxmanifest to indicate the details for the widget including the Class Id or GUID, display name, description and sizes such as small, medium or large. Screenshots 
                             can be provided for a Widget to be shown when adding a Widget in the Widgets Board which can support light mode and dark mode options including being able to use 
-                            language-specific or language-neutral assets plus an icon to be used in the list of available widgets to be added to the Widgets Board. 
+                            language-specific or language-neutral assets plus an icon to be used in the list of available widgets to be added to the Widgets Board. Widgets can enable customisation by 
+                            setting IsCustomizable to true which will cause the Customize widget button to be displayed in the ellipsis menu for the Widget.
                         </p>
                         <p>
                             Windows App SDK applications that need to implement Windows 11 Widgets can be developed more easily by using the Comentsys.Toolkit.WindowsAppSdk package on 
