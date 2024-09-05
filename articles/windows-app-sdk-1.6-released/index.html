@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - Windows App SDK 1.6 Released</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../windows-app-sdk-1.6-released">Windows App SDK 1.6 Released</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">Windows App SDK 1.6 Released</h2>
+                        <p class="blog-post-meta">5th September 2024</p>                
+                        <img src="../assets/windows-app-sdk.png" class="img-fluid" alt="Windows App SDK 1.6 Released"/>  
+                        <p>
+                            Windows App SDK 1.6 has been released by Microsoft, which is the set of APIs and tools to help create Windows desktop applications using C++ and Win32 
+                            or with C# and .NET that can leverage the modern controls and features of WinUI. Windows App SDK 1.6 includes some quality-of-life improvements and new features to allow 
+                            development of native Windows applications even better than before on <a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK" target="_blank">NuGet</a> 
+                            with Windows App SDK 1.6.
+                        </p>
+                        <p>
+                            Windows App SDK 1.6 now supports native Ahead-Of-Time or AOT compilation which allows you to produce an application that is compiled to native code allowing for a 
+                            faster startup such a with an example app delivering a 50% reduction although results may vary depending on the application along with package size can also be reduced 
+                            to around half with an example app in self-contained mode. Applications can also have a much smaller memory footprint when using Native AOT with Windows App SDK 1.6.
+                        </p>
+                        <p>
+                            Windows App SDK 1.6 has decoupled the Edge WebView2 by replacing the hard-coded version with a NuGet reference which allows applications to use any version of the 
+                            Microsoft.Web.WebView2 package they need or even reference the package directly to streamline dependencies for applications. Windows App SDK 1.6 also supports 
+                            new MSIX package deployment APIs which support the removal, provisioning and detection of pending registration and updates available locally along with easy feature 
+                            availability detection to allow developers to light up parts of their applications that are developed using Windows App SDK 1.6.
+                        </p>
+                        <p>
+                            Windows App SDK 1.6 also includes updates to controls such as an improved TabView tab tear-out experience for how users can drag tabs out of an application where a new 
+                            window is immediately creating during a tab tear out and there's no limitations due to drag-and-drop APIs as these aren't used. Windows App SDK version 1.6 also has an 
+                            update to the PipsPager which has a new mode to wrap between the first and last items and RatingControl is now more customisable with theme resources replacing many 
+                            hard-coded properties. There's also a few new APIs including ColorHelper.ToDisplayName, Microsoft.Windows.Globalization.ApplicationLanguages and additions to 
+                            Microsoft.Windows.Storage in Windows App SDK version 1.6.
+                        </p>
+                        <p>
+                            Source: <a href="https://blogs.windows.com/windowsdeveloper/2024/09/04/whats-new-in-windows-app-sdk-1-6/" target="_blank">What's new in Windows App SDK 1.6 - Windows Developer Blog</a>
+                        </p>
+
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
