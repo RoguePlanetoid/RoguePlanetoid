@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - WinUI Community Call - September 2024</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../winui-community-call-jun-2024">WinUI Community Call - September 2024</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">WinUI Community Call - September 2024</h2>
+                        <p class="blog-post-meta">11th September 2024</p>                
+                        <img src="../assets/winui-community-call-sep-2024.png" class="img-fluid" alt="WinUI Community Call - September 2024"/>                          
+                        <h3>Introduction - Michael Hawker (XAML Llama)</h3>
+                        <p>
+                            WinUI Community Calls are quarterly with the next one being in January 2025. WinUI is the native UI platform for Windows 10 and 11 build for modern hardware and devices 
+                            with the latest styling to build .NET and C++ apps and platforms like .NET MAUI and React Native for Windows. WinUI is shipped as part of the Windows App SDK along with 
+                            other APIs available to Windows app developers.
+                        </p>
+                        <h3>Windows App SDK 1.6 Feature Overview - Duncan MacMichael</h3>
+                        <p>
+                            Windows App SDK 1.6 was released just last week which added a lot of great features with the banner feature being native AoT support along with decoupled WebView2 versioning. 
+                            There are also new package deployment APIs and new enhancements for package removal and provisioning and detecting a pending registration. Another feature is improved TabView 
+                            tear-out which is an improved a new tab tear-out mode which allows a user to tear a tab out and instantly create a new window and you can also drag it to the side of the 
+                            screen snap it to the side of the screen in one motion and doesn't use drag and drop APIs and you can also run an application using this as administrator. PipsPager also 
+                            has a new wrapping mode, there's a more customisable RatingControl and ItemsWrapGrid has been unsealed along with some new APIs to fill gaps from UWP such as Colour Helpers 
+                            and Primary Language override feature to fine tine your application's display language.
+                        </p>
+                        <h3>WebView2 Decoupling - Scott Jones</h3>
+                        <p>
+                            One of the features of Windows App SDK 1.6 was to take the WebView2 out as it was originally a hard coded version of WebView2 embedded in Windows App SDK so for any features 
+                            or bug fixes would have to wait for a new version of that for any updates. Windows App SDK 1.6 now consumes the Microsoft.Web.WebView2 NuGet package as a dependency. This 
+                            also enables applications to specify a newer version of the Microsoft.Web.WebView2 package instead of being limited to the version included in the Windows App SDK and also 
+                            allows apps to reference packages which transitively reference Microsoft.Web.WebView2 which would previously caused a file collision error during publishing of an application. 
+                            This included an Entity Framework package reference if that was included in a Windows App SDK application. There is an issue with C# transitive dependencies that has been 
+                            fixed and will be rolling out shortly to the Microsoft.Web.WebView2 package which you can update in your applications to get that fix.
+                        </p>
+                        <h3>Native AoT Support Deep Dive - Scott Jones</h3>
+                        <p>
+                            AoT or ahead-of-time compilation, opposed to Just-Time-Compilation which runs against the CLR and are JIT compiling IL to Machine Code and AoT trades this off and does it all 
+                            ahead-of-time statically and there don't have to worry about the amortised cost of Jitting. AoT as technique reduces the memory and disk footprint of applications due to 
+                            trimmed versions of the binaries being converted along with increasing the speed of applications, particularly at startup. AoT builds on ready-to-run and trimmed enhancements 
+                            that were available before and AoT then fixes on a particular architecture. 
+                        </p>
+                        <p>
+                            One advantage of AoT is the effort that the debug experience where at debug time the app runs with the CLR in a AoT simulation mode which simulates the 
+                            behaviour that AoT would produce to improve the debugging experience of applications and will indicate any issues you would encounter when published as AoT. Then at publish 
+                            time managed assemblies are converted into trimmed, optimised, native binaries that eliminate the need for hostfxr and other .NET runtime complexities where you can still do 
+                            C# source-level debugging with your AoT binaries. 
+                        </p>
+                        <p>
+                            You can enable AoT in your project for the Windows SDK package version and C#/WinRT package reference for the source analyser to ensure your application is AoT compatible. 
+                            For your own applications can set the PublishAoT flag to true in application projects and in libraries you can set an IsAoTCompatible flag to true to assert that your 
+                            library is safe for use with AoT when you have ensured this is the case, you mark any classes of partial which permits a side/partial class implementation to add an 
+                            attribute to enable part of the AoT support. You also need to replace reflection-based code with statically-typed such as Foo.GetType() with typeof(Foo) and compile 
+                            time alternatives such as JsonSerializer with SourceGenerationContext and DllImport with a library import along with replacing any assembly-specific code. You need to 
+                            address any AoT/time-related warnings for an AoT project correctly and don't suppress any AoT or trim related warnings and make sure it is replaced with AoT or trim-safe code.
+                        </p>
+                        <p>
+                            There are some known issues including app hands due to .NET garbage collection exceptions but this will be resolved in the near future so it is not 
+                            recommended to ship any production code using AoT, there are also some C#/WinRT source analyser gaps than need to be resolved that currently require some 
+                            workaround code with use with .NET internal types like RangeIterator and collection expressions that aren't support yet. XAML compiler will alert 
+                            developer when using a binding or dynamic member path but there is now a GenerateBindableCustomProperty that can be attached recursively that you 
+                            intend to bind to dynamically to ensure that AoT and trim-safe code is generated for those types. With the Contoso Camera app there is a around 50% 
+                            reduction in start time for the application with AoT along with around 8x reduction in package size compared to a framework package by removing the 
+                            self-contained .NET runtime and removing projections and an around 2x reduction in package size for a self-contained application. Contoso Camera was 
+                            64.8MB taking 4.58 seconds to the UI first frame without AoT and 25.2MB and taking 1.66 seconds to the first frame with AoT. WinUI 3 Gallery was 
+                            75.1MB before AoT taking 3.01 seconds to the UI first frame and 41.6MB with AoT taking 2.16 seconds to the UI first frame.
+                        </p>
+                        <h3>Windows Performance Analyzer Perf Analysis - George Gao</h3>
+                        <p>
+                            How much would your own managed app performance improve with AoT, you can use Windows Performance recorder to perform a trace of an application including memory 
+                            usage and XAML frame analysis where can see startup including WinUI3 startup region and UI frame region. You look at the time just doing JIT and that would be the 
+                            time you would save by using AoT, which can include .NET initialisation for the startup time from process start to end of the first frame of UI. You can check this 
+                            time region and can check the samples of what code was running and can filter into an application and with a multithreaded application will have multiple threads 
+                            running at the same time and then look at the UI thread and can load publicly available symbols to then dig into things that look like JIT such as clrjit and this 
+                            is a method involved in JIT and can group all called methods together and call stacks in the Windows Performance Analyser which would be distributed all over various 
+                            times in the running of your application. You can also see callees of method to see what methods are being used and see how many samples will be eliminated that will 
+                            no longer happen with AoT. Make sure you have in Windows Performance Analyser with CPU Usage and XAML Activity and use the CPU usage table to see all the places you 
+                            are doing JIT and that's how much time you will save in your managed application.
+                        </p>
+                        <h3>Photos - Robson Pontin</h3>
+                        <p>
+                            Photos migrated from UWP to WinUI 3 in May 2024 for Windows 11 users and where they had looked at decoupling the XAML layer from the OS along with improved maintenance 
+                            and support that is decoupled from the Windows operating system. There was also great WebView2 feature support with better performance and image quality with a simplified 
+                            architecture. They did have to do things to challenge gaps from UWP which was the photos startup performance as it was slowed with .NET C# but they published with 
+                            ReadyToRun which did improve things but there is still some JIT (Just-In-Time) compilation overhead during application execution. With a new Photos app that is a 
+                            work-in-progress that uses native AoT development there is around a 55% smaller MSIX package size along with around 52% faster startup performance for the first 
+                            frame of the Photos application with overall feedback from users stating the app feels very snappy and responsive as soon as it is opened, and the rendering of UI 
+                            elements is much smoother. The Photos team are looking at getting this improved UX to customers by publishing this new version of Photos as soon as they can and in the 
+                            future will look to build XAML UI with C# instead of C++/WinRT. The developer experience for the Photos app is improved from increasing usage of .NET with latest updates, 
+                            APIs, Visual Studio tooling and IntelliSense. You can read more about the migration of the Photos app at <a href="https://blogs.windows.com/windowsdeveloper/2024/06/03/microsoft-photos-migrating-from-uwp-to-windows-app-sdk" target="_blank">Microsoft Photos: Migrating from UWP to Windows App SDK</a>.
+                        </p>
+                        <h3>Introducing preview Universal Windows Platform support for .NET 9 - Sergio Pedri</h3>
+                        <p>
+                            There is new Universal Windows Platform or UWP support for .NET 9, this will allow developers to modernise your UWP applications with the latest .NET and Native AOT which 
+                            provides a better path for UWP developers to migrate to WinUI 3 and Windows App SDK as before it meant you would have to migrate all the UI and the code to work at the same 
+                            time and there is a lot of work to do this. You can get a checkpoint this way to move to modern .NET and remove dependencies on .NET Native and get your application working 
+                            with .NET 9 with UWP and then developers can work on moving the UI stack to WinUI. You can get all the benefits of the new APIs and features of .NET and then move to WinUI 3 
+                            and benefits of AoT from managed WinUI apps and this functionality is available in preview today. UWP projects with .NET 9 will also use the new SDK project style which is 
+                            much cleaner and easier to work on and native AoT support is enabled by default as this is the only option available for Microsoft Store applications using UWP. When running 
+                            applications there is still XAML live preview, XAML hot-reload and a prototype of the XAML designer working in development.
+                        </p>
+                        <h3>Universal Windows Platform to Windows App SDK Migration Tips - Hemant Kumar</h3>
+                        <p>
+                            There will be official documentation with help for developers migrating from Universal Windows Platform or UWP to the Windows App SDK. Windows App SDK is the way forward for 
+                            applications and there will be guidance on migrating from features and APIs in UWP including changes to namespaces for XAML between platforms. 
+                        </p>
+                        <p>
+                            Window Management in UWP there is a CoreWindow managed by the OS but with WInUI apps they need to create their own Window and manage the lifetime of this themselves so could 
+                            store the Windows on the application level and fetch it back through Microsoft.UI.Xaml.Application.Current in the application instance, applications with multiple windows could 
+                            manage these through a static list and fetch them back when needed and there is a WindowHelper in the WinUI Gallery application on GitHub which includes advanced window 
+                            tracking features.
+                        </p>
+                        <p>
+                            Dispatcher Priority from UWP which uses the CoreDispatcher in WinUI 3 is the DispatcherQuee where the challenge is to wait for a UI thread task to finish so could write an 
+                            extension method and then use await on this extension method if an application needs to do this to return the underlying task to the caller of the method and let the caller 
+                            know that any work on the UI thread has finished which can achieve the same parity between CoreDispatcher and DispatcherQueue.
+                        </p>
+                        <p>
+                            Keyboard events from UWP such as CoreWindow.KeyUp, CoreWindow.KeyDown and CoreWindow.CharacterReceived is replaced by the UIElement.KeyUp, UIElement.KeyDown and 
+                            UIElement.CharacterReceived events on the root element of XAML. CoreWindow.GetKeyState is replaced with InputKeyboardSource.GetKetStateForCurrentThread and 
+                            CoreDispatcher.AcceleratorKeyActivated is replaced by KeyboardAccelerators in XAML for creating key combinations for applications.
+                        </p>
+                        <p>
+                            Display information API for subscribing to changes to the display when migrating application from UWP including AutoRotationPreferences is replaced by the 
+                            SetDisplayAutoRotationPreferences native API in WinUI 3. LogicalDpi from UWP needs to use XamlRoot.RasterizationScale or GetDpiForWindow native API in WinUI 3 
+                            and DpiChanged from UWP is replaced by apps tracking the XamlRoot.Changed event in WinUI 3. CurrentOrientation from UWP if using DirectX rendering can use the 
+                            DXGI_OUTPUT_DESC.Rotation from IDXGIOutput::GetDesc native API as this is unavailable in Windows App SDK and DisplayContentsInvalidated from UWP can use 
+                            RegisterDeviceRemovalEvent if being used to track DirectX device availability as this is also unavailable directly in Windows App SDK.
+                        </p>
+                        <p>
+                            Replacing WINMD references where UWP applications could consume native code using these so applications being migrated should remove references older references to SDK 
+                            Contracts and specify the version of the WindowsAPI via the TargetFramework of the project and if any third-party Windows runtime component is consumed that is defined 
+                            in a winmd file then need to add a reference to the Microsoft.Windows.CsWinRT NuGet package and generate C# projections to consume it.
+                        </p>
+                        <h3>GitHub Survey - Rinku Stephen</h3>
+                        <p>
+                            There was a survey on GitHub on how developers rate their experience of the WinUI GitHub repository and if they could do one thing to improve the experience of the repo what 
+                            would that be. The DevSat Score was 50 which is moderately satisfied with feedback themes including the need for WinUI 3 development, improved documentation and addressing 
+                            tooling deficiencies along with calls for improved transparency, bug fixes and more responsive handling of bug reports. Feedback also included a desire for open-source 
+                            contributions and community involvement and a desire for WinUI 3 to achieve feature parity with other frameworks plus the need to improved management and community engagement. 
+                            Microsoft is working on community engagement and improving documentation.    
+                        </p>
+                        <p>
+                            Developer experience with WinUI 3 improvements include features such as a designer to easily visualise user XAML code throughout the development of an application. WinUI 3 
+                            AppX Bundles where currently Visual Studio doesn't generate appx bundles for WInUI applications despite selecting the Always option in the packaging wizard will be resolved 
+                            with a new feature to make sure these are generated. Search WinUI comment in Visual Studio installer by adding WinUI components into the Visual Studio installer search results 
+                            to enhance discoverability, visibility and accessibility to improve the developer experience, especially for new developers and save time, with this feature available in 
+                            preview where you can search for WinUI in the Individual components in the Visual Studio installer. IntelliSense features where unsupported values were still appearing 
+                            causing runtime XML parsing errors without clear messages is being resolved by making sure that only supported values are suggested by IntelliSense to prevent these issues.
+                        </p>
+                        <h3>Plans & Roadmap - Michael Hawker (XAML Llama)</h3>
+                        <p>
+                            Windows App SDK 1.7 is early in planning after the Windows App SDK 1.6 release and top-of-mind features to investigate are convenience APIS for XAML Window, addressing the 
+                            TitleBar preview feedback, TableView / Inking / Cross-Process Islands progress from 1.6 roadmap. WinUI 3 designer progress, web authentication support and CameraCaptureUI 
+                            along with quality, experience issues and more with details available at <a href="https://aka.ms/winappsdk/plans" target="_blank">aka.ms/winappsdk/plans</a>.
+                        </p>
+                        <p>
+                            Upcoming events include <a href="https://www.dotnetconf.net/" target="_blank">.NET Conf</a> which is November 12th - 14th and is a free virtual event, 
+                            <a href="https://ignite.microsoft.com/" target="_blank">Microsoft Ignite</a> which is November 19th - 21st and is online for free or can 
+                            attend in Chicago and the next Community Call which is January 22nd 2025 and will be on YouTube as always to see the latest features that are being worked on at that time.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
