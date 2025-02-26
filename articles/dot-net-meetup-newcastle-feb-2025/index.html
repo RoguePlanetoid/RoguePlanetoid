@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - Qudos .NET Meetup Newcastle - February 2025</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../dot-net-meetup-newcastle-feb-2025">Qudos .NET Meetup Newcastle - February 2025</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">Qudos .NET Meetup Newcastle - February 2025</h2>
+                        <p class="blog-post-meta">26th February 2025</p>                
+                        <img src="../assets/qudos.png" class="img-fluid" alt="Qudos .NET Meetup Newcastle - February 2025"/>  
+                        <h3>Let's start using Mongo DB in our next .NET project - Kevin Smith</h3>
+                        <p>
+                            Kevin liked using MongoDB as it is more developer focused. Kevin is a software developer and is a Microsoft MVP and runs .NET Sheffield and .NET York. 
+                            He also helps with open-source projects and his own at <a href="https://github.com/kevbite" target="_blank">github.com/kevbite</a> his website is 
+                            <a href="https://kevsoft.net" target="_blank">kevsoft.net</a>.
+                        </p>
+                        <h4>MongoDB</h4>
+                        <p>
+                            MongoDB is the most trending document database and is just below SQL databases but for a modern database it is ahead of the curve compared to those. 
+                            MongoDB is a multi-purpose document database to solve different people's needs, documents are stored in BSON and you implicitly normalise data and 
+                            roll things up into the document such as an address as part of a user object and it is built for the cloud and can be sharded.
+                        </p>
+                        <p>
+                            BSON documents store different datatypes that can be used compared to JSON including real number types such as decimals and doubles and can store dates 
+                            and index on these for better performance. Document Schema design it still has a scheme but no upfront design of the schema and can have different types 
+                            of schema at the same time, you can have rapid structure changes and rapidly change data it also requires less admin time and there is schema validation 
+                            with a JSON schema to validate what has been put into the database to prevent anything going into the database that isn't valid when inserting or updating 
+                            anything by giving errors or warnings but when using C# you can use the Type system to help with this. Document schemas can be different with some shared 
+                            columns and some different ones.
+                        </p>
+                        <h4>Document Modelling</h4>
+                        <p>
+                            Model for application usage with single document atomicity, you want all operations into a single document so won't need things like transactions etc can 
+                            embrace embedded data and roll-up small documents into larger documents such as different logs could have per hour or per minute. Dates and times are UTC 
+                            but can also support time zones and can index an array so could support multiple addresses so they can be queried efficiently. 
+                        </p>
+                        <p>
+                            In SQL you would have different tables for a Blog site such as Article, Author, Comments, Tags etc but in MongoDB you can look on the use case so for a Blog 
+                            site you can have all the article data together including sub documents for author, comments and tags for an article document. You could also have a hybrid 
+                            approach with a collection of multiple authors and keep these in sync using an event-based system.
+                        </p>
+                        <h4>MongoDB in .NET</h4>
+                        <p>
+                            Entity Framework Provider which is a collaboration between Microsoft and MongoDB. Entity Framework is an ORM which maps database into objects, you can map data 
+                            into C# code with a default convention built in and supports change tracking where you can make changes and save this and it will apply those updates for you so 
+                            don't have to know what has been changed it will do this for you and supports higher developer productivity and don't have to worry about "updates" and "selects" 
+                            and you can also use LINQ which work as you'd expect and has optimisations for lazy loading, eager loading and query caching.
+                        </p>
+                        <p>
+                            You can have your models as records in C# and create a DB Context the same way as in SQL and can configure any mappings for the db context which uses a ToCollection 
+                            rather than ToTable as MongoDB works with collections rather than tables. You can create optimistic concurrency, and this is monitored so you can keep the concurrency 
+                            working correct which is built in by default. 
+                        </p>
+                        <p>
+                            You can register the DB Context and have this use the MongoDB provider and the MongoDB client which is the raw driver for MongoDB. When creating documents you can just add 
+                            these to the context and this will be converted to relevant commands and be updated in MongoDB accordingly, you can query documents with LINQ to fetch the data and map this 
+                            into memory based on a policy class. Updating documents can be done by fetching and making any changes and then Save changes.
+                        </p>
+                        <h4>MongoDB Driver</h4>
+                        <p>
+                            Things you can't do in EF you can use the driver for as this has been done since day one and is default way of dealing with database and need to know more about operators etc 
+                            so does have a bigger learning curve. It is built up around being document oriented and has better performance and efficiency with less overhead. Have full MongoDB features 
+                            such as aggregation pipelines and transactions, which is wrapped for multiple operations for EF driver, along with native BSON. 
+                        </p>
+                        <p>
+                            There are more flexible native querying and has concepts like doesn't exist which is beyond what you can do with null in C# you can also do geospatial queries and vector 
+                            queries that aren't supported by EF. The driver supports default conventions, but you can also create your own such as Camel Casing or how Enums are represented as strings 
+                            which does impact performance as have bigger indexes compared to integers. 
+                        </p>
+                        <p>
+                            You can also override mappings for objects and register mapping and override things as needed and other options such as serialisers for specific types and can also register 
+                            using IoC and support polymorphic objects and can also support raw BSON documents and can use it in a similar way to the EF provider. You can create documents and query 
+                            documents by using an expression and queries will be used that creates a BSON document over the wire or can use Filter expressions to create operations in the MongoDB syntax. 
+                        </p>
+                        <p>
+                            You can also build more complicated querying logic with builders and join multiple filters together and can check for things that exist, you can also use aggregation for 
+                            matches with filter builders or expressions. Updating documents is very similar to EF with MongoDB expressions along with Delete. When do an operation it will create a 
+                            session and on a session you can start a transaction and then enlist operations on that session and those operations will be enlisted and wrapped in that transaction to 
+                            perform operations together.                           
+                        </p>
+                        <h4>Change Streams</h4>
+                        <p>
+                            You can listen to changes in the database so a real-time application can listen to a collection for a document, you can open a change stream on a collection, database and 
+                            cluster and events are read from the operation log and can be started in the past as long as have an OpLog for those events in the past and can resume with a token at anytime 
+                            to continue a stream. You can listen to document level operations like insert, update and delete and collections can have when things have been modified or created as well 
+                            as database events such as when things are dropped. 
+                        </p>
+                        <p>
+                            You can use this to monitor for indexes for a collection to monitor the MongoDB database and to listen to changes you can use Watch method where can loop for changes which 
+                            will get all changes so you can create an aggregation pipeline to listen for specific changes and can give updates accordingly such as getting the full documents but if you 
+                            do this for past events you'll only get the document as it is currently, but can also get pre and post values for any changes and this works on replica sets locally or Atlas 
+                            for local or cloud.
+                        </p>
+                        <h4>Production Features</h4>
+                        <p>
+                            MongoDB has indexes can have array indexes or geospatial indexes and wildcard indexes, you can do TTL indexes so you can clean up documents that will be deleted once that has 
+                            been reached. There are also unique indexes but this only works in a single shard and not across the rest of the cluster. There are also vector indexes for use with LLMs or RAG.
+                        </p>
+                        <p>
+                            Replication by default for redundancy, high-availability, and primary and secondary and can do rolling indexes to secondary and swap this back to a primary instance. You can 
+                            read from secondaries but this depends on replication. You can have application to reads and writes to primary which is replicated to secondary. If have three node replica you 
+                            have to wait for two nodes to be written to for an acknowledgement.
+                        </p>
+                        <p>
+                            Sharding distributes data across multiple machines and is useful for large datasets and can spread data per shard as needed or can spread load and is useful for high throughput 
+                            applications where sharding would be useful. You have application servers talking to router for shards and can coordinate where the data is being fetched from and in newer 
+                            MongoDB config servers are part of shards.
+                        </p>
+                        <p>
+                            You can try out MongoDB with <a href="https://mongoplayground.net" target="_blank">mongoplayground.net</a> and get information about MongoDB at 
+                            <a href="https://mongodb.com" target="_blank">mongodb.com</a>
+                        </p>
+                        <h3>Returning to .NET after a decade in the world of JavaScript - Mark Jose</h3>
+                        <p>
+                            Mark has been in North East for a long time but have been away for a while but are back here again. He started as a Microsoft engineer 25 years ago and 
+                            would be like a stick of rock with Microsoft written through. He then fell into the world of JavaScript but they have opinions about .NET and the past 
+                            with Microsoft. but .NET has come a long way since he last used it.
+                        </p>
+                        <h4>How they moved to JS</h4>
+                        <p>
+                            Mark started with no software engineering qualifications  but started as a physicist gathering data from weather balloons for methane in atmosphere and had to interpret 
+                            this data and worked with scientists and many didn't do much programming but at the time would create things by hand and fell into software then. He started with C++ 
+                            for Microsoft tech and worked with VRML for digital twins although were just basic 3D models of thing but left that job when .NET Framework just came out.
+                        </p>
+                        <p>
+                            They also worked in a few sectors and came into Scott Logic where they could write the code but couldn't explain it but worked there for a few years and then moved to BJSS 
+                            and then to a private equity firm. During time at Scott Logic and was working on financial dashboards and had some React and JS experience and went full-front end.
+                        </p>
+                        <h4>What they really want as a software engineer</h4>
+                        <p>
+                            is a low barrier to entry, comprehensive package library, large community of engineers for support, a tried and tested approach and a short change cycle. Want to get started 
+                            and not get stuck setting up machine and environments. JavaScript was appealing as you could open a browser and type stuff into Dev Tools such as Visual Studio which is still 
+                            quite large. NuGet is great but NPM is good for JavaScript but Microsoft also own this too. There are too many ways to do the same thing in certain languages or platforms, 
+                            not a real obvious way to get started. Sometimes you can have too many settings and just want to get started. You want to do a thing, with AI they is a narrative about 
+                            software engineers being replaced but most of the time you are figuring out what is needed rather than writing code.
+                        </p>
+                        <h4>Nice to haves</h4>
+                        <p>
+                            Consistent language and shared code across the stack such as JavaScript with NodeJS on the backend and have a flexible and easy to use IDE but Visual Studio is Windows only 
+                            although there is VS Code which is easy-to-use where there is an extension for everything such as RESTclient for .http files although support for this varies for IDEs. Also 
+                            nice to have a compact and modular SDK.
+                        </p>
+                        <h4>Types of things they build</h4>
+                        <p>
+                            They have built websites, web applications, mobile applications, services such as micro-services and monolithic services, desktop applications along with infrastructure and 
+                            cloud. They do progressive web apps, cross platform apps along with cloud functions, CI/CD is what they do the most. 
+                        </p>
+                        <h4>Things they build regularly</h4>
+                        <p>
+                            They build progressive web apps with React and Vue, cross platform apps with React Native and Flutter and cloud functions with JavaScript and TypeScript and CI/CD pipelines 
+                            in Terraform, Pulumi and NodeJS and scripts with NodeJS, NPM/X, Shell and CLI. You could built web apps with Blazor PWA, cross platform apps with .NET MAUI, for cloud have 
+                            Functions Framework for .NET and for scripts can use PowerShell and CLI.
+                        </p>
+                        <h4>Language considerations</h4>
+                        <p>
+                            C# has type safety at runtime but TypeScript gives a false sense of security and often JavaScript with a strong test suite can be argued for which forces you to think about 
+                            things more and write good tests. Need to know how things are working underneath which for JavaScript is not type safe. Generics in C# can be cumbersome and be complex and 
+                            have co and contravariance to worry about in TypeScript as they are slightly less rigid. Class Extensions are something they like in C# but they do look a bit like JavaScript 
+                            mixins. 
+                        </p>
+                        <h4>A low barrier to entry</h4>
+                        <p>
+                            For JavaScript use flutter for a cross platform app and for functions and CI/CD pipelines in Google Cloud using firebase and scripts can use NodeJS for a go-to for starting 
+                            new applications for JavaScript and then use Visual Studio Code for most of their development. For .NET can create a Blazor PWA application, cross platform app with .NET MAUI 
+                            create cloud functions in .NET and with CI/CD Pipelines can use GitHub Actions and write scripts in PowerShell and have toolset including Visual Studio Code, .NET SDK, 
+                            C# Dev Kit and MAUI Extension. Hot Module Reloading is supported by .NET with Hot Reload.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
