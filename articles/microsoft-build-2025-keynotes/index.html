@@ -82,7 +82,7 @@
             <div class="text-start">
                 <article class="blog-post">
                     <h2 class="blog-post-title mb-1">Microsoft Build 2025 - Keynotes</h2>
-                    <p class="blog-post-meta">19th May 2024</p>
+                    <p class="blog-post-meta">20th May 2024</p>
                     <img src="../assets/microsoft-build-2025.png" class="img-fluid" alt="Microsoft Build 2025 - Keynotes" />
                     <h3>Microsoft Build Opening</h3>
                     <h4>Satya Nadella</h4>
@@ -298,6 +298,229 @@
                         stack with GitHub Copilot or Microsoft 365 Copilot enabling agents for every role and Azure AI Foundry to build AI agents on a robust set of rails for management, identity and security 
                         and create opportunities to fuel ambitions across the world to help solve problems wherever people are. The big winners are going to be developers who build applications not those who 
                         build platforms and it is not about the technology but what people do with it.
+                    </p>
+                    <h3>Unpacking the Tech</h3>
+                    <h4>Jay Parikh</h4>
+                    <p>
+                        Jay supports the new Microsoft CoreAI team and has spent a lot of their career building infrastructure and tools for developers. Core AI team focuses on empowering 
+                        every developer to shape the future with AI, the principles that guide them is to use AI tools and platforms not just AI tools and platforms and transform the 
+                        entire experience not just a part of it. Will show off AI-powered tools that extend from the cloud to the edge and help bring in a new age of AI applications and 
+                        make it easy to test, deploy and monitor applications and help modernise applications and reduce tech debt and they want to give developers their time back.
+                    </p>
+                    <h4>Jay Parikh & Jessica Deen</h4>
+                    <p>
+                        Jessica Deen joined Jay with a demo application is possible to ask it to create a PR to improve a readme to help with a new person joining a 
+                        team but to also use these tools to develop faster. Jessica is a develop who spends most of the time asking who broke this then realising it 
+                        was them, you can look at the back log and see what tasks you can avoid and get Copilot to instead such as input validation or type hints for 
+                        API functions which Copilot lives for. Another one is to remove all TODO comments from the codebase and let GitHub Copilot take care of these 
+                        but instead do other tasks that are more interesting such as a new design for an icon. Copilot can also help with edits when editing your code 
+                        or bring an agent into Visual Studio Code and have it take care of an issue such as getting a Figma design and it will pick up a Copilot 
+                        instructions file to follow any coding standards and principles. This is all powered by Model Context Protocol or MCP which gives Copilot 
+                        access to more tools such as getting designs from Figma and when commit messages you can have Copilot fill out these too. 
+                    </p>
+                    <p>
+                        Jessica talked about the Readme where you can see what Copilot has done with a PR and can add a comment to add something like an architecture 
+                        diagram using mermaid.js for it to include this in the readme. Copilot allows you to focus on higher impact work and the models you use in 
+                        GitHub can be used in your own agentic applications and can get code to get started with integrating GitHub Models and Azure AI Foundry into 
+                        your applications. You could also look at an issue with an incident where an unhandled exception occurred and can see details of an issue such 
+                        as from the Azure SRE Agent where it can handle an alert and acknowledge this and begin an investigation including forming a hypothesis and 
+                        detect that the errors were related to a deployment and it was able to initiate a rollback and handle monitoring itself which saves time if 
+                        you were on call and could use GitHub Copilot to resolve the code change or it could be a migration where you can get the plan for this change 
+                        and what is needed to upgrade or migrate such as RabbitMQ to Azure Service Bus and see what changes would be needed. 
+                        Jay talked about using AI to migrate to the latest version of .NET with an AI-powered upgrade agent along with using one to migrate mainframe 
+                        code which should be available later this year. Jessica talked about an issue for integrating a virtual guestbook service with agentic Spotify 
+                        integration which could be implemented with GitHub Copilot with agents. 
+                    </p>
+                    <h4>Jay Parikh</h4>
+                    <p>
+                        Jay mentioned this is just the beginning of this plan, create and operate workflow where you will have a team of AI agents you can work with. 
+                        Microsoft are also integrating OpenAI and Anthropic agent functionality into GitHub, where GitHub will be the place you organise intelligence 
+                        where agents can operate effectively and securely with openness of choice and many customers are getting benefits of using GitHub Copilot which 
+                        includes saving hundreds of hours of manual work.
+                    </p>
+                    <p>
+                        Jay talked about the platform that powers AI agents which requires new systems, infrastructure and tools with Agent Factory, he spoke to 
+                        Bill Gates who said that Microsoft's vision was to create a software factory and are taking the same approach to build a full-stack platform 
+                        for AI agents and applications. Microsoft have been working to ship features quickly, but developers can try out the new features and Microsoft 
+                        use it internally with Microsoft 365 and Copilot. They have a new leaderboard to see which are the more popular models and hugging face 
+                        integration and same-time access to latest models from OpenAI in Azure AI Foundry as well and with Azure API Management you can access these 
+                        with any AI application with MCP and there is GitHub Models to try out any models along with model customisation for your specific use case 
+                        and you can also do distillation to reduce a model for requirements, cost or performance. 
+                    </p>
+                    <p>
+                        Jay also talked about the other core area of Azure AI Foundry with a complete stack of AI capabilities and there are key services to expand 
+                        which includes Agent service to scale agents at enterprise scale, there's an agent catalogue to pick from existing agents, agent knowledge 
+                        allows agents to perform more sophisticated tasks and support tools such as MCP and A2A along with frameworks to help made decisions in a more 
+                        cohesive way.
+                    </p>
+                    <h4>Amanda Foster & Elijah Straight</h4>
+                    <p>
+                        Amanda Foster and Elijah Straight talked about building an Agent in Azure AI Foundry which can use a configuration to make the correct tool calls 
+                        to make a calendar appointment for example. Visual Studio Code has an extension where you can see what agents are doing including request and 
+                        response and in-depth details such as tokens used and tools called with thread data which can be stored. You can use multiple agents together in 
+                        one experience for example in an event planning agent to perform the actions such as creating a LinkedIn post, produce an image for the event and 
+                        even create an RSVP content for the event and post a draft to LinkedIn. But how can you ensure that the agents are delivering high quality results, 
+                        can do this by integrating into the CI/CD pipeline including AI quality metrics with the SDK for this.
+                    </p>
+                    <h4>Jay Parikh & Patrick LeBlanc</h4>
+                    <p>
+                        Jay talked about digging into the data for the example event with Patrick LeBlanc for looking for speakers who are good at AI and demos for the eveent 
+                        but were only using a keyword and vector search for this but can use semantic operators in PostgreSQL to search for this for example with the 
+                        azure_ai.generate semantic operator with the prompt to get the information along with the query. 
+                    </p>
+                    <h4>Jay Parikh & Mehrnoosh Sameki</h4>
+                    <p>
+                        Jay talked about adopting new AI capabilities being an issue if can't trust or secure them, but this is a core principle for AI by integrating Purview and 
+                        Defender into agents and Mehrnoosh Sameki talked about measure, protect and monitor. She showed how to use an AI red-team agent to adversary attack agent 
+                        to test the system and able to see if any attempts are getting though and if they can, create a context filter with guardrails and protect against indirect 
+                        or direct jailbreak attacks. You can monitor attempts against the system but prompt shield can already block many attempts and can use Defender to fully 
+                        investigate an incident and see where it coming from and if it is coming from a known attack group could even remove the relevant access from a compromised 
+                        source, you can put the right controls in place and monitor in production.
+                    </p>
+                    <h4>Jay Parikh & Seth Juarez</h4>
+                    <p>
+                        Jay also talked about Cloud to Edge as shouldn't have two platforms for these so Azure AI foundry is being built to extend from the Cloud to 
+                        the Edge and Seth Juarez showed that there is a bunch of models you can download and use locally easily. Jay talked about securing the system 
+                        and taking AI from the edge to the cloud but to keep moving and exploring the frontier of what you can do with the tools and platform and are 
+                        teaming up with Microsoft Research to see what can be included in the platform, there's a lot to figure out and what capabilities they are 
+                        working on. 
+                    </p>
+                    <p>
+                        Seth mentioned there is a lot of things that need to be done as a data scientist which is to get some data and analyse it by row and by column 
+                        but instead can use an AI Agent like a mini data scientist in a box and from a day can be an hour and even if there are some formatting issues 
+                        the agent can compensate for this and get the code you need. Graph RAG allows relationships and entities to be extracted and analysed to 
+                        understand a data structure or code and then use it to help create new capabilities in code by understanding the code an implementing the 
+                        changes.
+                    </p>
+                    <h4>Jay Parikh</h4>
+                    <p>
+                        Jay mentioned we know how important these tools are to shape our craft and team culture and to realise ambitions, but the opportunity is the idea 
+                        of breaking fee of the constraints where you can build in multiple dimensions and in parallel with multiple agents and will be doing this together 
+                        to make superpowers ubiquitous and the limitations are just imagination and drive.
+                    </p>
+                    <h4>Jatinder Mann</h4>
+                    <p>
+                        Jatinder Mann talked about Windows AI Foundry which is a way to build AI models and access to a growing catalogue of models with the support 
+                        you need to get started and can explore a wide range of models tuned for Windows or pull from repositories that span CPU, NPU and GPU. It is 
+                        not just about the number of models but the quality that can run directly on your device that can reason on multi-stage tasks which needed 
+                        cloud-scale compute before but can now run directly on your PC. Phi-4 reasoning is a 14 billion parameter AI that can run locally. Windows 
+                        AI Foundry local is where you can see the list of models optimised for your PC, see which models are already downloaded or run them directly 
+                        from the CLI and then interact with the model and then can integrate this easily by changing the endpoint to a local host instead of the cloud 
+                        based. 
+                    </p>
+                    <p>
+                        Jatinder talked about the next step which is to customise these which including tailoring these with parameter efficient fine-tuning with 
+                        LoRA which can be done on Azure and then a lightweight file can then be used locally. You can select a model and then select the training 
+                        data and test data and then trigger a fine-tuning job that is triggered on Azure to fine-tune a pre-trained AI model and can even see examples 
+                        of what output is like before and after a LoRA adapter. You can also make sure a model makes use of the right knowledge at the right time 
+                        including building natural language search.  When you bring your own models then can take advantage of Windows ML to make sure that 
+                        performance and capabilities are accessible.
+                    </p>
+                    <h4>Charles Lamanna</h4>
+                    <p>
+                        Charles Lamanna talked about the fact there will be a lot of agents developed over the years. Microsoft Copilot follows you from app to 
+                        app and brings in capabilities across applications but can also use this with Microsoft Teams or use this in the background and as we use 
+                        this will need to secure them with Entra for access, Purview for data and Defender for security. In Microsoft Copilot you can use agents 
+                        from Microsoft or third-parties and use these such as Researcher to explain and reference a document which can even compare against internal 
+                        strategies, it knows how you works and will have follow up questions on anything particular to pay attention to, the Researcher agent will 
+                        execute a sequence of steps to get the information you need and responses are throughout and verbose but can also include straightforward 
+                        overviews and use the information to take the right approach for education research and preparation where agents can make us more productive. 
+                        There are many agents available and agents developers build can show up in an open ecosystem and a key part of this is MCP, Model Context 
+                        Protocol, which is the new way these agents communicate to these backend systems and MCP Services are available for anyone to use and 
+                        Microsoft will support all open protocols that matter as it will be an open agentic web to create first-class experiences in platforms 
+                        such as Microsoft Copilot.
+                    </p>
+                    <p>
+                        Charles talked about the ongoing theme is lots of agents and will need to create some structure around agents, so how do you organise teams 
+                        so do the same kind of thing with agents to have them appear alongside all of our organisations to have agents and people work alongside 
+                        each other and look at a new way of getting things done, everything we use will have to change and the way we collaborate will have to evolve 
+                        and look at new tools to get this done which includes Copilot Studio which is an incredibly easy way to build these and work with Power Apps 
+                        or enable access to agent capabilities in Microsoft Teams.
+                    </p>
+                    <h4>Ryan Cunningham</h4>
+                    <p>
+                        Ryan Cunningham talked about agents in Copilot Studio which starts with natural language instructions and a grounding with knowledge from 
+                        your organisation, but these agents aren't just waiting to be chatted to, but they have tools and skills to do work in an organisation, 
+                        if something has an API you can work with it or with MCP to pull though capabilities. You can create very specific prompts about how an 
+                        agent will respond and select the AI model and see how it performs and can have AI developers do foundational work on a model and leverage 
+                        this in Copilot Studio. 
+                    </p>
+                    <p>
+                        Ryan mentioned that Power Apps allows agents to be layered on the same secure platform and can be used with agents and create a whole new 
+                        type of application, you can even manage agents and supervise the work they are doing autonomously as agents won't do 100% of things 100% 
+                        of the time and can see what agents need assistance and if they got stuck and get the agents unblocked quickly but agents can also notice 
+                        trends and things humans may not notice and partner with agents to investigate something. You can have a team of agents built into Power Apps 
+                        that can perform different actions based upon a plan where can add steps and partner with agents at every step and be the foundation for 
+                        building software and change the way the world works with agents and Power Apps.
+                    </p>
+                    <h4>Charles Lamanna</h4>
+                    <p>
+                        Charles mentioned the other place we will work together with agents is in Microsoft Teams with 320,000,000 people using Teams every day and 
+                        will be seeing many agents working in teams in a chat, channel, meeting or call where you can interact with these AI agents and Microsoft 
+                        will be making this easier with Teams AI Library to have agents show up.
+                    </p>
+                    <h4>Farah Shariff</h4>
+                    <p>
+                        Farah Shariff talked about Teams being the collaboration space for agents and colleagues to work together and in a chat, you can talk to them 
+                        and access critical information within the flow of work. You could have an agent for a standup to bubble up topics which can include things 
+                        from other agents such as an incident response and uses the A2A protocol to communicate with them no matter how they were built. You can build 
+                        agents with the Teams AI Library that can take advantage of MCP or A2A that integrates with AI models and results in faster development and more 
+                        capable of interacting with humans within Microsoft Teams.
+                    </p>
+                    <h4>Charles Lamanna</h4>
+                    <p>
+                        Charles talked about agents showing up in more places such as Microsoft Teams and they need to be secured with Entra AI the same way people and 
+                        applications are protected today and have Purview to protect data as it flows through.
+                    </p>
+                    <h4>Shilpa Ranganathan</h4>
+                    <p>
+                        Shilpa Ranganathan talked about Microsoft Purview having built in safeguards to prevent sensitive information from being leaked accidentally such 
+                        as customer accounts which can be labelled automatically by Purview and other information that is labelled correctly is safe for agents to use, 
+                        AI generated content is also automatically labelled and protected with Purview. A data leak scenario could be by asking for something that is sensitive, 
+                        and the response will be an error saying that this information is restricted instead of responding with the information.
+                    </p>
+                    <h4>Charles Lamanna</h4>
+                    <p>
+                        Charles mentioned that with Copilot, Copilot Studio and Azure AI Foundry is to be secure by design with Purview, Entra and Defender and you can use these 
+                        AI agents today, but they need world-class cloud and infrastructure.
+                    </p>
+                    <h4>Scott Guthrie</h4>
+                    <p>
+                        Scott Guthrie talked about offering the highest scale, lowest cost AI infrastructure that powers AI agents with innovations and optimisations 
+                        with Microsoft Azure with more regions than any provider and are expanding capacity and you can bring applications closer to customers. Much of 
+                        the capacity in Azure is optimised for AI and Microsoft are building our many Azure AI Datacentres with the most advanced AI super computers to 
+                        allow developers to leverage AI models at even lower cost. With this power and scale comes responsibility by sourcing energy from renewable 
+                        energy and Zero-carbon sources and will have 100% renewable energy by the end of 2025. Microsoft are also using innovative approaches in 
+                        construction with hybrid materials with cross laminated wood and alternatives to concrete foundations. 
+                    </p>
+                    <p>
+                        Scott talked about the Azure AI Datacentre runs clusters of nVidia GB200 AI systems with first server, rack and cluster deployed in Azure and 
+                        already running production workflows. These GPUs are packed together in a single rack to train larger AI models but the challenge when putting 
+                        them together is a lot of cooling and they are so power dense you can't use AI cooling but need to use liquid cooling to provider cool liquid 
+                        and extract hot liquid which is cooled in a continuous closed-loop system with giant fans. Closed loop system means the water is not wasted 
+                        and all new datacentre designs in future will use zero waste water cooling methods. GPUs need more interconnections and operate as a single 
+                        interconnected cluster and needs to be hyper optimised with enough optical fibre in one datacentre to wrap around the world many times. 
+                        There is a 400 terabit AI WAN for an Azure AI Datacentre which enables training in multiple data centres, and every region has exabytes 
+                        of high-performance storage to drive over two million transactions per second on a single Blob storage account for unprecedented data 
+                        transfer for AI workloads.
+                    </p>
+                    <p>
+                        Scott mentioned they have Azure Boost for every new server in Azure whether for AI or not and have Azure Cobalt 100 ARM-based VMs with best 
+                        performance for price including twice the performance for .NET applications. The Azure AI datacentre will have ten times the performance of 
+                        the world's fastest supercomputer and is just one of the new datacentres they are delivering. Azure enables cost reductions and powers a new 
+                        era of AI apps and agents to integrate AI and provide AI solutions that weren't possible before. ChatGPT is on Azure and is the fastest 
+                        growing app in history with over 500 million weekly active users. ChatGPT needed petabytes of data storage and uses Azure CosmosDB which 
+                        delivers turnkey scale out with guaranteed uptime and can replicate data to any region in the world where prompts, metadata and more for 
+                        ChatGPT is stored to deliver a natural language experience with low latency and high scale and they can put data closer to users to result 
+                        it faster responses to users. 
+                    </p>
+                    <p>
+                        Scott mentioned you can start with Gigabytes of data and scale to Petabytes of data and for CosmosDB you only pay for the data and scale 
+                        that you use and delivers five nines of availability and has been essential for ChatGPT's growth and success. ChatGPT needs to scale 
+                        application across ten million cores assisted by Azure Kubernetes Service for cloud native applications which is a fully managed service 
+                        available in every region with automated deployments, healing and patching along with security safeguards and allows for cloud native scale 
+                        for unlimited scale notes and don't need to scale linearly. All of this technology is powering a new era of AI apps and agents, and AI 
+                        innovators are building on Azure.
                     </p>
                 </article>
             </div>
