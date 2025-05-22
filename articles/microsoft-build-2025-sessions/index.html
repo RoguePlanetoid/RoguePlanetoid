@@ -272,6 +272,177 @@
                         of the model needs to be downloaded with Foundry local which is embedded into Windows 11 and Windows App SDK. Windows AI Foundry provides task-based APIs 
                         and access to open-source, third-party or your own models to build AI into your own applications.
                     </p>
+                    <h3>SQL Server 2025: The Database Developer Reimagined - Bob Ward, Muazma Zahid</h3>
+                    <h4>Introduction</h4>
+                    <p>
+                        SQL Server 2025 infuses AI and has a new logo! Data is the fuel that powers AI, without data AI is pretty hard to achieve and now SQL Server 2025 is part 
+                        of this. SQL Server 2025 is the AI-ready enterprise database from ground to cloud with best-in-class security and performance, AI built-in, made for developers 
+                        and with Cloud agility through Azure. You will be able to use T-SQL and be able to choose the AI model you want, and it is more than AI as this is the most 
+                        significant release of SQL Server in a decade.
+                    </p>
+                    <p>
+                        SQL Server 2025 builds on a foundation of innovation. SQL Server 2017 enabled SQL Server on Linux with support for containers, adaptive query processing, 
+                        automatic tuning, graph database and machine learning services. SQL Server 2019 added data virtualisation, intelligent query processing, accelerated database 
+                        recovery and data classification. SQL Server 2022 was cloud connected and supported IQP NextGen, Ledger, Data Lakes and T-SQL enhancements. SQL Server 2025 
+                        has innovations and enhancements from past releases, and you can develop once and deploy anywhere for SQL Server 2025, Azure SQL and SQL database in Fabric 
+                        supporting T-SQL for developers, SQL engine, tools along with Fabric, AI and Copilots.
+                    </p>
+                    <p>
+                        SQL Server 2025 has AI built-in and can develop modern data applications and integrate your data with Fabric, it is secure by default with a mission critical engine 
+                        that can be connected with Arc and assisted by Copilots along with being a benchmark leader, optimised for the latest hardware and build for all platforms including 
+                        Azure, Windows, Linux and Kubernetes.  SQL Server Management Studio 21 is based on Visual Studio 2022 64-bit and supports Copilot in public preview, Git and TFS along 
+                        with a migration assistant and a most request feature of dark mode, it also features a new connection experience, query editor improvements and always encrypted assessment. 
+                    </p>
+                    <h4>AI Built-in</h4>
+                    <p>
+                        What problems are you trying to solve with AI? SQL Server 2025 delivers smarter searching on your existing text data, bringing in other documents or text for centralised 
+                        vector searching, provides building blocks for intelligent assistants to connect with Retrieval Augmented Generation and AI agents along with being able to take advantage 
+                        of AI in a secure and scalable fashion including co-locating data plus overcome complexity by using the familiar T-SQL language with extensions to enable AI capabilities.
+                    </p>
+                    <p>
+                        Building scalable AI applications for agentic RAG with vector search built into SQL Server 2025 to store vectors and data together for consistency and search for most 
+                        relevant data, operational RAG to retrieve the most semantically relevant data from your database and use this to ground Large Language Models for specific scenarios such 
+                        as model context protocol situation and normal structured queries to allow Large Language Models to query structured data and take advantage of rich metadata and query 
+                        optimisation.
+                    </p>
+                    <p>
+                        Build enterprise AI-ready applications by building agentic RAG patterns inside the engine with a Vector Store with native vector data type for a column you store in the table 
+                        and DiskANN index on top of this, model management for ability to declare model definitions to point to the model of your choice on ground or cloud using T-SQL, embeddings 
+                        built in for text chunking and built-in multimodal embedded generations, simple semantic searching with vector distance (KNN) and vector search (ANN) based on the index 
+                        along with supporting framework integrations including LangChain, Semantic Kernel and Entity Framework Core and will support OpenAI models and Ollama models.
+                    </p>
+                    <p>
+                        SQL Server 2025 Vector Search has AI inferencing endpoints for a wide range of models that are possible they don't reside in the engine but will use REST APIs to talk to AI 
+                        models of your choice in a secure manner. You will declare a model definition in T-SQL where you can choose from three different protocols for the API format from Azure OpenAI, 
+                        OpenAI compatible and Ollama where it exists, you declare once and use multiple and you can create embeddings which will use these models and will be stored in your vector type 
+                        which is a sequence of numbers that models use to understand your data. In your application you can send a natural language prompt and can create another embedding and can use 
+                        vector search to find most similar results based on the prompt using your data, this can also use the new JSON data type for JSON data. If there is a model that isn't supported, 
+                        you can use the sp_invoke_external_rest_endpoint to talk to any model endpoint for greater extensibility and multimodal and can talk to any REST endpoint.
+                    </p>
+                    <p>
+                        Security, SQL and AI in SQL Server 2025 is you control all access with SQL security with roles, permissions and authentication. You also control which AI models to use, and these 
+                        AI models can exist on ground or cloud, or a combination are isolated from SQL. You can use Role Level Security, TDE and Dynamic Data Masking, track everything with SQL Server 
+                        auditing and there is a ledger for chat history and feedback if building a chat application. This can be a very secure process to use AI in your application when using SQL Server 2025 
+                        and with SQL Server Management Studio and Copilot you can get assistance about your data including determining what embeddings are in your database such as supporting multiple languages, 
+                        embeddings can be generated with T-SQL and can use what models you want to use either locally or on cloud.
+                    </p>
+                    <h4>Developers, Developers, Developers</h4>
+                    <p>
+                        SQL Server 2025 has the most developer features in a decade. SQL Server 2025 is built for developers to develop modern data applications there is a Data API builder which can convert 
+                        any table or stored procedure into a GraphQL endpoint you can connect to in your app for efficient data applications. SQL Server 2025 supports JSON type, index and updated T-SQL functions 
+                        along with support for Regular Expressions and other T-SQL functions. There is a new capability called Change Event Streaming where can consume log change events and there is a REST API 
+                        to connect your data to any REST interface including GraphQL from T-SQL which is useful for AI or any downstream application you have access to that you can expose through REST. 
+                        GitHub Copilot for SQL is now available in Visual Studio Code and there is a Python Driver coming for SQL Server.                        
+                    </p>
+                    <p>
+                        GitHub Copilot for SQL has the context of your database including the schema so you can get the queries you need in T-SQL based on your tables, but you can also write code with the SQL 
+                        context to get code to help build an application to connect with your database for example using Semantic Kernel. SQL Server 2025 introduces Standard Developer Edition which is free for 
+                        development and test purposes with all the features and limits from the SQL Server 2025 Standard Edition on all platforms with no licence costs. 
+                    </p>
+                    <p>
+                        JSON before SQL Server 2025 was varchar/nvarchar based and any index that supports this but in SQL Server 2025 there is a native json datatype for JSON using binary storage up to 2GB 
+                        along with a json index and then functions to use when building applications and are brining NoSQL inside SQL as part of your queries and your code. You can use JSON_VALUE to get any 
+                        value from a JSON document and there are new capabilities for aggregation with JSON_ARRAYAGG and there are key / value operations using JSON_OBJECTAGG. You can use modify to update 
+                        individual JSON values for complex JSON payloads and do this as part of the SQL Server 2025 engine and can operate directly with values. To performantly query JSON you can create a 
+                        json index so can then search a document using the index and you can see this in the execution plan from SQL Server Management Studio when using SQL Server 2025 with a json index. 
+                        Additional T-SQL support includes regular expression functions, Base 64 functions, fuzzy string match functions, substring with optional length, string concatenation operator along 
+                        with CURRENT_DATE to get the date and DATEADD which now supports bigint.
+                    </p>
+                    <p>
+                        Capturing changes with SQL Server includes Change Tracking for cache invalidation and sync, Change Data Capture for data warehousing and auditing. SQL Server 2025 supports Change Event 
+                        Streaming for event-driven architectures, microservice integrations, real-time analytics, cache sync and AI agents.  With Change Event Streaming in SQL Server 2025 you want to take an 
+                        action based on a change in data from SQL Server which can scale as your data scales and is near-real time and is push based not pull based which can be enabled for your database and 
+                        when setting up an event stream you specify the Azure Event Hub and table where changes will be pushed to and these are JSON-based in a format called cloud event which contains schema 
+                        information and column names. You can use Azure Functions to take events from an Azure Event Hub to create an AI Agent and can even use GitHub Copilot to accept the event from the 
+                        Event Hub to parse out the information including the data itself from the event triggered from Change Event Streaming and then pass this to an AI agent.
+                    </p>
+                    <p>
+                        SQL Server 2025 is integrated with Microsoft Fabric which integrates your operation data with a unified data platform, Microsoft Fabric includes Data Factory, Real-Time Intelligences, 
+                        Databases, Analytics, Industry Solutions, Power BI along with partner solutions. Mirroring from SQL Server 2019 and later replicates databases to Fabric with zero ETL and data I replicated 
+                        to One Lake and is kept up to date in near real-time, mirroring protects operation databases from analytical queries and computer replication is included with your Fabric capacity for no 
+                        cost and there is free mirroring storage for replicas tiered to Fabric Capacity.
+                    </p>
+                    <p>
+                        Enhancing the industry engine in SQL Server 2025 includes many changes to Security including security cache improvements, authentication using system-assigned managed identity and backup 
+                        to URL with managed identity. Performance improvements include optimised locking, change tracking cleanup and batch mode optimisations. Availability changes include improved health 
+                        diagnostics, communication control flow tuning and DAG sync improvements. 
+                    </p>
+                    <p>
+                        Mission Critical Engine for performance and availability of your modern database including improved concurrency with optimised locking, abort query hint and tempdb resource governance 
+                        along with accelerating performance with IQP enhancements, columnstore indexes and query store on read replicas in a production environment and increase HADR with reliable failover for 
+                        availability groups, availability group tuning and diagnostics plus backup enhancements. Transaction locks help avoid blocking with lock escalation and can be turned on in SQL Server 2025 
+                        to prevent an entire table being locked with optimised locking.
+                    </p>
+                    <h4>Conclusion</h4>
+                    <p>
+                        SQL Server 2025 Platform Architecture is something new that supports new applications and new platforms to build optimised applications, AI agents and connect to Microsoft Fabric or use 
+                        embeddings from Azure AI Foundry where AI agents can then use Azure EventHub to respond to events from the database or call external REST endpoints to include AI models locally or in 
+                        the cloud as well as other online capabilities using REST APIs.
+                    </p>
+                    <h3>Elevating Development with .NET Aspire: AI, Cloud, and Beyond - Damian Edwards, David Fowler, Maddy Montaquila</h3>
+                    <h4>What is Aspire?</h4>
+                    <p>
+                        Aspire allows you to build intelligent applications intelligently where you can bring together infusing AI into your .NET apps with Agentic Apps with Agentic DevOps which are AI-powered 
+                        agents operating as a member of your development team. The dev loop kills velocity, and local dev is fragile with high friction onboarding with slow ramp up time, inconsistent dev 
+                        experiences make things hard to troubleshoot and critical workflows rely on scripts, hacks and tribal knowledge. 
+                    </p>
+                    <p>
+                        Aspire lets developers just be developers again where can onboard an intern in an afternoon instead of a couple of weeks, be able to run full integration suite locally without spinning 
+                        up CI/CD or build machines, or with the dashboard able to test telemetry flow without waiting for a full deployment and don't have to be an expert in Bicep to be able to deploy 
+                        applications. Aspire lets you develop again and can turn on and instrument things such as Open Telemetry, logging and resiliency with Polly including retries and be able to have 
+                        your own standards and ship your own extension methods and have a deployment story that is improved.
+                    </p>
+                    <h4>Devis Lucato</h4>
+                    <p>
+                        Devis works on many AI projects in the office of the CTO including Semantic Kernel to make AI development more productive including developing SDKs and moving to encapsulating this 
+                        into a single API. Were asked how to secure memory for a knowledge base with Kernel Memory and create a solution to inject and process data with a pipeline with a web service that 
+                        can point any language to which allowed internal components to be changed so enabled many extensions to create a flexible pipeline but it was hard to set up but with Aspire it is 
+                        very easy to spin things up locally and also be able to deploy to the cloud and Aspire is integrated into many IDEs including JetBrains Rider. All the resources will be spun up as 
+                        needed rather than having to start each one manually when working locally and can also combine other resources such as those in Python and Node.js 
+                    </p>
+                    <h4>Aspire</h4>
+                    <p>
+                        Aspire enabled code-first control, is modular and extensible with observable from the start for flexible deployments and has been around for a year and there are over 130 integrations, 
+                        over 700 community PRs and 70% of top .NET customers are using Aspire. Aspire with Copilot is an AI-assisted experience directly in the Aspire developer dashboard where it can identify 
+                        resource issues, find bottlenecks and help with spotting problems at development time, you can ask Copilot about specific traces and find root causes of errors, and it works seamlessly 
+                        with the rest of your Copilot agents in Visual Studio. 
+                    </p>
+                    <p>
+                        Aspire is released every six weeks and things are being fixed and value is being added, and it is easy and low friction to update .NET Aspire. You can update the .NET templates if the 
+                        .NET Aspire templates have been installed with “dotnet new update” from Command Line or Terminal to the latest version of the templates for .NET Aspire but there is work in progress to 
+                        make the update experience work in Visual Studio. For a .NET Aspire project you can also use “dotnet outdated -inc Aspire -u” from the Command Line to update the .NET Aspire packages 
+                        and you will also need to update the SDK version in the csproj in Visual Studio or Visual Studio Code and once updated you can take advantage of the latest features in .NET Aspire.
+                    </p>
+                    <h4>Your <s>Aspirations</s> Feedback</h4>    
+                    <p>
+                        .NET Developers understand features such as Project files etc but other developers won't understand this so Microsoft has aspiration to broaden the horizons of .NET Aspire but other 
+                        developers have to get over the dotnetisms for this so there will be a command line experience for .NET Aspire with “aspire run” which is a .NET command line tool which takes normal 
+                        things you do in Visual Studio but making these available in a Command Line Interface where you can create the templates and also trust the developer certificate automatically to make 
+                        it easier, the point of this is to hide the default things that .NET Aspire has to do. You can also dee a small Dashboard-like experience in the Command Line Interface to show anything 
+                        that has been started without needing to start Visual Studio or Visual Studio Code. You can also add additional .NET Aspire packages with “aspire add” to add these to your project and 
+                        you can also add npm applications such as Vite + Vue.js.
+                    </p>
+                    <h4>Software Developer Lifecycle</h4>
+                    <p>
+                        Onboard, Develop, Test and Deploy focus of .NET Aspire has been Develop and Test, the Command Line Interface targets Onboard. With Deploy this has been revisited in regards to boosting 
+                        productivity of teams in Microsoft teams using .NET Aspire to help them move faster who were using it for local development including Xbox and Copilot teams but many teams were asking 
+                        for help to deploy and looked at building an experience for those teams to deploy using internal processes to then help everyone else to deploy to Azure and Azure Container Applications 
+                        by adding support to be able to deploy everywhere.
+                    </p>
+                    <p>
+                        The application host in .NET Aspire is a great place to see the structure of the application and see the application's configuration as you need to tell .NET Aspire what your application 
+                        is including the services and how they talk to each other which can be visualised in the Resource table and graph in the .NET Aspire dashboard. From .NET Aspire you can see the traces for 
+                        any requests between different parts of the application. From the AppHost you can add compute resources to model environments such as an Azure Container App and you can turn on various 
+                        things you may need when the application is deployed into these environments, and the environment informs the target of where things should be by creating the relevant setup in Bicep 
+                        after running infra synth for Azure.
+                    </p>
+                    <p>
+                        There is also preview support for Azure App Service in .NET Aspire which creates the relevant setup in Bicep for this environment after running infra synth. If you want to split compute 
+                        environments for example for front end and back end you can specify different compute environments to disambiguate them, when infra synth is executed there will be different ones for the 
+                        different parts of the application, and with some hints in the App Host can infer the networking that may be required for the components of the application to be able to communicate with 
+                        each other, targeting different things should be as simple as possible such as cross-cloud deployments and be able to glue these together and represent these from your App Host to help 
+                        represent the deployments used by teams in Microsoft.
+                    </p>
                 </article>
             </div>
             <!-- /Article -->
