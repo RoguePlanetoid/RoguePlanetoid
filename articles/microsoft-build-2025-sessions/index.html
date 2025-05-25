@@ -82,7 +82,7 @@
             <div class="text-start">
                 <article class="blog-post">
                     <h2 class="blog-post-title mb-1">Microsoft Build 2025 - Sessions</h2>
-                    <p class="blog-post-meta">21st May 2025</p>
+                    <p class="blog-post-meta">25th May 2025</p>
                     <img src="../assets/microsoft-build-2025.png" class="img-fluid" alt="Microsoft Build 2025 - Sessions" />
                     <h3>Azure AI Foundry: The AI app and Agent Factory - Yina Arenas & Scott Hansleman</h3>
                     <h4>Introduction</h4>
@@ -442,6 +442,300 @@
                         different parts of the application, and with some hints in the App Host can infer the networking that may be required for the components of the application to be able to communicate with 
                         each other, targeting different things should be as simple as possible such as cross-cloud deployments and be able to glue these together and represent these from your App Host to help 
                         represent the deployments used by teams in Microsoft.
+                    </p>
+                    <h3>The future of web development with ASP.NET Core & Blazor - Mike Kistler & Daniel Roth</h3>
+                    <h4>Introduction</h4>
+                    <p>
+                        ASP.NET Core has come a long way since it first shipped in 2016 as part of .NET Core, it is trusted by millions of developers, powers the world's largest services, industry leading 
+                        performance and is the foundation of model cloud and AI powered application leveraged as part of Microsoft 365, Microsoft Bing. Microsoft Teams, Microsoft Copilot and Xbox along with 
+                        most of Microsoft's Azure services. Microsoft uses ASP.NET Core as it is faster than other frameworks and is a mature and robust framework. 
+                    </p>
+                    <p>
+                        Build AI powered web applications with ASP.NET Core with Microsoft.Extensions.AI which are AI primitives and building blocks for .NET, Evaluations to evaluate the quality and safety of 
+                        your AI applications, integrate with VectorData for vector databases for semantic search and embeddings along with AI templates with Blazor and ASP.NET Core featuring out-of-the-box 
+                        guidance with code ready to go, C# MCP SDK to extend AI apps  with new tools and data plus Semantic Kernel for multi-agentic workflows and orchestration.
+                    </p>
+                    <p>
+                        ASP.NET Core developers love .NET Aspire which helps you build, test and deploy applications seamlessly from code to cloud and helps with a streamlined inner loop, includes a developer 
+                        dashboard features integrations and assists with deployment which you can add to any ASP.NET Core application and ready for any cloud and lights up features to follow cloud best practices.
+                    </p>
+                    <p>
+                        ASP.NET Core in .NET 10 is focusing on areas including making it easier to create more secure applications, app observability with more traces and metrics to help troubleshoot applications, 
+                        targeted performance improvements for higher throughput and lower memory utilisation along with addressing top pain points and gaps in ASP.NET Core.
+                    </p>
+                    <h4>Easier to create secure applications</h4>
+                    <p>
+                        ASP.NET Core in .NET will support the latest security standards and best practices including WebAuthN and passkey authentication along with OAuth 2 refresh token support to automatically 
+                        refresh it when it expires from a refresh token without impacting the user experience which enables a shorter time to live for tokens. Make authentication easier to setup & use as if they 
+                        aren't easier to use people won't use them and you will get security problems with authentication scaffolding along with identify and authentication documentation improvements as through 
+                        GitHub issues and social media to make this easier to consume including scenario-based tutorials and video content. 
+                    </p>
+                    <p>
+                        Passkeys are cryptographic credentials that replace traditional passwords and consist of a public-private key pair scoped to a specific account and origin where private key is stored in an 
+                        Authentication and this requires user verification before allowing authentication and Passkeys cannot be shared across applications and are Phishing resistant and secure by design. Will be 
+                        building in support for Passkeys to ASP.NET Core Identity inspired by fido2-net-lib but there's no support yet for attestation as there isn't yet a full standard for this so may change if 
+                        it were integrated at the moment and project templates will be extended to optionally add Passkey support and existing projects using ASP.NET Identity can add Passkey support but this will 
+                        require database schema changes. Authentication scaffolding will be based on “dotnet scaffold” to generate code into your projects, existing ASP.NET Core & Blazor Identity scaffolders will 
+                        be updated for Passkey and other .NET 10 support and can add ASP.NET Core Identity Endpoints, Entra ID authentication and add to Blazor Hybrid and .NET MAUI applications.
+                    </p>
+                    <h4>App observability and diagnostics</h4>
+                    <p>
+                        ASP.NET Core in .NET 10 to make it easier to monitor and troubleshoot applications by adding more metrics such as Kestrel memory pool, authentication and authorisation metrics along with 
+                        Blazor specific metrics including how many circuits are connected and how many are not in a Blazor application. Adding activities to Blazor Server for distributed tracing and diagnostics 
+                        for Blazor WebAssembly for performance profiling and memory usage to diagnose issues more easily. Will be building in OpenTelemetry for trace instrumentation without needing an external 
+                        package and integrating Microsoft.IdentityModel logs such as features handling JWT so don't have to look around for them.
+                    </p>
+                    <h4>Targeted performance improvements</h4>
+                    <p>
+                        ASP.NET Core in .NET 10 will the fastest version of .NET yet include releasing memory from Kestrel memory pool, API JSON deserialization performance improvements for building APIs using 
+                        new Pipe reader support to System.Text.Json. Microsoft will investigate performance of anti-forgery tokens to make this faster and Blazor WebAssembly startup improvements, so applications 
+                        load faster.
+                    </p>
+                    <p>
+                        Kestrel gets smarter about memory as Kestrel grows the memory pool as needed but it doesn't release this memory, so Kestrel holds onto that memory even after traffic has dropped. This has 
+                        kept applications stuck at high memory watermarks such as after load spikes. In .NET 10 Kestrel trims memory over time reducing an applications footprint which results in better scaling, 
+                        loader idle costs and smarter resource usage and have been experimenting with this internally which is reducing memory usage and will be coming soon to a .NET 10 preview release.
+                    </p>
+                    <p>
+                        Blazor WebAssembly startup improvements to speed up Blazor load time by making sure Blazor framework scripts are fingerprinted which adds a unique filename to cache these as long as 
+                        possible by browsers and scripts are then compressed and cached as static web assets along with preloading Blazor WebAssembly resources to make sure that Blazor applications can load 
+                        faster in .NET 10.
+                    </p>
+                    <h4>Address top pain points & gaps</h4>
+                    <p>
+                        ASP.NET Core in .NET 10 for backend adds key feature asks for minimal APIs using System.Text.Json which will be the recommended place to implement APIs and where strategic based investments
+                         from Microsoft will be happening including minimal API validation and support for server-sent events being returned by minimal APIs. Ongoing OpenAPI investments include support for the 
+                         newest version of the standard OpenAPI v3.1 which will be the default version and XML doc comments-based OpenAI descriptions. Improve build-time OpenAPI doc generation and support emitting 
+                         OpenAPI documents in YAML format rather than JSON. Other backend pain points being addressed includes JSON Patch which supports updating JSON data with just changes needed or can test to 
+                         see if changes would be valid and this uses System.Text.Json as before this required the old NewtonSoft.Json package. ASP.NET Core in .NET 10 will also generate correct responses for 
+                         unauthorized requests for APIs in Web apps.
+                    </p>
+                    <p>
+                        ASP.NET Core in .NET 10 for frontend focuses efforts in Blazor including Blazor state persistence support, reconciling NavigationManager behaviour across render modes Blazor supports and 
+                        creating a consistent way when doing page navigations and handling Not Found responses. Improving interaction between enhanced navigation and scroll position and experience with QuickGrid 
+                        and Entity Framework Core. JavaScript interop adds support for invoking constructors, properties and supplying callbacks and smoothing out support for invoking .NET code from JavaScript 
+                        via WebAssembly along with improved automated browser testing with WebApplicationFactory and Kestrel. Blazor state persistence simplifies persisting the prerendered state with a new 
+                        declarative model for persistent state when prerendering, improve resiliency by persisting circuit state with option to persist circuit state on server when client is disconnected such 
+                        as when user has switched browser tabs or network lost for a prolonged period and improve scalability by persisting idle circuits with APIs for proactively persisting or evicting circuits, 
+                        but this is not automatic so need to implement an app specific policy.
+                    </p>
+                    <h3>Build the next gen of AI apps with .NET: Models, Data, Agents, & More - Jon Galloway, Brady Gaster & Jeremy Likness</h3>
+                    <h4>Introduction</h4>
+                    <p>
+                        Things are moving at a rapid pace, ChatGPT was announced in 2022, and many people are using it today and it only took five days to get to 100,000,000 users and it is about every seven 
+                        months to double the length of tasks that can be completed with 50% accuracy so is an exponential pace for this. You can do so many things with generative AI as had to have very specialised 
+                        libraries to do classification, summarisation and sentiment analysis which can be done with generative AI and in .NET. Generative AI applications are being built in .NET and in production 
+                        including all the Copilot experiences from Microsoft including Microsoft Copilot, GitHub Copilot and Xbox Copilot for gaming along with third parties to create better experiences for 
+                        customers. NET ecosystem includes companies providing SDKs for the .NET platform. 
+                    </p>
+                    <h4>.NET "all-in" for AI</h4>
+                    <p>
+                        .NET provides foundational building blocks for AI with Microsoft.Extensions.AI which has gone general availability along with VectorData extensions for data, semantic search and embeddings. 
+                        There are also other building blocks for you to interface with AI including .NET and C# based MCP server for intelligent tools and discovery, AI templates with out-of-the-box guidance with 
+                        code ready to go that goes beyond hello world but has complex scenarios built in such as setting up embeddings, there is also semantic kernel which .NET is a first class part of this for 
+                        multi-agentic workflows and orchestration along with model evaluations and scoring across multiple dimensions such as the safety of output and how grounded it is.
+                    </p>
+                    <h4>.NET AI Libraries</h4>
+                    <p>
+                        .NET AI Libraries with Microsoft.Extensions.AI and Microsoft.Extensions.AI streamlines AI integration with unified APIs with common AI abstractions, standard middleware, vector store 
+                        operations and abstractions along with interoperability and extensibility. AI Extensions in Action, Microsoft.Extensions.AI provides the IChatClient which has been enabled in the Telerik 
+                        AI Prompt Component out of the prompt so can use this in your Blazor project by registering the IChatClient and then add the Telerik AI Prompt Component which will use the underlying 
+                        IChatClient it can also be setup with some predetermined prompt suggestions so with just a few lines of code you can have AI generation in your Blazor applications. AI and vector data 
+                        extensions are basic building blocks and primitives that can be integrated into cloud, web, desktop and mobile applications that you can build with AI Model Provider SDKs, UI Components, 
+                        AI Libraries, Vector Store Provider SDKs in Apps or Agent Frameworks from Core AI and Vector extensions.
+                    </p>
+                    <h4>Agents</h4>
+                    <p>
+                        Agents are Large Language Models enhanced by different features and services such as tools including functions, models and Model Context Protocol with Memory if there is a long conversation 
+                        including state management and embeddings along with Data using Retrieval Augmented Generation and structured replies. Agents can be orchestrated to determine what agents are available with 
+                        routing, scaling and discovery along with being part of workflows for autonomous agents, agentic workflows and agentic DevOps.
+                    </p>
+                    <p>
+                        Agents are AI designed to perform a task and task can vary in level of complexity and capabilities depending on your need from simple generation of summaries, images, audio and more with 
+                        an AI model and input to more complex retrieval of information from grounding along with reasoning, summarising and answering user questions to more advanced capabilities to take actions 
+                        to automate workflows and replace repetitive tasks for users. Agents are ways of breaking down AI so that each agent performs a specific task and AI extensions for .NET are agent ready 
+                        which can use what is build into .NET with the right tool for the right job.
+                    </p>
+                    <p>
+                        .NET Agentic applications can have their front end on cloud, web, desktop and mobile with a build layer with Agent SDKs including Semantic Kernel, Azure AI Agent Services, AutoGen and 
+                        Microsoft 365 Agents SDKs built on a core later with Agent Runtime supporting durable workflows, state management, orchestration and observability. .NET agentic applications can use 
+                        data with data stores, memory and perform ingestion and retrieval and supports protocols such as MCP and A2A along with supporting monitoring, evaluations and deployment with .NET Aspire 
+                        and Azure AI Foundry.
+                    </p>
+                    <h3>AI infused mobile & desktop app development with .NET MAUI - Beth Massi, David Ortinau, Gerald Versluis & Uma Maheswari Chandrabose</h3>
+                    <h4>Introduction</h4>
+                    <p>
+                        David spoke about building intelligent applications, intelligently including agentic apps to infuse AI into your .NET applications for cloud, web, desktop, mobile, games and IoT along 
+                        with tools for agentic DevOps with AI-powered agents operating as a member of your development team in Visual Studio, Visual Studio Code, GitHub and Azure combined with Aspire to build, 
+                        test and deploy seamlessly from code to cloud. Intelligent applications is bringing AI into your application which is non-deterministic and depends on a bunch of other factors. 
+                    </p>
+                    <p>
+                        Jakob Nielsen who talks about how to build great user experiences since the dawn of the web stated that "AI is introducing the third user-interface paradigm in computing history, shifting 
+                        to a new interaction mechanism where users tell the computer what they want, not how to do it - thus reversing the locus on control".  What could AI potentially do for you to help your 
+                        users be more effective in the moment is a lot of the thinking Microsoft are doing to help users focus on what they want to do, not how to do it.
+                    </p>
+                    <p>
+                        AI is changing applications and how we make them with changes in user experience including personalisation context-awareness such as knowing location and calendar and multi-modal interaction. 
+                        AI can know a whole lot more about the user if they opt into this and can users use the app in different ways such as voice control and the same app can adapt in real time. There was the 
+                        Windows Phone feature where you could put in a to do for a location and when you got near that location you would get notification about doing that task at that location.
+                    </p>
+                    <h4>Design Principles for AI Applications</h4>
+                    <p>
+                        6 Design Principles for Generative AI Applications by Justin D. Weisz et al is to Design Responsibly to solve real user problems not just flash in the pan stuff, minimise user harms so if 
+                        you let people using a chat window in an unhealthy way you enable an unhealthy outcome, use human-centred design and don't let people harm themselves, expose or limit emergent behaviours 
+                        along with testing and monitoring for user harms. Design for Mental Models to orient the user to generative variability, teach effective use, understand the user's mental model and teach 
+                        AI about the user. 
+                    </p>
+                    <p>
+                        Design for Appropriate Trust and Reliance where you should help a user known when they should or should not reply on AI output, be clear about how well an AI performs for a given task, provide 
+                        rationales for outputs, use friction to prevent overreliance and encourage critical thinking along with signifying the role of the AI. Design for Generative Variability to leverage multiple 
+                        outputs, visualise the user journey, enable curation and annotation along with drawing attention to differences or variations across outputs.
+                    </p>
+                    <p>
+                        Design for Co-Creation to work with AI collaboratively and help the user craft effective outcome specifications, provider generic input parameters, provider controls relevant to the use case 
+                        and technology along with supporting the co-editing of generated outputs. Design for Imperfection by making uncertainty visible, evaluate outputs for quality and offer ways to improve outputs 
+                        along with providing feedback mechanisms.
+                    </p>
+                    <p>
+                        Microsoft's AI principles are fairness, reliability and safety, privacy and security, inclusiveness, transparency and accountability. Mitigation layers for user experience include designing 
+                        for responsible human-AI interaction, for system message and grounding to ground your model and steer its behaviour, for safety system to monitor and protect model inputs and outputs and 
+                        for the model to choose the right model for your use case. 
+                    </p>
+                    <p>
+                        Mitigation layers are assisted by the HAX toolkit is a set of tools to help create responsible and effective human-AI interactions, recommended system message framework that provides 
+                        instructions, clear directives and more on the tone and style of responses along with Azure AI content safety which detects and moderates harmful user-generated and AI-generated context 
+                        and Azure AI Foundry provides a broad selection of models and helpful tools to help guide your choices.
+                    </p>
+                    <h4>.NET MAUI</h4>
+                    <p>
+                        .NET MAUI, which is AI infusion ready, is for building native multi-platform applications all in one framework. .NET MAUI is the modern native client stack for .NET featuring a single 
+                        project and codebase with native controls and styling supporting over sixty common device APIs and access platform specific APIs if needed. .NET MAUI enables app store distribution and 
+                        reach, with productivity for Visual Studio and Visual Studio Code and the platform is open source on GitHub with a healthy ecosystem of controls and components.
+                    </p>
+                    <p>
+                        .NET MAUI is increasing year on year for support from developers including over a thousand issues resolved and PRs merged on GitHub. .NET MAUI offers one solution for everything you need 
+                        with context-awareness, adaptive UI, AI, multi-modal and model support along with UI controls for flexible UI that AI can manipulate. ONNX is the ability to run small purpose-built models 
+                        on device rather than cloud. It doesn't take much code to integrate AI into .NET MAUI using Microsoft.Extensions.AI and a few more lines of code to integrate MCP and Tool Calling and you 
+                        can bring it all together to analyse and prioritise tasks. Plugin.Maui.Audio enables audio recording cross-platform and MediaPicker is baked into .NET MAUI to capture photos or input images.
+                    </p>
+                    <h4>Syncfusion & Microsoft</h4>
+                    <p>
+                        Syncfusion and Microsoft empower developers together. Uma Maheswari Chandrabose has worked on UI development for various components and are overseeing the Essential Studio product. 
+                        Syncfusion is a comprehensive suite of over 1,900 UI controls across different frameworks to quickly build mobile, web and desktop applications including Blazor, .NET MAUI and others.
+                    </p>
+                    <p>
+                        Syncfusion is collaborating for the developer community and are growing alongside the .NET ecosystem to advance the .NET MAUI framework and are contributing to the community in two ways 
+                        including the Syncfusion Toolkit for .NET MAUI with twenty-nine UI controls and are contributing to the .NET MAUI framework repository to fix framework related bugs and reviewing community 
+                        PRs at first level before being referred to Microsoft. 
+                    </p>
+                    <p>
+                        Syncfusion have performed over 320 merge requests and over 100 PRs under review and handle 65% of community PRs. The impact of the collaboration with Microsoft has resulted in speeding up 
+                        development which has been high quality and compatible, got to know more about community requirements, test their controls in beta version of .NET MAUI before official release and the 
+                        collaboration has resulted in a huge spike in the .NET MAUI Toolkit.
+                    </p>
+                    <p>
+                        New updates to Syncfusion Toolkit for .NET MAUI include six new controls such as Picker, Date Picker, Time Picker and Date time Picker along with linear and circular progress bars and are 
+                        optimised for Ahead of Time compilation and trimming to stay fast and be more lightweight. Syncfusion's mission is to simplify development and deliver innovation with ease including 
+                        AI-powered AI components.
+                    </p>
+                    <h4>.NET MAUI Hybrid Applications</h4>
+                    <p>
+                        Beth talked about .NET MAUI hybrid applications which are a blend of native and web technology where the UI is written in web technologies and wrapped in a native application container. 
+                        Hybrid apps have access to native platform features and device hardware to leverage features that a web application cannot access easily or at all. Hybrid apps can be mobile or desktop 
+                        applications without the need for separate development and can be distributed by downloading and installing them through apps stores along with being able to support code reuse across 
+                        device platforms and web browsers to achieve greater developer productivity.
+                    </p>
+                    <p>
+                        For Web UI and Native UI look and feel for web UI typically looks the same across devices, that is controlled by CSS, while native UI is device-specific by default. Native UI can provide 
+                        a more seamless user experience tailored to specific devices and Web UI can easily be reused in web application. Skills needed for web would be knowledge of HTML, JavaScript and CSS whereas 
+                        native UI, on the Microsoft stack, requires knowledge of XAML.
+                    </p>
+                    <p>
+                        .NET MAUI Hybrid apps with Blazor are enabled with the Blazor Web View including a solution template for Blazor Hybrid + Web where there is a tight inner loop for development with Copilot 
+                        and Hot Reload and built-in input controls including forms with validation and you can reuse UI across native and web with Blazor. .NET MAUI Hybrid apps with Hybrid Web View allows other 
+                        JavaScript front ends allows developers to reuse Angular, React and other JavaScript frameworks in .NET MAUI native desktop and mobile apps providing C# to JavaScript interop along with 
+                        coming in .NET 10 new hooks for intercepting web requests.
+                    </p>
+                    <h4>Agentic DevOps</h4>
+                    <p>
+                        Gerald talked about Agentic Dev Ops. Evolving DevOps which started with the union of people, process and technology to enable continuous deliver of value to end users to DevSecOps which was 
+                        union of people, process and technology with security as a shared responsibility to enable continuous deliver of value to end users.  Evolution has continued to Agentic DevOps which are 
+                        AI powered agents operating as a member of your dev team to automate, optimise and accelerate every stage of the software development lifecycle.
+                    </p>
+                    <p>
+                        GitHub Copilot is built for the developer experience to automate the mundane and focus on what matters such as creating tests and writing documentation. The next evolution of GitHub 
+                        Copilot is new agents to help solve real-world problems throughout the software lifecycle including ideation, planning, model evaluation as well as AI assisted coding along with testing, 
+                        code review, security, deployment and modernisation.
+                    </p>
+                    <p>
+                        GitHub Copilot Agent Mode supercharges the AI-assisted coding experience directly in Visual Studio to expand your AI capabilities beyond auto complete by assigning multi-step coding tasks, 
+                        leverage an AI-powered peer programming that can build new features or refactor legacy code plus heal itself when things break. GitHub Copilot Agent mode can analyse a codebase, edit files, 
+                        run tests, fix errors or make suggestions all from a single prompt and use agent mode in the IDE of your choice with support for Visual Studio, Visual Studio Code and many more.
+                    </p>
+                    <p>
+                        GitHub Copilot Vision allows you to illustrate your context with images instead of text in Visual Studio where it interprets UI designs and specifications along with redlines and annotations 
+                        plus project architecture diagrams, data schemas and even napkin sketches. Together with hot reload and live preview you can watch your UI designs come to live and Copilot Vision provides 
+                        the latest multi-modal Large Language Model Improvements in Visual Studio.
+                    </p>
+                    <p>
+                        GitHub Copilot Coding agent provides agentic capability in GitHub to enhance team productivity like an AI teammate where you can assign issues to GitHub Copilot and get back pull requests, 
+                        automatically validated with tests and linters. You can stay in control by working with Copilot just like any other developer and iterate through pull request reviews along with being able 
+                        to tailor GitHub Copilot to you needs by customising the development environment, adding custom instructions and providing external context through Model Context Protocol servers.
+                    </p>
+                    <p>
+                        .NET Aspire is code-first control that is modular and extensible with observability from the start along with flexible deployments with many use cases that could work with .NET MAUI. 
+                        Aspire with Copilot is an AI assisted experience directly in the Aspire developer dashboard where you can have Copilot identify resource issues, find bottlenecks, and help with spotting 
+                        problems at development time. You can also ask Copilot about specific traces and find root causes of errors and it works seamlessly with the rest of your Copilot agents in Visual Studio.
+                    </p>
+                    <h3>Crafting great Windows native app experiences - Niels Laute & Sergio Pedri</h3>
+                    <h4>Introduction</h4>
+                    <p>
+                        Niels works on Power Toys and AI Dev Kit and Sergio is an engineer on the Microsoft Store Client team, and both talked about building great experiences for Windows. Windows App SDK and 
+                        WinUI supports new MVVM Toolkit generators to remove boilerplate code to help implement observable properties and commands for MVVM scenarios with minimal code. 
+                    </p>
+                    <p>
+                        New DependencyProperty generators in Toolkit Labs that simplify registration of DependencyProperty field s in your XAML projects available for Universal Windows Platform and WinUI. 
+                        Native AOT allows you to public your app using the Native AoT runtime for .NET for faster startup performance, lower memory usage, smaller binary size and for self-contained deployment.
+                    </p>
+                    <h4>Windows App SDK</h4>
+                    <p>
+                        Windows App SDK is introducing meta packaging to allow including a subset of packages to minimise app size for self-contained applications such as for AI, Base, Direct Write, Foundation, 
+                        Interactive Experiences, Packages, Widgets and WinUI making it easier to use them in Windows Presentation Foundation. Windows App SDK will have a new experimental release cadence from 
+                        quarterly to monthly releases based on feedback from developers wanting to have early bits to make it easier to get feedback.
+                    </p>
+                    <h4>Design</h4>
+                    <p>
+                        Developers aren't designers so might not know how to create a beautiful user interface but can elevate your application with core design principles with spacing and layout to have 
+                        consistent spacing which creates visual order, typography where clear text builds hierarchy, colour and material can help users by highlighting what matters and can introduce motion 
+                        to help users understand what is happening. 
+                    </p>
+                    <p>
+                        Fluent Design uses a consistent spacing of units of four so if you use that this will help layout things more consistently such as sixteen pixels for inner borders of dialogs or 8 pixels 
+                        for spacing between buttons. Fluent Design typography has a really nice type ramp which if you stick to will be consistent with the rest of Windows itself. Fluent Design has a great set 
+                        of colours and combinations with the brushes as part of WinUI that look right and be readable for accessibility. 
+                    </p>
+                    <p>
+                        Many of the core components in WinUI support Children Transitions when they are repositioned to look better and these add up to improve the overall application experience. There are also 
+                        animations that occur on the compositor thread such as implicit show animations and hide which can be done easily and recommended durations and timings are consistent across Windows, so 
+                        they don't come across too slow or fast. 
+                    </p>
+                    <h4>Microsoft Store</h4>
+                    <p>
+                        When listing applications on the Microsoft Store there is a Figma design template to see how your application icon will look in the Store, there will also be the ability to see how it 
+                        looks across Windows itself in the future such as how icons will look in the Windows Taskbar. The same Figma template will also help with application screenshots that contain text and 
+                        highlight certain parts of your screenshots and then be able to explore these and use them when publishing your application on the Microsoft Store.
+                    </p>
+                    <h4>Conclusion</h4>
+                    <p>
+                        Fluent Design in both WinUI and Windows Presentation Foundation help make your application look great and applying core design principles can get you a long way. Design helpers in 
+                        WinUI Gallery and Windows Community Toolkit can be leveraged along with easy-to-user helpers to add polish to your application. App icon and screenshot templates for Figma allow you 
+                        to create beautiful asses for application to help make it stand out.
+                    </p>
+                    <p>
+                        Microsoft Store reaches over 1.2 billion users with an open platform and flexible commerce including Win32, Universal Windows Platform and web applications and they can be packaged 
+                        with any technology. There is a new zero-cost onboarding fee for individual developers so submitting your application to the Microsoft Store is now completely free for individual 
+                        developers. If you are publishing Windows applications with MSIX then distributing on the Microsoft Store is recommended and Microsoft are making it easier for people to discover 
+                        applications. 
                     </p>
                 </article>
             </div>
