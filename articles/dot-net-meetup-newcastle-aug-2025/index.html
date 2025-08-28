@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - Qudos .NET Meetup Newcastle - August 2025</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../dot-net-meetup-newcastle-aug-2025">Qudos .NET Meetup Newcastle - August 2025</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">Qudos .NET Meetup Newcastle - August 2025</h2>
+                        <p class="blog-post-meta">28th August 2025</p>                
+                        <img src="../assets/qudos.png" class="img-fluid" alt="Qudos .NET Meetup Newcastle - August 2025"/>  
+                        <h3>Using Postgres SQL with .NET - Peter Shaw</h3>
+                        <p>
+                            Peter has been speaking at events for years including the upcoming Tech Connect conference in September and spoke
+                            about using PostgreSQL in .NET or how to fall in love with the database again with examples available at 
+                            <a href="https://github.com/shawty" target="_blank">github.com/shawty</a>.
+                        </p>
+                        <h4>Why Postgres?</h4>
+                        <p>
+                            Postgres has a very long history - Some of the historical highlights are that Postgres is the grandfather of MS SQL as it started 
+                            its life in the 60s and 70s at UC Berkley which was what became Microsoft SQL and that project evolved to become Postgres. Postgres 
+                            hasn't just marketed itself as a database as it can do a huge amount more, it is a data application platform, it is more than 
+                            collection of tables and stored procedures but is a platform you can add an insane amount of plugins, if there is something you 
+                            want your database to do there is probably a plugin to do that such as vector support for AI and now vector extensions and parallel 
+                            execution has been built into the core product itself that runs on GPUs, and CPUs and more with first class datatypes for these in 
+                            Postgres. Stored procedures can be written in JavaScript, C# or any other language you want to write them in with extensions to 
+                            support many languages or formats but can even bring other components into the database if needed. As a flexible system and platform 
+                            there is no shortage of things you can do, another thing foreign data wrappers such as loading a CSV file and present this via 
+                            Postgres as it is a table, loaded it straight from the file system which you can issue SQL commands against.
+                        </p>
+                        <h4>NpgSql</h4>
+                        <p>
+                            The elephant's doorway to the .NET world - NpgSql is the official Postgres provider for data access inside a .NET application and is 
+                            Microsoft official and is maintained by people from Microsoft including those in their database team and it is all open source and written in C# as 
+                            a fully-fledged .NET assembly and will work with anything that can consume a .NET assembly and from .NET 8 onwards it uses other things 
+                            that have front ends for such as NodaTime which is where you deal with things such as dates and times along with time zones. There are two 
+                            parts with one supporting ADO.NET and another on for Entity Framework, you can use the native datatypes in .NET that are transitioned into 
+                            their Postgres equivalent. There are four people who make what NpgSql what it is who know Entity Framework well and the extension makes the 
+                            whole thing seamless.
+                        </p>
+                        <h4>Dapper</h4>
+                        <p>
+                            Make the elephant look smarter - Dapper + ADO.NET + NgpSql is the fastest and simplest way to access it, allow you to take a class or record 
+                            and put this into a database with Dapper which also allows control over the database without needing to us anything complicated like AutoMapper. 
+                            It allows raw SQL access and data model mapping.
+                        </p>
+                        <h4>Standard datatypes </h4>
+                        <p>
+                            Ints, strings and Booleans they're all the same - Standard data types are exactly what you would expect such as int, varchar, nvarchar, float,
+                             decimal and even money but the only one you should be using is numeric. A lot of types exist as aliases in modern Postgres but may have been its 
+                             own type in an older version. Postgres has better types of its own and those types frequently perform better than more compatible types which are 
+                             there just t#oadhere to ANSI AQL 97/99 standards. The main thing is to use the underlying type rather than the alias. For char, varchar etc just 
+                             use TEXT for dates use TIMESTAMPTZ even if you don't have to use a time zone as it uses the same amount of space in the database or any more or 
+                             less time. For primary keys use BIGSERIAL which is an alias for LONG or can use UUID but be careful with BOOL and BIT, so may be used to using 
+                             BIT in MS SQL which is 0 or 1 but in Postgres it is the character 0 or 1 or the word true or false or any non-standard type so if want an integer 
+                             bool it needs to be the BOOL. BIGSERIAL is a big version of the SERIAL and in newer Postgres now has identity. Where possible use NUMERIC for 
+                             number types of even integers as the performance is better where can make 128-byte huge values if needed and don't use MONEY or FLOAT as these 
+                             types are old and very flaky and often cause rounding errors and other hard to spot problems so if doing any calculations these types could bite 
+                             you and NUMERIC 10,0 is the equivalent to INT.
+                        </p>
+                        <h4>Advanced Data Types</h4>
+                        <p>
+                            This includes ARRAY which can put proper arrays into the database from C# and can filter on certain values in the array or join arrays together 
+                            into another ARRAY column plus can be updated so that just the value changed is updated which ideal for tags and HStore is similar to ARRAY and was 
+                            first custom data type and isn't used any more in modern Postgres, if there are still big groups using specific features they will leave them in or 
+                            alias them properly. Json is JavaScript Object Notation and Jsonb is a binary format where is boiled down and advantage is are not using standard 
+                            text practices to manipulate it, you don't have to start at the beginning as the format will have a binary marker for these and the values will be 
+                            returned as the type it has been set to so if you can use Jsonb as it has many more things it can do in the database with more APIs that can 
+                            manipulate and can do it faster. Box, line and point are for 2D drawing where people had written CAD packages using Postgres and query how these 
+                            elements relate to each other such as sorting view planes. Inet/Cidr where you have an IP address with the full notation and that type allows you 
+                            to take a fully expressive internet notation and query which IP addresses relate to a netmask, it will do the heavy lifting for you. Ranges are a 
+                            fantastic datatype, think about a hotel booking system where you can only have one person in a room at a time so how easy would it be to write code 
+                            to pick a room twice if not looking how you validate dates the range type something can be stored with such as date and time range a room is not 
+                            available it won't allow you to write the same range in the database and these ranges can have square brackets for inclusive values and rounded 
+                            brackets to be exclusive of that value at either end. You can work with Macaddr to get used ranges, manufacturer ranges and other information 
+                            you can query by. Polygon is much like box, line or point it could be a two-million-sided triangle or a three-sided polygon and can do all sorts 
+                            of geometric functions or do radians to other conversions. Geography was the original type in Postgres and things from Postgis were added such 
+                            as GeoPoint, GeoLine and GeoPoly and coordinate systems are fully respected.
+                        </p>
+                        <h4>Pub / Sub messaging</h4>
+                        <p>
+                            Keep the elephant informed and it will keep your app informed. If you use Redis you don't need to but can use Postgres instead and with just a few 
+                            lines of code, you can listen to notifications to full examples that could be used in enterprise applications. You can use a NOTIFY command to publish 
+                            a message for a subscriber to receive. You can use pgAdmin which is the easiest and most helpful way of interacting with a Postgres database. 
+                        </p>
+                        <h3>Business As First Class - Samson Nwizugbe</h3>
+                        <p>
+                            Samson is a software engineer, and their passion is not just for software but creativity where software is part of that creativity and works for a company that designs solutions
+                            along with being co-organiser of <a href="https://dotnetliverpool.org.uk/" target="_blank">.NET Liverpool</a>.
+                        </p>
+                        <h4>Business Experts</h4>
+                        <p>
+                            Business as first class is building products that reflect the business including clean architecture and good design by prioritising domain knowledge over 
+                            technical implementation details to do something for them and serves purpose it is for. Software engineers should always think of why, why do something or 
+                            why not to do something and it is important to know this first before any endeavour which is the problem including the communication gap and obscurity of 
+                            business purpose by technical details and then have clarity by isolation along with what is important, the programming language or the business language in 
+                            software.
+                        </p>
+                        <p>
+                            Brainstorming and how people communicate where from a business perspective or a developer perspective, but product owners need to know what it would do and 
+                            what will users gain to use a product they don't care why it does it so fast but if it does what they want it to do. Typical business function implementation 
+                            is a business function which does something, so the problem is the business gets buried in the implementation, with mixed input and business rule validation, 
+                            product has processes you don't know what they do or if go back to something to know what something actually means to the business. The product describes a 
+                            technical interaction and a not a business process is an issue. The product often speaks the technology and not the business and what this means to business 
+                            owners and when they need to have business rules there is a communication gap between what they see and what they want. Business requirements are dynamic, 
+                            and the product needs to say what it does and to know that it does something. Tight coupling can create brittle systems where changes in processes can cause 
+                            issues, something can be dependent on a whole bunch of moving parts and something can do a whole lot of things compared what is meant to do, we can have lots 
+                            of rules all in one system.
+                        </p>
+                        <h4>Separation of Concerns</h4>
+                        <p>
+                            Solutions can be clarity with separation of concerns with clean architecture, which can be seen as overkill, and it can be when all you see all problems as a 
+                            nail as you have a shiny (clean architecture) hammer. It is not some new concept or buzzword, but it is something we have been doing in software for years, 
+                            where design according to contracts. Have isolated quanta such as domain with business concerns, application with orchestration, presentation with user IO 
+                            and infrastructure with implementation details and does this matter, it needs to be something that takes some input and produces output and we don't need to 
+                            care what happens in between, we have contracts that can be implemented where can have a set of business rules that can execute a business function and be 
+                            agnostic to technology and implementation and making the focus on the product and what it does. Pieces of software that move together, modified together are 
+                            a quanta, which is a piece of software that we change together and what pieces have things that change together which could be for a technical reason. 
+                        </p>        
+                        <h4>Business Quanta</h4>   
+                        <p>
+                            Business quanta answers the question of what do you do, this contains the rules, processes and truths that make the business what it is, what do you serve and 
+                            what do you do is the question it answers -  it is the core of the business, it is what the business gets paid for and is the business concerns and a business 
+                            process must do what it says what it does. Creating or designing a domain of an application which is meant to be the business piece of the application, what 
+                            does the application do, what do you want users to do such as manage lifecycle of something or update something, so need to distil the problem domain where 
+                            each part does different things to achieve the big picture into separate moving parts and need to determine which key functions need to be implemented and how 
+                            to you then perform actions such as make payments, validate payments, get financial auditing which are all different domains, with different rules and roles. 
+                            Need to be able to identify these subdomains within the business which is an advantage of domain driven design with a process called context mapping where you 
+                            workshop and reason about different subdomains and units within the business and how they handle these functions. Being able to reason about identifying these 
+                            subdomains is a process between the business and developers to identify each and every unit which is an iterative process, and you can't identify all in one 
+                            go but this is information as the business progresses and matures.
+                        </p>
+                        <h4>Ubiquitous Language</h4>
+                        <p>
+                            Ubiquitous language with the power of names where words can have power and words can light fires in the minds of people, developers know the importance of 
+                            language in software and this another important tool which is the difference between asking joining a ride in a system and the geographical information about 
+                            a user's location, what does the language mean in the context in the business and does the software speak the language and does something have the same context 
+                            and mean the same thing across the entire business. Business language in code includes a bad with technical focus such as journey database, stripe client and 
+                            Google Maps places client instead of business focus with journey plan, payment reservation and live ride tracking. When business language becomes predominate 
+                            in the system there is a synergy between business language and what is reflected in the code.
+                        </p>
+                        <h4>Bounded Contexts</h4>
+                        <p>
+                            Bounded contexts where can protect the integrity of each problem space by binding it into a specific context. Business are not isolated units as each part plays 
+                            a part or facilities in a business function and interact with each other and have isolated rules that must be obeyed and followed in those contexts so need to 
+                            ensure that these work together without leaking information between contexts, within a context will have specific rules and language and be able to design products 
+                            that function as isolated units without knowledge of outside units but also communicates with other business subdomains to perform a business function. Ambiguity 
+                            between contexts could have domains concerned with booking, pricing and location tracking and within these context the business defines rules and processes that 
+                            facilitate these actions and within each of these than can be the concept of the journey a user takes such as for booking is the waypoints and stops but for pricing 
+                            it would be the total distance covered for pricing and for location need geolocation in real time but are using the same language of journey which have meanings 
+                            specific to that context and for those people working on that context so for someone on location tracking journey means geolocation and pricing means the distance 
+                            travelled. 
+                        </p>
+                        <p>
+                            Benefits of bounded contexts is clarity of business concepts across multiple boundaries and business units don't operate in isolation so need to have communication 
+                            across bounded contexts which can work together for a certain business purpose so how do these communicate which is with events. Domain events are when there is a 
+                            change within a context they can announce something has changed in the system so that other components of the business or users can be notified to perform an action 
+                            which allows them to work together. Components can announce something has changed or if something requires knowledge to attend to this it can listen for this change 
+                            and react to it, which removes coupling or dependency and there is less direct connection between other systems, they don't need to know about these they just need to 
+                            know what has happened that they are interested in they listen for this change. You can have a ride requested event and then a driver matching context and ride context 
+                            can react to this message each of which doesn't need to know the internal workings of the other. This needs to be agnostic within the business, the mode of events 
+                            doesn't matter to the business but all it does is with a certain context, unit of change that it announces or publishes changes that have been made. You can have 
+                            the concept of publishing where you perform and action and persist this change and then you can publish this change but you can have a broken state where the system 
+                            could fail and the message is lost and the rest of the system doesn't react but you can have resiliency patterns or event sourcing but how you persist or transport 
+                            these doesn't matter to the business but that it just works. 
+                        </p>
+                        <h4>Anti-Corruption Layer</h4>
+                        <p>
+                            You can have an anti-corruption layer as when you have information communicated across subdomains there is a risk of leaking concerns between domains. There may be 
+                            information within an event that other contexts don't need to know about which is included and consumers may be responsible for mapping messages from one to their own 
+                            so can have something that translates an event into something that a context should know and what language it should know but this can be a toolkit in your toolset that 
+                            can solve a problem like this for you. Tactical (Technical) Patterns for modelling the business contexts in code include Entities for the business concept of which its 
+                            identity and lifecycle is important, Value Objects which gain meaning by a shared concept of what they represent within a model which can not only be records but perform 
+                            actions on the result of their properties and need to be immutable where the identity and the state are ephemeral along with Aggregates which are the consistent boundary 
+                            of business components within a subdomain. 
+                        </p>
+                        <h4>Repositories</h4>
+                        <p>
+                            Repositories where while may focus on business logic information that needs to be persisted and hydrated from a data store. The business doesn't need to know what product 
+                            is used to store information. A repository declares to the rest of the domain that you can persist something and get it back exactly as stored later. You can compose a 
+                            business process via the application quanta such as location, pricing, payments where need to mandate these to work together where interaction is between different domains 
+                            with different information so will have an application quanta and UI about the communication between different services and domains all to contract and orchestrate a business 
+                            process with defined contracts with business processes which can be resolved through a single unit and can have single pipeline for things like exception handling as need to 
+                            remember everything happens within a layer of abstraction. 
+                        </p>
+                        <h4>Challenges & Layers</h4>
+                        <p>
+                            Challenges with domain reporting include reporting efficiency where loading entire aggregates for reporting is resource intensive and unnecessary, the shape of information 
+                            reported to uses is more often than not very different from business models and also need to make sure don't do accidental mutation. You can use Command Query Responsibility 
+                            Segregation (CQRS) which separates business actions (commands) from domain reporting (queries) both logically and in code, so think about segregating your application into 
+                            making actions and reporting them. Infrastructure Quanta is it doesn't really matter what tools we use but it does matter how well it does it but to the business it doesn't 
+                            matter so just need to design carefully to contract and which tool is the best one to use with regards to repositories, external services, unit of work and query services. 
+                            Presentation is the user IO which is getting information from the user and then collecting a response to send back to the user.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
