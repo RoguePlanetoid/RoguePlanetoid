@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - Windows App SDK 1.8 Released</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../windows-app-sdk-1.8-released">Windows App SDK 1.8 Released</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">Windows App SDK 1.8 Released</h2>
+                        <p class="blog-post-meta">10th September 2025</p>                
+                        <img src="../assets/winappsdk.png" class="img-fluid" alt="Windows App SDK 1.8 Released"/>  
+                        <p>
+                            Windows App SDK 1.8 has been released by Microsoft, which are the set of APIs and tools to help create native Windows desktop applications using either C++ 
+                            and Win32 or C# and .NET that can also leverage the modern controls with Fluent design using WinUI. Windows App SDK 1.8 provides fixes including issues with 
+                            NavigationView when setting SelectedItem to null didn't clear the selection state in collapsed mode, TabView where closing a tab would move the keyboard focus 
+                            to Add tab buttons instead of the newly created tab along with other issues including fixing an issue where hover effects of other windows for the app could 
+                            flicker when at least one Windows has ExtendsContentIntoTitleBar was set to true and a UI consistency where SplitButton appeared shorter than standard Button 
+                            controls. You can find the latest version of Windows App SDK on <a href="https://www.nuget.org/packages/Microsoft.WindowsAppSDK" target="_blank">NuGet</a>.
+                        </p>
+                        <p>
+                            Windows App SDK 1.8 beings new Windows AI APIs that can be used with a local language model for Copilot + PCs where applications can respond to prompts, recognise 
+                            text in images, describe the contents of an image, remove an object from an image and more. Applications can determine if an input exceeds the allowable size for a 
+                            Text Summariser call with Prompt Size Limit reporting which enables developers to adjust input accordingly based on token count rather than byte or character length 
+                            and since this can vary over time applications should treat this as a dynamic limit. Text Rewriter tone allows rewriting of text with specific tones from casual for 
+                            more informal and conversational content using natural and spontaneous phrasing that preserves meaning and format, formal potion transforms text into a polished 
+                            professional version that maintains the original structure and details with precise language suitable for a formal context or the general option which retains the 
+                            original tone and intent ensuring the meaning remains unchanged. 
+                        </p>
+                        <p>
+                            Windows App SDK 1.8 has been converted to a NuGet metapackage where each component of Windows App SDK is not a component NuGet package which is listed as a dependency 
+                            by the metapackage which enables developers to choose the metapackage or select specific packages for their applications to only include the APIs and functionality 
+                            needed by their application. Windows App SDK 1.8 also offers a modernised file and folder picker experience with the Microsoft.Windows.Storage.Pickers which improves 
+                            over Universal Windows Platform file and folder pickers which didn't support elevated process support with simplified usage where a WindowId can be provided in the 
+                            constructor compared to the existing UWP-based picker which required initialising a window handle for window association. 
+                        </p>
+                        <p>
+                            Source: <a href="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/stable-channel/" target="_blank">Latest stable channel release notes for the Windows App SDK</a>
+                        </p>
+
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
