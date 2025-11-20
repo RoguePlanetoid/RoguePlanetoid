@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - Pizza & Pull Requests - November 2025</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header-articles.png" alt="RoguePlanetoid" height="25px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../pizza-and-pull-requests-nov-2025/">Pizza & Pull Requests - November 2025</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.png" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">Pizza & Pull Requests - November 2025</h2>
+                        <p class="blog-post-meta">20th November 2025</p>                
+                        <img src="../assets/pizza-and-pull-requests.png" class="img-fluid" alt="Pizza & Pull Requests - November 2025"/>  
+                        <h3>Kongfidence in Your APIs - Richard Lee-Turner</h3>
+                        <p>
+                            Richard who is a Senior Platform Engineer at Capgemini talked about What is Kong, why would you use it, community and enterprise features 
+                            and alternatives along with deployment topologies. 
+                        </p>
+                        <p>
+                            What is Kong? It is a reverse proxy and API gateway and simplifies point of entry and is built on NGINX and Lua and designed to scale across 
+                            environments. There are community and enterprise options and is an open-source API gateway where enterprise brings a GUI and developer portal. 
+                            It has routing and load balancing features, authentication and authorisation, rate limiting and integrations with third parties and is flexible 
+                            where you deploy it. You can deploy it across a range of environments.
+                        </p>
+                        <p>
+                            Why would you use Kong? It is platform agnostic and no lock into a specific cloud provider and teams can define their config and security 
+                            authentication and can be deployed with or without databases and in hybrid and cloud hosted models and has over seventy open-source community 
+                            plugins with support for OIDC, MTLS and Vault support. Supports observability with insights against targeted flows and is lightweight.
+                        </p>
+                        <p>
+                            Enterprise supports proxy caching and advanced rate limiting and for deployment there is a self and SaaS solution with more GUIs and workspaces 
+                            for separating flows into multiple areas with access to enterprise plugins and enterprise level support. Alternatives are AWS API Gateway which 
+                            has deep integration with AWS but single cloud lock in as does Azure API Management which has deep integration with Azure Product set. Mulesoft 
+                            Anypoint is another alternative which is more in legacy and data driven areas and requires a larger amount of resource due to feature set and 
+                            focus on data analysis. 
+                        </p>
+                        <p>
+                            Traditional deployment method is a Kong Gateway instance with a database where these instances are clusters in a traditional deployment, and a 
+                            Kong Gateway cluster allows to scale system horizontally by adding more machines to handle more incoming requests. All instances within a cluster 
+                            will run with the same config. There is also DB-less mode but functionality is limited with reduced plugins and rate limiting. Hybrid mode is most 
+                            popular where have database as self-managed control plane node and distributes to data planes which could be on prem or cloud as just need 
+                            connectivity for config. Availability of database doesn't affect availability of the Data Planes as if it loses connectivity it uses stale 
+                            configuration for that time and admins only need to interact with the control plane nodes to monitor the entire status of the deployment.
+                        </p>
+                        <p>
+                            Kong Gateway AI is a specialised middleware layer to pair with language models to secure interactions with large language models and other 
+                            AI-powered services such as prompt engineering controls and token usage analytics. Konnect SaaS is the software as a service solution where 
+                            control plane is fully managed in the cloud, the DB is also managed in the cloud and data planes can be hybrid or in the cloud and get all 
+                            the enterprise features with pay as you go or subscription models and seems to be the direction Kong is pushing towards.
+                        </p>
+                        <p>
+                            Kong is to minimise impact and demand on services and if have lots of services a gateway acts as a single point of inspection and can spread 
+                            out on the back end and is a flexible solution with config and content along with useful plugins to tailor what you do and don't need in your 
+                            environment, may want to use a different security protocol you could do this and there is a lot of third-party and enterprise support.
+                        </p>
+                        <p>
+                            Enterprise solution cost varies on gateways and SaaS solution on what you are using it for and can be around $200 per month but if have more APIs 
+                            it does cost more and if a heavy user and depends on traffic on how much it costs, could be small or massive. 
+                        </p>
+                        <h3>Certifications - Dan Farrall</h3>
+                        <p>
+                            Dan Farrall, Senior Platform Engineer at Gapgemini talked about the certification model at Gapgemini who have a reward for doing so to level up your 
+                            career where they will pay for certifications and one of their goals was a Kubestronaut and then became a Golden Kubestronaut and also some Microsoft 
+                            certifications as well. They have become more skilled in a number of areas and is not tying but is an investment in them and have had no challenges 
+                            about relevance of exams and has got them approved and been paid for them and have earned more from rewards than exam fees paid for by Capgemini.
+                        </p>
+                        <h3>To Cache and Beyond - Hamed Gholamian</h3>
+                        <p>
+                            Hamed is a Senior Platform Engineer at Capgemini and talked about Caching. 
+                        </p>
+                        <p>
+                            What is Caching? Caching stores temporary copy of data for faster access for local cache or edge and can reduce repeated requests to origin and 
+                            can save requests to disk and common types include browser, server-side or CDN edge and caching depends on how things are set up but can have 
+                            different ways of doing caching which can improve speed and reduce backend load. Before the Edge their old platform was stable but tightly 
+                            coupled with a lot of non-cloud technology and was a lot of moving parts and was a bit of difficulty there and changes were slow and heavy, 
+                            they needed cloud-native flexibility and faster evolution.
+                        </p>
+                        <p>
+                            Choosing what works, choosing the best partners like Cloudflare, Fastly and Cloudfront where Fastly use Varnish which is an open-source caching 
+                            engine. They needed a seamless native fit as everything was on AWS and were looking for something simplified and with an agile architecture so 
+                            chose CloudFront as their entire ecosystem was in AWS so could do native integration, there was cost visibility and automation potential as had 
+                            one account in AWS and for security and compliance would be provided by others but it made more sense to use CloudFront.
+                        </p>
+                        <p>
+                            They took an intuitive approach and did discovery and planning as first phase to see what they would do and move and the next part was a proof 
+                            of concept, they needed to see if it would give them what they need and then do incremental adoption and asked about shifting services to this 
+                            platform to teams and then perform continuous improvement as there would be issues and snags so how do you move forwards. Tooling includes 
+                            Terraform, Jenkins and Kubernetes with an IaC first approach for consistency and shared scripts and templates for faster onboarding and 
+                            automated edge deployments for reliability to also help other developers come along the journey with them. 
+                        </p>
+                        <p>
+                            People and paths, there are lot of teams and need to go to the right people as have many teams with many apps and priorities with apps with a 
+                            lot of dependencies as one service could have a lot of dependencies. Coordination slowed progress as lot of time had to speak to developers 
+                            and team leads and depended on availability but trust grew through small wins, moving smaller applications that were less sensitive and can 
+                            prove these things that work and show a platform is steady, cloud native and reliable can gain some trust along with clear communication 
+                            helped, going to teams and asking for their help to find out how services worked.
+                        </p>
+                        <p>
+                            First steps were onboarding apps and started onboarding with early adopter apps, there were some unexpected issues and things that worked 
+                            before weren't working and it turned out to be an upstream issue from somewhere else but realised they needed a safer way to test, they needed 
+                            a way to test the process without bothering the teams so created a test app that would unblock them. This test app was a sand box for 
+                            experiments, can't just be an application that returns 200, it could post data and do some interactions on the back end, can delete some 
+                            data so create a dummy application that has some endpoints and can give dummy data but can push it as hard as they can and get the 
+                            behaviour they wanted, this would also validate changes safely. This test app could build confidence across teams and can show evidence 
+                            that it works as expected.
+                        </p>
+                        <p>
+                            Testing without the risk with the test app could simulate traffic safely and see how things are affected, isolate CloudFront changes from live 
+                            users with no production risk and no angry stakeholders. Challenges and how they adapted were CloudWatch logs came mid journey as this wasn't 
+                            available at the beginning of using CloudFront which was very challenging, access logs were written into S3 buckets but for many apps this was 
+                            very difficult so they wrote Grabtacular to fetch and parse S3 logs and used this for troubleshooting such as seeing what happened with a 
+                            particular distribution and URL. Kinesis wasn't an option for them along with other reasons made it a bit more difficult with many applications 
+                            to migrate. Their configuration for Terraform was getting bigger so wrote tools to manage these configuration scripts.
+                        </p>
+                        <p>
+                            What they learned and unlearned was though discovery they need to validate in practice not on paper, it might sound like a task is easy such 
+                            as migrating an application may take a lot of changes to get to that point. Defaults are starting points not solutions, sometimes turning 
+                            something on doesn't work and instead causes issues. Sometimes best practices don't fit and that's okay, they found things that didn't apply 
+                            that made things worse. People matter more than tools, all the communications and people helping would help more and clarity beats speed 
+                            every single time, sometimes going to a team and asking if something isn't working and get their help or help them.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="steps steps-articles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.png" alt="RoguePlanetoid" height="20px"></a>
+                <a href="https://www.twitter.com/rogueplanetoid" target="_blank"><img src="../../images/twitter.png" height="45px" alt="@RoguePlanetoid"></a>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
