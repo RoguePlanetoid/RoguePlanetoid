@@ -1,17 +1,18 @@
-.steps {
+.circles {
     width:100%;
     aspect-ratio: 900/80;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    background-image: url('../images/circles-bottom.svg');
 }
 
 .text-posts {
-    color: #ED1619 !important;
+    color: #003399 !important;
 }
 
 .text-articles {
-    color: #009935 !important;
+    color: #003399 !important;
 }
 
 .text-podcast {
@@ -30,22 +31,6 @@
     text-decoration: none!important;
 }
 
-.steps-black {
-    background-image: url('../images/steps-black.svg');
-}
-
-.steps-posts {
-    background-image: url('../images/steps-posts.svg');
-}
-
-.steps-articles {
-    background-image: url('../images/steps-articles.svg');
-}
-
-.steps-podcast {
-    background-image: url('../images/steps-podcast.svg');
-}
-
 .bg-cespage {
     background-color: #830088;
 }
@@ -55,11 +40,11 @@
 }
 
 .bg-posts {
-    background-color: #ED1619;
+    background-color: #003399;
 }
 
 .bg-articles {
-    background-color: #009935;
+    background-color: #003399;
 }
 
 .bg-podcast {
@@ -70,45 +55,49 @@
     background-color: #ffffff;
 }
 
+.bg-rogueplanetoid {
+    background-color: #003399;
+}
+
 .btn-posts {
     color:#ffffff!important;
-    background-color:#ED1619!important;
-    border-color:#ED1619!important;
+    background-color:#003399!important;
+    border-color:#003399!important;
 }
 .btn-posts:hover{
-    background-color:#f25053!important;
-    border-color:#f25053!important;
+    background-color:#3366cc!important;
+    border-color:#3366cc!important;
 }
 
 .btn-posts-inverse {
-    color:#ED1619!important;
+    color:#003399!important;
     background-color:#ffffff!important;
     border-color:#ffffff!important;
 }
 .btn-posts-inverse:hover{
-    background-color:#f25053!important;
-    border-color:#f25053!important;
+    background-color:#3366cc!important;
+    border-color:#3366cc!important;
     color:#ffffff!important;
 }
 
 .btn-articles {
     color:#ffffff!important;
-    background-color:#009935!important;
-    border-color:#009935!important;
+    background-color:#003399!important;
+    border-color:#003399!important;
 }
 .btn-articles:hover{
-    background-color:#35b44e!important;
-    border-color:#35b44e!important;
+    background-color:#3366cc!important;
+    border-color:#3366cc!important;
 }
 
 .btn-articles-inverse {
-    color:#009935!important;
+    color:#003399!important;
     background-color:#ffffff!important;
     border-color:#ffffff!important;
 }
 .btn-articles-inverse:hover{
-    background-color:#35b44e!important;
-    border-color:#35b44e!important;
+    background-color:#3366cc!important;
+    border-color:#3366cc!important;
     color:#ffffff!important;
 }
 
@@ -127,17 +116,21 @@
     text-decoration: none!important;
 }
 
+.text-rogueplanetoid {
+    color: #003399 !important;
+}
+
 .link {
     text-decoration: none!important;
     color:#000000!important;
 }
 
 .posts .nav a, .nav .posts a:link, .nav .posts a:visited, .nav .posts a:hover, .nav .posts a:active {
-    color: #ED1619!important;
+    color: #003399!important;
 }
 
 .articles .nav a, .nav .articles a:link, .nav .articles a:visited, .nav .articles a:hover, .nav .articles a:active {
-    color: #009935!important;
+    color: #003399!important;
 }
 
 .podcast .accordion a, .accordion .podcast a:link, .accordion .podcast a:visited, .accordion .podcast a:hover, .accordion .podcast a:active {
