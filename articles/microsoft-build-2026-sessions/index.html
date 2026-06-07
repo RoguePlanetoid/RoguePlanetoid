@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="RoguePlanetoid" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rogueplanetoid" />
+    <meta name="twitter:creator" content="@rogueplanetoid" />
+    <meta name="twitter:title" content="RoguePlanetoid" />
+    <meta name="twitter:description" content="Posts, Articles and Podcast" />
+    <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png" />
+    <meta name="twitter:image:alt" content="Posts, Articles and Podcast" />
+    <!-- /Twitter -->
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RoguePlanetoid" />
+    <meta property="og:site_name" content="RoguePlanetoid">
+    <meta property="og:description" content="Posts, Articles and Podcast" />
+    <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="630" />
+    <!-- /Open Graph -->
+    <link rel="icon" href="../../favicon.ico" />
+    <link href="../../css/style.css?v=2.0.0" rel="stylesheet">
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>RoguePlanetoid - Articles - Microsoft Build 2026 - Sessions</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8038JPY7YN');
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- Main -->
+    <main>
+        <!-- Navigation -->
+        <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../../">
+                    <img src="../../images/header.svg" alt="RoguePlanetoid" height="50px">
+                </a>
+                <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../posts">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../articles">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-articles active" href="../microsoft-build-2026-sessions">Microsoft Build 2026 - Sessions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://www.comentsys.com" target="_blank">
+                    <img src="../../images/comentsys.svg" alt="Comentsys" height="50px">
+                </a>
+            </div>
+        </nav>
+        <!-- /Navigation -->
+        <!-- Section -->
+        <section class="text-center text-black container">
+            <!-- Article -->
+            <div class="text-start">
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">Microsoft Build 2026 - Sessions</h2>
+                    <p class="blog-post-meta">8th June 2026</p>
+                    <img src="../assets/microsoft-build-2026.png" class="img-fluid" alt="Microsoft Build 2026 - Sessions" />
+                    <h3>Build and ship faster with a developer-optimised experience on Windows - Kayla Cinnamon, Craig Loewen & Jianye Lu</h3>
+                    <h4>Building on Windows</h4>
+                    <p>
+                        Kayla's team covers many features of Windows along with PowerToys, Windows Terminal, Winget and WSL and 
+                        covered building on Windows and building for Windows. Developer Setup on Windows, where taking tools takes a 
+                        long time so there's a WinGet config file which includes a lot of these tools to make this step a little 
+                        easier and these are files are idempotent so if those things are already installed then it won't do that 
+                        again, you can get the Windows Developer config from <a href="https://github.com/microsoft/WindowsDeveloperConfig" target="_blank">github.com/microsoft/WindowsDeveloperConfig</a>.
+                    </p>
+                    <p>
+                        Kayla spoke about taskbar personalisation features coming to Windows with taskbar position including left, 
+                        top and right along with the existing bottom option, there is also a new run dialog which is more 
+                        streamlined and is build using architecture of PowerToys command palette which is now inside run where can 
+                        search for tooling, if contributed to command pallet on Windows fore PowerToys there is a good chance that 
+                        code is in Windows. There is also an experiment with intelligent terminal where have a companion where can 
+                        stay in your prompt without being taken out of your flow, you can pick which agent you want to use from the 
+                        ones installed on your machine along with the preferred model, it is open source at 
+                        <a href="https://github.com/microsoft/intelligent-terminal" target="_blank">github.com/microsoft/intelligent-terminal</a>.
+                    </p>
+                    <p>
+                        Craig showed the Linux container support where can arbitrarily download and run Linux distributions, where 
+                        these containers are powerful as you can build environments that can run locally or in the cloud using WSL. 
+                        You can get and use these container images and setup a specific environment with prerequisites such as 
+                        Python. Have also included Coreutils where you can run core Linux utilities such as grep with over 160 tools 
+                        with super awesome and powerful of brining tools from Linux to WSL is available on GitHub at 
+                        <a href="github.com/microsoft/coreutils" target="_blank">github.com/microsoft/coreutils</a>. Microsoft built 
+                        a Linux container CLI rather than use an existing one as have build an API for this and to be opinionated, 
+                        so these the CLI and API work together but is all open source and works with container tools on Linux with 
+                        contributions to work with those for free.
+                    </p>
+                    <h4>Building for Windows</h4>
+                    <p>
+                        Kayla talked about what is intended to make building applications easier is the winappCLI, which can be 
+                        found via <a href="https://github.com/microsoft/winappcli" target="_blank">github.com/microsoft/winappcli</a>, 
+                        which can jumpstart building Windows apps and covers the hard part like publishing and what things package identity 
+                        unlocks such as native notifications and other app services and is available on WinGet and the win-dev-skills from GitHub at 
+                        <a href="https://github.com/microsoft/win-dev-skills" target="_blank">github.com/microsoft/win-dev-skills</a> to
+                        build WinUI 3 and Windows App SDK applications with skills that are really helpful from workflow, design, 
+                        testing, packaging and migration with up to date information that can be directly accessed to be more 
+                        efficient with token usage so agents know all about WinUI 3.
+                    </p>
+                    <p>
+                        Kayla spoke about rebuilding the demo application from containers example, when using GitHub Copilot CLI and 
+                        then use winui-dev as the custom agent, you can ask it to create the application, how it should look and 
+                        then ask it to perform the UI testing needed. It will build the app then deploy it and the use the UI 
+                        testing to check everything works as needed. PowerToys has a feature to grab and move a Window if you have a 
+                        Window with too many tabs or just want to move a Window from anywhere in Windows.
+                    </p>
+                    <p>
+                        Jianye spoke if have ever worked on performance in Windows where collect the executable data running and feed 
+                        that into Copilot to allow it to a better job of improving performance, but this requires instrumentation, 
+                        and when build this is an extra fork in build pipeline and when running instrumented view it is slow and not 
+                        mimicking the actual application so instead of PGO it will use SPGO where can have same performance benefits 
+                        without restrictions and apply any improvements to applications, where it is possible to build an 
+                        application, create a profile and rebuild the application with the example showing a 30% increase in 
+                        performance.
+                    </p>
+                    <p>
+                        Craig spoke about taking the container file and Linux code which lives inside a C# Windows App SDK / WinUI 
+                        project and then add the WSL Containers project and define the WSL Container Image which will make the 
+                        container part of the build process where can build and run an application which looks like a Windows app 
+                        which runs Linux in the backend executing that code in the background. The service runs it its own WSL 
+                        process as part of the Windows application which gets its own WSL virtual machine and within the project 
+                        there is C# code that starts the Virtual Machine, pulls the specific Container image configured with needed 
+                        options along with being able to create a Windows command line utility using the same approach.
+                    </p>
+                    <h3>GitHub Copilot in Visual Studio: Agents That Debug, Profile, and Test - Nik Karpinsky & Mads Kristensen</h3>
+                    <p>
+                        Mads spoke about Copilot in Visual Studio, about how Visual Studio fits into these agentic worlds, it is the 
+                        tool for C++ and C# developers as the premiere place to do your professional development today and tomorrow. 
+                        There are certain things that make it easier with quality gates about how the code looks with security, 
+                        quality and governance and things specific for professional developers that Visual Studio is good at. With 
+                        code quality you might not do all the work and have an agent do it so how to you maintain that code quality, 
+                        is the code something you have to maintain then coding standards and quality matters as code is an asset, but 
+                        if just a proof of concept then it is a artifact as it doesn't matter but if see code as an asset then Visual 
+                        Studio is for you.
+                    </p>
+                    <p>
+                        Nik talked about showing what is real and what people will encounter every day, showing working on Visual 
+                        Studio in Visual Studio with the profiling tools with a component written in C++, C#, JavaScript, Assembly 
+                        and IL so need professional tools to work on this so need to use Visual Studio to do this. There was an 
+                        internal bug filed with an index out of range issue with the profiler and normally to fix this would look at 
+                        the back trace, figure out what is happening and why but now can look at agentic capabilities to be more 
+                        efficient and use GitHub Copilot. Can use MCP servers to tie into other endpoints where can give details of a 
+                        bug and then write a relevant unit test for this bug, but can remain in the loop of this process or set it 
+                        going on autopilot if you wanted to, the issue was missed as it was in code that had not been previously used 
+                        until the next feature was created so was missed during code review.
+                    </p>
+                    <p>
+                        Nik was writing the test first, which wasn't something they did before Copilot, they can have the test to 
+                        check for the issue and then use this to help resolve the issue, you can create a test to reproduce an issue 
+                        and then may find another issue with the test itself fix to this test using GitHub Copilot to ensure it 
+                        behaves and reproduces the issue reported as expected before it has been fixed, so the test fails due to this 
+                        behaviour not having been resolved. It is then possible using this test to debug the test with Copilot using 
+                        the Debugger agent which knows how to use the debugger and it found an off-by-one error being the cause of 
+                        the issue based upon the value being used and then resolved this and ran the Unit Test to ensure the test 
+                        passed and were able to use Copilot to author the fix.
+                    </p>
+                    <p>
+                        Nik showed off the new profiler agent experience, one of the packages they added was a 
+                        VSTestPerformanceCollector so every time a unit test runs they have a profiling trace ran, this profiler will 
+                        collect information about where the program is and then save all the information it collected along with 
+                        auxiliary data and present a report on where your application spent the most amount of time including CPU 
+                        cycles, memory allocation and more. Showed using dynamic instrumentation and hook into the profiler which 
+                        will instrument the code with start and stops to determine where to apply fixes. You can Profile with 
+                        Copilot with a Unit Test to make it faster, but you can do the same thing yourself.
+                    </p>
+                    <p>
+                        Nik and Mads showed that you can learn why things are faster by asking questions to Copilot to understand why 
+                        one thing is faster than another. If not using data with performance issues, then you are just refactoring. 
+                        You can also see suggestions for ways of improving performance that you may not have thought of, in order to 
+                        a good performance improvement you have to measure and see the results before and after an improvement. You 
+                        can decide the Copilot experience you want to make improvements where you are involved more, but there are 
+                        guardrails where you can let Copilot figure out what is needed to make the improvements needed using the 
+                        Profile feature.
+                    </p>
+                    <p>
+                        Nik and Mads showed that Visual Studio debugger and profiler optimised issues many areas including the 
+                        profiler itself, reduced costs of using Azure App Services and increased performance of the .NET compiler, 
+                        Roslyn, it has many benchmarks over the years but GitHub Copilot found an optimised something in switch case 
+                        evaluation.
+                    </p>
+                    <p>
+                        Mads spoke about that there is a bunch of stuff coming in Visual Studio, with cool things for Copilot where 
+                        have old and hard-to-maintain applications such as old Web forms, where might not have the experience or 
+                        knowledge to do this, have had breakthroughs in app modernisation to convert Web Forms into Blazor where can 
+                        take old apps and take them to a modern stack and apply Aspire and upscale them to run on the Cloud handled 
+                        by the modernisation agent.
+                    </p>
+                    <p>
+                        Mads talked about Agent skills, which really make your agent workflows more powerful and useful when they 
+                        work on your codebase so how to you find skills, which are markdown files, but how do you know what skills to 
+                        use when working on different parts of your codebase, so ill automatically work out which skills to apply 
+                        based upon your task such as when working on WinForms tasks will add these skills from the experts on those 
+                        technologies are applied automatically which are skills you can trust that are automatically applied.
+                    </p>
+                    <p>
+                        Mads mentioned about build speed and attempts long running builds where there are errors in the Error List so 
+                        are doing optimisations and to build speed and it will check the error list and other indicators to know to 
+                        kick off a build or do other things first, checking errors or warnings before build. Another issue is merge 
+                        conflicts as these can be frustrating and difficult so will launch soon to have AI automatically resolve 
+                        merge conflicts which will be a huge thing to have this ability to work things out, how a human would do it 
+                        and how would the agent do it is the same but if it can't do it then you can have that input where needed.
+                    </p>
+                    <p>
+                        Mads said that Visual Studio is getting Copilot features later than other products, which can be frustrating 
+                        as have their own implementation and have to make this work with all the different aspects of Visual Studio 
+                        that other tools don't have and have own implementation of back end and talk to Copilot service itself so 
+                        will make the move to use the GitHub Copilot SDK to power the integration, so all the features will use the 
+                        same SDK and have same features at same time but will be different such as having Visual Studio do the things 
+                        it does even if on the shared SDK.
+                    </p>
+                    <p>
+                        Mads mentioned have a list of different models you can bring and would like to bring more to Visual Studio, 
+                        you can bring your own key from list of providers that are supported when signed in with GitHub Copilot but 
+                        can also use any AI model both local and cloud in Visual Studio, this is a huge thing for enterprises with 
+                        strict security requirements who can use their own on-prem models. There are trust boundaries for security 
+                        where can mandate the models that are used to control the local or cloud layers which will be coming soon to 
+                        Visual Studio 2026.
+                    </p>
+                    <h3>Modernize intelligent apps and agents with .NET that scale as you grow - Andrew Westgarth & Gaurav Seth</h3>
+                    <p>
+                        Andrew spoke about covering modernisation challenges including where organisations face common challenges 
+                        when modernising existing applications or scaling new projects along with Managed Instance on Azure, Built 
+                        in MCP and AI APIs as AI consumable tools plus use of GitHub Copilot App Modernisation Tool to see any 
+                        potential problems when migrating and help make those changes when migrating a project. Understanding 
+                        modernisation challenges include legacy system dependencies where have heavy reliance on specific operating 
+                        systems and libraries that complicates application migration or scaling efforts might have dependencies on 
+                        drawing libraries such as GDI or third-party libraries. Statement vs stateless where stateful session 
+                        management can hinder management where stateless architectures better support scalability and flexibility. 
+                        Configuration and secret management including scattered configuration and secrets across environments 
+                        challenge centralised governance and secure management.
+                    </p>
+                    <p>
+                        Managed Instance on Azure App Service helps accelerate the move to platform as a service which preserves 
+                        Windows dependencies and then can unlock scale, security and Azure AI from one instance to thirty with a few 
+                        clicks or a CLI command and deploy to on top of the Premium v4 instance. Foundation for cloud adoption is 
+                        minimal or zero code changes where can enable app modernisation preserving existing dependencies and 
+                        configurations, can even support reading and writing to registry of have storage using drive letters that 
+                        map to cloud storage especially if don't have access to source code or is a third party application that is 
+                        critical to your business and need to move these to the cloud. Get cloud native benefits where gain 
+                        scalability with vertical or horizontal scaling from a single code with low ram to 32 cores with 265 GB of 
+                        memory and depending on your needs scaling is available at the click of a button, then have cloud native 
+                        benefits such as availability zones as well as taking care of infrastructure maintenance, patching and 
+                        scaling and can support incremental modernisation which can reduce risk and accelerate time-to-value for 
+                        enterprises but can then move to modern .NET. Secure data management with integration of Key Vault for 
+                        protection of credentials and configuration settings, compatibility with storage for local and remote 
+                        file-based dependencies, custom dependency installation to support legacy components and supports secure 
+                        remote access to ease with troubleshooting and aid with transition of control when moving to platform as a 
+                        service plus built-in scaling and maintenance features that can adjust to demand and minimise downtime.
+                    </p>
+                    <p>
+                        AI integration with MCP, AI integration with APIs where MCP enables APIs to function as AI tools, allowing 
+                        seamless interaction between AI agents and existing APIs where can discover APIs in your application and 
+                        expose MCP tooling which is managed by OAuth and RBAC to maintain secure and auditable API interactions plus 
+                        MCP supports multiple programming languages like .NET and others such as Python enabling broad applicability. 
+                        Can take an application such as a .NET Framework application which already exposes an API and using Azure to 
+                        expose this as MCP tools to use these capabilities within this to be exposed to other applications.
+                    </p>
+                    <p>
+                        Agentic application patterns with modern agentic application design where have agent-based modular design 
+                        where can have specialised agents responsible for distinct domains enhancing modularity and task focus, 
+                        orchestration coordination which manages agent interactions ensuring efficient execution and proper task 
+                        sequencing. Flexibility and scalability where can have scalable applications that adapt to use needs with 
+                        legacy and greenfield compatibility supporting integration with legacy systems and new projects.
+                    </p>
+                    <p>
+                        GitHub App Modernisation Tool allows for AI-assisted code modernisation where Copilot analyses legacy 
+                        codebases and generates refactored code aligned with modern architecture, practices that reduces manual 
+                        effort, can also accelerate new development by generating scaffolding, APIs, tests and deployment scripts to 
+                        streamline prototyping with multi language support making it versatile across projects and features enhance 
+                        development efficiency where can integrate with Azure App Service to enable faster cycles, improved code 
+                        quality and better collaboration among developers.
+                    </p>
+                    <p>
+                        Gaurav talked about using GitHub Copilot modernisation tool to take a class ASP .NET Framework web 
+                        application with web forms and API controllers, it also uses a local SMTP server writing email locally along 
+                        with a bunch of dependencies. This solution can then be modernised using GitHub Copilot can select the 
+                        Migrate to Azure option for an assessment report which will provide the different targets on Azure where the 
+                        default target for this application is an Azure App Service Managed instance to achieve the full potential 
+                        of the application but if change to Azure Apps that use Windows then there are mandatory changes due to 
+                        sandboxing along with other changes to help retarget the application such as replacing the SMTP 
+                        implementation with the flexibility to remove and improve features while on a Managed Instance on App 
+                        Service to help modernise the application.
+                    </p>
+                    <p>
+                        Guarav also spoke about augmenting the existing REST API where you can create an MCP server against the REST 
+                        endpoint that is deployed on your app server with In-Built MCP, where you can give the Open API 
+                        specifications for an endpoint where each method of a function within the REST API can become a tool call on 
+                        the MCP server enabling existing functionality within an application to be leveraged by agents or GitHub 
+                        Copilot, bringing the power of AI to applications using Managed Instance on App Service within Azure.
+                    </p>
+                    <h3>Building WinUI Apps with C# First Patterns and AI Assisted Workflows - Chris Anderson</h3>
+                    <p>
+                        WinUI is getter better for you, what's improving is performance with system compositor and memory 
+                        improvements, controls with new built-in DataGrid and Charing and with Open-Source progress and community 
+                        contributions coming soon to WinUI. What has been heard is commitment concerns, is WinUI the long-term path? 
+                        Yes, along with feature gaps and migration challenges with smother paths from older stacks. There are no 
+                        intentions to build a new framework and WinUI 3 is just WinUI and working hard to stretch it for any use 
+                        case and bring it into the shell and have first-party features using it and see third-party support improve 
+                        so are committed to move WinUI forward. System tray and limited use of Windows include some of the feature 
+                        gaps that people are calling out which is one of the biggest issues and then how do you migrate, can you 
+                        incrementally adopt and there is a WinForms interop for WinUI but this should be super easy to do and should 
+                        be able to mix and match WPF which is a big chunk of work they want to get in the future.
+                    </p>
+                    <p>
+                        Development is evolving and AI-assisted development is the new default and the programming model is expanding 
+                        to match with the shift for AI-assisted where code generation is part of every workflow and dynamic UI with 
+                        faster interaction and more dynamic interfaces and code first workflows over markup. The platform expands 
+                        where C# joins XAML where C# is a first-class way to build IU, XAML remains fully supported just choose the 
+                        model that fits - Reactor is an open repository exploring C# first AI-friendly with reactive UI pattens. 
+                        Reactor informs WinUI it does not replace it - it is an exploration layer where ideas are tested where 
+                        innovation flows down from a high churn rate where patterns mature into production and then go into WinUI 
+                        with what you ship apps with today to become consistent and standard.
+                    </p>
+                    <p>
+                        Reactor is a place to try out ideas and see where things will fit in, will keep building with WinUI and have 
+                        continued investment and explore where things are heading with Reactor. Reactor has a new projection with C# 
+                        into the controls for a functional reactive style approach to building applications, a lot of controls will 
+                        still be written in the way they are today with WinRT and C++ but will be an experimental playground where 
+                        development will be out in the open and the syntax may completely change on how to express construction 
+                        patterns and will iterate on a lot of things where you can do an imperative or expression construction of 
+                        code with Reactor.
+                    </p>
+                    <h3>Taking your AI to the edge with .NET MAUI - Gerald Verluis</h3>
+                    <p>
+                        .NET MAUI allows you to build multi-platform apps all in one framework, to build cross platform amazing 
+                        looking apps on Android, iOS, Mac and Windows with one codebase and it all maps to native controls and 
+                        native styling and looks as you would expect on the device you are running on with a unified .NET and C# 
+                        layer with lots of controls and what you need to build common apps that are useful for anyone. .NET MAUI 
+                        Blazor Hybrid allows you to take your Blazor through WebView to .NET MAUI with a fully native web UI where 
+                        you can use Blazor controls, validation and more and for other frameworks there is the Hybrid WebView. .NET 
+                        offers choice for client app developers so if want websites then use Blazor with C#, HTML and CSS and if 
+                        want Native can use .NET MAUI with C# and .NET or can have both with Blazor Hybrid with .NET MAUI.
+                    </p>
+                    <p>
+                        What changed in how we build .NET MAUI? The .NET MAUI team now builds with Copilot across the loop, it is 
+                        not just autocomplete it helps reproduce bugs, write tests, make fixes and review changes which means faster 
+                        bug fixes, new features and experiments. They have thousands of UI tests which take a while to run so can 
+                        have AI figure out the relevant UI tests to run for the changes but don't have to spend time to find 
+                        relevant ones but outsource this to GitHub Copilot. They have MAUI-aware reviewers due to having lot so 
+                        things to be aware of which will look at code beyond the vanilla Copilot but has .NET MAUI specific 
+                        expertise but there is still the human in the loop but when something bad happens with a PR can learn from 
+                        this with AI and take this to the next PR so it doesn't happen again. They take things a step further beyond 
+                        writing code but also have an agent look to see if documentation is needed or a blog post and will even 
+                        draft a PR for the documentation or blog post. The curve is visible where have gone from 7% to 62% of 
+                        Copilot-authored merged PRs in under a year where this ramped up from November 2025 which is a signal that 
+                        the engineering loop has changed as now, they have the tools to go there and do things faster and produce 
+                        extra value.
+                    </p>
+                    <p>
+                        .NET MAUI is the community, they have contributors for issues, PRs, samples, documentation and feedback that 
+                        shapes the product plus community standup to share progress, answer questions and celebrate what people build 
+                        online on YouTube to show off what happened in the community including new things to share. Also have 
+                        dedicated .NET MAUI events which are taking off which are focused events that turn shared learning into real 
+                        adoption plus there is MAUIverse which connects libraries, tools, samples, content and people which can be 
+                        found at mauiverse.net. Thanks to contributors who are appreciated by Microsoft for the time and effort that 
+                        has been spent along with component vendors who build on top of .NET MAUI or even their own tools. Partners 
+                        help widen what .NET MAUI can be, Microsoft have announced collaborations such as Syncfusion with code fixes, 
+                        testing but also as part of this have a .NET MAUI Toolkit which are available for free built with high 
+                        performance, customisation and accessibility in mind. Partner contributions at agent speed include 50-70% 
+                        time reduction with 2-3x moee issues with more PRs and more fix time rate. Uno has been partnering on 
+                        SkiaSharp investing in graphics where have stepped up as a co-maintainer to make it better for everyone. In 
+                        .NET ecosystem we are all friends as with Avalonia is brining .NET MAUI to Linux and the Browser.
+                    </p>
+                    <p>
+                        Investments for .NET 10 was quality which has been top of mind including fixing bugs and have been focusing 
+                        on performance, so apps are loading quickly and not sluggish and always working to make this better and 
+                        simplicity to make APIs easier to work with and modern to leverage the latest Android and iOS APIs. 
+                        Investments in XAML include Global Namespaces which reduce or completely eliminate the xmlns declaration in 
+                        your own project and declare your own prefixes, there is also implicit namespaces where can remove 
+                        boilerplate XAML at head of each file and source generation where using Roslyn source generators instead of 
+                        XAMLC with better performance which is opt-in in .NET 10 but will be mandatory in .NET 11, it has faster 
+                        debug and release performance to go from XAML to C# which allows faster inflation, less debug memory faster 
+                        on release and less app memory along with removing the inconsistency in performance between debug and release 
+                        build and nothing is different between these.
+                    </p>
+                    <p>
+                        SafeArea is edge-to-edge design support for notches, camera holes or other cut outs with lots of variations 
+                        so have a unified API to handle these scenarios better, where have SafeAreaEdges where can have full 
+                        edge-to-edge content and reserve relevant space is needed or for elements such keyboard and works for Android 
+                        and iOS or if elsewhere is needed this will be added. Android Material 3 is being implemented, and first 
+                        controls have been added in .NET MAUI 10 since November with more additions for these new controls and have 
+                        an opt-in for this so is not a breaking change and there are bigger changes going on and in .NET 11 should 
+                        have the entire Material 3 experience. .NET 10 proof in the service releases has 242 commits in just one 
+                        service release with quality improvements, accessibility test improvements, modernisation with media pickers 
+                        have been updated and improving on every service release and are new things for hybrid scenarios for sending 
+                        messages between .NET MAUI and JavaScript plus platform improvements for iOS and Android using AI assisted 
+                        engineering.
+                    </p>
+                    <p>
+                        .NET 11: the next wave for .NET MAUI, where CoreCLR becomes the default runtime, before .NET 11 .NET MAUI 
+                        was still using the Mono runtime on Android and iOS, but CoreCLR which brings one runtime where .NET MAUI 
+                        apps move closer to same runtime as ASP .NET Core, Azure services, desktop apps and other .NET workloads 
+                        and have better diagnostics with dotnet-trace and dotnet-counters working for MAUI mobile workflows and 
+                        CoreCLR brings better performance and is the foundation for ongoing NativeAOT work across Android, iOS and 
+                        Mac Catalyst. Ther will also be dotnet run support making it easier from the CLI and easier for tools / 
+                        agents to automate and make it efficient to use with Copilot and can also have dotnet watch support for iOS 
+                        and Android and apply Hot Reload changes on Android and iOS simulator workflows. Putting more pins on the 
+                        map with .NET 11 with a maps control, using Apple Maps on iOS and Google Maps on Android, supporting pin 
+                        clustering and custom pins with richer integrations for map long-press, map element click events and cluster 
+                        taps with more control including map element visibility, Z-index and Android map styling to customise 
+                        styling. Other features include code support in XAML, badges for shell tabs and toolbar items.
+                    </p>
+                    <p>
+                        MAUI Labs is where experiments can breathe, to release things faster, DevFlow inspects and automates .NET 
+                        MAUI apps with CLI, screenshots, visual tree, log and MCP which allow agents to inspect your app. 
+                        Essentials.AI allows platform-native and local AI from .NET MAUI thought Microsoft.Extensions.AI 
+                        abstractions plus AI extensions to turn app functionality into AI callable tools with source-generated 
+                        bindings along with experiments for Linux, macOS (AppKit), WPF and maybe other back-end platforms to come.
+                    </p>
+                    <p>
+                        DevFlow gives agents hands and eyes for .NET MAUI that uses the .NET MAUI CLI which connect to an agent 
+                        application inside your application at debug time to connect to DevFlow agent and see things going on in 
+                        your application and when building an app it can go through your application autonomously and will power the 
+                        VS Code extension for an agentic engineering experience for .NET MAUI apps. Essentials.AI is local AI 
+                        through .NET abstractions to work with local AI supporting platform-native such as Apple Intelligence, 
+                        Gemini Nano and Windows Copilot Runtime with interfaces supporting chat and text generation, streaming 
+                        responses, tool / function calling and more along with easily switching between models on cloud, local / 
+                        on-device and platform-native although features can vary between platforms but can target the features that 
+                        are broadly supported as things evolve any missing features may be added in future. You can put an attribute 
+                        in your application to turn an app into a tool that agents can call with an “AITool” attribute to expose 
+                        this to agents.
+                    </p>
+                    <h3>Building for the agentic web with .NET 11 - Daniel Roth</h3>
+                    <p>
+                        Dan talked about building for the agentic web with .NET 11 where the demand on modern web applications just 
+                        keep going up with users wanting more performance and airtight security that requires observability on how 
+                        apps behave in production, which need to be modern and interactive, where most are cloud-native and 
+                        distributed that increasingly need agentic capabilities that reason, use tools and collaborate.
+                    </p>
+                    <p>
+                        Developers want to build more and faster with AI and the platforms underneath need to constantly keep up, in 
+                        .NET 11 are investing to address needs of the most demanding modern web apps and everything being done in 
+                        this release is organised around six themes, the first is to address top feedback and pain points where are 
+                        addressing as many top voted issues in this release as they can.
+                    </p>
+                    <p>
+                        Strengthening the foundation with performance, security and observability that make .NET a platform you can 
+                        trust, which runs some of the biggest services in the world like Bing, Xbox, most of Azure and more where 
+                        the demands of those workloads push them to keep raising the bar. As a result, everyone benefits where 
+                        Minimal APIs, SignalR, Blazor are where Microsoft are actively innovating and adding new capabilities to 
+                        help build great modern web apps.
+                    </p>
+                    <p>
+                        Simplify building distributed web apps, working closely with Aspire team so that building, running and 
+                        deploying multi-service apps that integrate with a variety of cloud services feels easy and natural along 
+                        with enabling agentic web apps including integrating with Microsoft Agent Framework supporting new UI 
+                        patterns for AI-driven experiences to make ASP .NET Core and Blazor the best way to build agentic web 
+                        applications.
+                    </p>
+                    <p>
+                        Fundamentals are something they focus on every .NET release do make .NET a platform you can count on, with 
+                        performance try to make every release of .NET the fastest ever, with this release reducing TLS handshake 
+                        overhead in Kestrel so short-lived connections are faster, optimising how malformed requests are handles so 
+                        can shed bad traffic efficiently and free up capacity for real users. Working with runtime team on runtime 
+                        async which is a more efficient async implementation to make sure it works great across the platform, 
+                        including web.
+                    </p>
+                    <p>
+                        Security includes hardening Kestrel, the cross-platform high-performance web server and running security 
+                        scans on the code base using the latest AI models to ensure the platform is secure and trustworthy. 
+                        Modernised cross-site request forgery support sing fetch metadata based on latest OWASP recommendations. For 
+                        long-lived connections like with SignalR and Blazor are adding automatic auth token refresh to close a real 
+                        usability gap, and for observability ASP .NET Core now emits OpenTelemetry semantic convention tabs natively 
+                        and every request is automatically traced using OTel conventions without needing external instrumentation and 
+                        working on full OpenTelemetry support for Blazor WebAssembly.
+                    </p>
+                    <p>
+                        The end result is when you upgrade to .NET 11 your apps will run faster, save and are more observable, no 
+                        code changes required. Also are focusing ASP.NET Core investments on the modern stack of minimal APIs, 
+                        SignalR and Blazor to push boundaries and add new capabilities, although other parts of ASP. NET Core such 
+                        as MVC, Razor Page and API controllers will continue to be supported and will benefit from foundational 
+                        improvements. Investments are focused on a modern web stack that clearly aligns with modern web app needs, 
+                        for minimal APIs and Blazor are adding support for async validation so validation can before long-running 
+                        operations without blocking.
+                    </p>
+                    <p>
+                        Support the latest OpenAPI version, OpenAPI 3.2, with proper support for binary file responses and fixing a 
+                        long-standing testing pain point when using Web Application Factory with minimal APIs and trying to create a 
+                        custom configuration. SignalR is getting off-token refresh support for long-lived connections and adding 
+                        correlation ID support for distributed tracing. Blazor has a lot happening to fill out Blazor's server-side 
+                        rendering model so can use static server-side rendering without compromise. Also adding support for TempData, 
+                        binding to session state, output caching, client validation without requiring interactivity, adding async 
+                        validation and much more.
+                    </p>
+                    <p>
+                        Try to make it easier to scale your Blazor server apps using pause and resume so can free up those resources 
+                        when being held by idle circuits. On WebAssembly the big story is runtime consolidation effort by 
+                        transitioning from Mono to CoreCLR, will preview this in .NET 11 and ship this stable in .NET 12. There are 
+                        new runtime capabilities like multi-threading, 64-bit memory and other WASM 3.0 features which will land on 
+                        the CoreCLR-based runtime. In the meantime, are shipping a new project template for Blazor Web Workers that 
+                        allow you to move CPU-intensive work off the UI thread and lastly there is Union support coming to C# and 
+                        lighting it up across the entire ASP.NET Core stack for richer API contracts, more expressive component 
+                        parameters and better type safety.
+                    </p>
+                    <h3>.NET 11 in depth: Runtime, libraries, and SDK for the AI era - Richard Lander & Chet Husk</h3>
+                    <p>
+                        Covering the tooling level improvements and initiatives in .NET 11 where the .NET SDK has three major work 
+                        streams that have been worked on for the .NET 11 releases. The first is new capabilities and new user 
+                        experiences, the second is a strong focus on performance though the stack and the third is lightening the 
+                        load of acquisition and management of the tools. Some of the features are net-new CLI features as well as 
+                        changes to features that are well-used today to make them more workable or more efficient in an LLM context, 
+                        performance is a focus because - with the rise of agents and the sort of acerated inner loop requirements 
+                        that we have for these repeated multi-agent scenarios, want to make sure every command ran is as fast as 
+                        possible.
+                    </p>
+                    <p>
+                        Examples of work on the user experience, for years dotnet run has been the backbone of the inner loop when 
+                        you're working on your projects, you would “dotnet run” a project and it would run and in .NET 10 added ways 
+                        to expand how projects could hook how they run which led to enhancements around running Azure functions in 
+                        the emulator, but one area that hadn't received as much love was .NET MAUI and device specific running of 
+                        applications on your devices. When you run a .NET MAUI application you typically have to not only just build 
+                        the project but also build some king of installation payload, push it to a device and then run that payload 
+                        on the device, well starting in .NET 11 the .NET MAUI team has contributed enhancements to dotnet run to 
+                        make the device flows a first-class citizen in the dotnet rune experience and have expanded the .NET MAUI 
+                        targets so that run actually handles the device deployment. What's no important is that run also understands 
+                        how to query devices have available and this entire protocol is something that is extensible not just for 
+                        .NET MAUI but could be extended to support Uno or Avalonia.
+                    </p>
+                    <p>
+                        They want to make sure that the dotnet CLI works nicely with agents of all kinds, and have put work into the 
+                        dotnet CLI to make it aware of when it is being run under an agent context, this is necessarily and kind of 
+                        heuristic based approach, but once have this knowledge, it lets us do two important categories of work where 
+                        it lets us change the way we render output to the output streams and helps understand more about who is 
+                        driving us and their usage patterns so can change the internal behaviour, an example are the terminal logger 
+                        which is default build display starting in .NET 10 has a static section where y our project outputs are 
+                        emitted then a dynamic portion where it is constantly updating and showing what targets are being built for 
+                        each project that is being built and LLMs interpret that live portion as a very token inefficient stream of 
+                        constant changes, so armed with the new knowledge the CLI has have been able to disable that live update 
+                        when run in an LLM context, with the code idea of understand when are in an LLM context and using that to 
+                        change behaviour is something we're taking to heart throughout the entire dotnet CLI.
+                    </p>
+                    <p>
+                        It more common for agents to spawn off separate worktrees which are a Git technique for creating shallow 
+                        clones of a repo at different branches so that work can be done in parallel, however, when you run dotnet 
+                        build that operation is not normally aware of any other build that is going on in the machine which can lead 
+                        to significate amounts of resource usage tension on our machine, so are looking at strategies like a sort of 
+                        central gatekeeper for MSBuild that all builds have to route through that can delegate resources to each 
+                        individual build so that your machine remains responsive. With the rise of agents and the rise of parallel 
+                        work on a single machine it has become much more necessary that they take steps to address this scenario, 
+                        this category of work is something should expect to see more of in the dotnet CLI overall so when you choose 
+                        to do with it then want that work to be fast, so are starting on a journey to make the dotnet CLI a 
+                        NativeAOT application, done because the dotnet CLI is used so frequently that any amount of performance that 
+                        can contribute to its shared base multiplies incredibly well translating to real benefits given the number of 
+                        times each developer issues a command.
+                    </p>
+                    <p>
+                        This is an ecosystem play for us, many of the tools we make on depend on libraries that we also make and 
+                        some of those libraries are not AoT or trim-friendly so by setting a milestone of the dotnet CLI being an 
+                        AoT application that forced them to investigate these technical and process blockers and start knocking them 
+                        down. Just over the course of .NET 11 development cycle so far, we've been able to make really common 
+                        libraries like templating and NuGet and event parts of MSBuild more trim friendly. This is an ongoing 
+                        efforts and not all use-cases are trim-friendly but is the kind of north star for the overall effort and the 
+                        hope is that especially with some of these NuGet libraries, unblocking these core Microsoft provided 
+                        libraries from being trim friendly makes it possible for the entire ecosystem to make trimmed and AoT 
+                        applications more effectively.
+                    </p>
+                    <p>
+                        There were complete replacements where they had telemetry libraries that they had to migrate to 
+                        OpenTelemetry, they had old COM patterns that needed to be made trim friendly and a lot of this was stuff 
+                        the runtime had already provided and had just not taken advantage yet. Are hopefully that the dotnet CLI 
+                        taking advantage of those will start to lead to real benefits to end users as well as championing NativeAoT 
+                        as a valid and awesome technology in its own right. They are also hitting more highlights by embracing 
+                        threads in MS build and in .NET 11 not just processes, today MS Build uses a multi-process architecture that 
+                        is great for isolation and safety but it has high overheads in terms of inter-process communication costs so 
+                        this multi-threaded mode is something we've been working on for a while, although not ready today will be 
+                        ready for when .NET 11 launches.
+                    </p>
+                    <p>
+                        The final pillar which was acquisition where have two main things they are working on, the first is a 
+                        NativeAoT tool called dotnet up which we hope will give users, who work on multiple platforms or across 
+                        teams members that work on multiple platforms, a consistent way to acquire and manage their .NET toolchains, 
+                        it does all the things you would hope it world, support nightlies, use global.json if it is there and it 
+                        does this using user-level installs of the tooling so no admin required with previews of this tool coming 
+                        soon. The other arc of acquisition is how you download the SDK today and what you get when you download it, 
+                        the SDK is downloaded many times for many reasons not just for end users but also for containers which are a 
+                        primary way people build their applications, so are looking at ways to reduce the on-disk size of the SDK 
+                        and discovered that tarballs support what's called hard links which are ways of pointing like symlinks, it 
+                        is pointing to files that share the exact same content to one canonical resource, and when produce tarballs 
+                        and do an automated unification and deduplication has yielded incredible results where have shaved quite a 
+                        few megabytes in the order of 80 megabytes in .NET 11 previews for all the different platforms and more from 
+                        all the SDK payloads.
+                    </p>
+                </article>
+            </div>
+            <!-- /Article -->
+        </section>
+        <!-- /Section -->
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="circles"></div>
+        <nav class="navbar bottom navbar-light p-2 bg-articles">
+            <a href="../../"><img src="../../images/footer.svg" alt="RoguePlanetoid" height="30px"></a>
+   
+        </nav>
+    </footer>
+    <!-- /Footer -->
+    <!-- Scripts -->
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- /Scripts-->
+</body>
+
+</html>
