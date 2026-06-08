@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="RoguePlanetoid" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rogueplanetoid" />
+    <meta name="twitter:creator" content="@rogueplanetoid" />
+    <meta name="twitter:title" content="RoguePlanetoid" />
+    <meta name="twitter:description" content="Posts, Articles and Podcast" />
+    <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png" />
+    <meta name="twitter:image:alt" content="Posts, Articles and Podcast" />
+    <!-- /Twitter -->
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RoguePlanetoid" />
+    <meta property="og:site_name" content="RoguePlanetoid">
+    <meta property="og:description" content="Posts, Articles and Podcast" />
+    <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="630" />
+    <!-- /Open Graph -->
+    <link rel="icon" href="../../favicon.ico" />
+    <link href="../../css/style.css?v=2.0.0" rel="stylesheet">
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>RoguePlanetoid - Articles - Microsoft Build 2026 - Sessions</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8038JPY7YN');
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- Main -->
+    <main>
+        <!-- Navigation -->
+        <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../../">
+                    <img src="../../images/header.svg" alt="RoguePlanetoid" height="50px">
+                </a>
+                <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../posts">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../articles">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-articles active" href="../model-context-protocol/">Model Context Protocol</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://www.comentsys.com" target="_blank">
+                    <img src="../../images/comentsys.svg" alt="Comentsys" height="50px">
+                </a>
+            </div>
+        </nav>
+        <!-- /Navigation -->
+        <!-- Section -->
+        <section class="text-center text-black container">
+            <!-- Article -->
+            <div class="text-start">
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">Model Context Protocol</h2>
+                    <p class="blog-post-meta">9th June 2026</p>
+                    <img src="../assets/model-context-protocol.png" class="img-fluid" alt="Model Context Protocol" />
+                    <p>
+                        AI applications are reasonably well known with applications like ChatGPT being most familiar, or AI assistants such as Microsoft Copilot along with 
+                        other AI applications such as Claude. These AI applications can be connected to external system using an open-source standard, MCP or Model Context 
+                        Protocol which enables AI applications to connect to data sources, this can be markdown files which are a format used throughout these types of 
+                        applications or databases that can be used to store information for retrieval. MCP also can work with tools that do things from search engines to 
+                        calculators and MCP can also perform tasks, to find out more about Model Context Protocol then visit <a href="https://modelcontextprotocol.io" target="_blank">modelcontextprotocol.io</a>.
+                    </p>
+                    <p>
+                        Model Context Protocol or MCP defines a universal standard for AI assistants and applications to plug into the outside world and talk to external 
+                        systems with one standard interface for data or tools in a growing ecosystem of servers and clients that can be leveraged behind the scenes by 
+                        developers to allow AI assistants and applications to connect to everything they need. MCP can allow AI assistants and applications to read or 
+                        write files, access calendars or productivity applications, control applications, perform actions or run custom workflows or prompts.
+                    </p>
+                    <p>
+                        Model Context Protocol is setup in three parts, first part of the setup for MCP is the host with is the AI application or assistant such as Claude, 
+                        ChatGPT or Visual Studio Code using GitHub Copilot. The second part of the setup for MCP is the server which is a small application that exposes 
+                        capabilities and responds to the host and the final part of the setup for MCP is the protocol itself, which is the shared language AI applications 
+                        or assistants use to talk to each other.
+                    </p>
+                    <p>
+                        Model Context Protocol, before Anthropic the creators of Claude AI assistant, developed it in 2024 every AI tool needed custom connectors for each 
+                        system which was an unsustainable approach,  MCP reused message flow ideas from Language Server Protocol, originally developed for Visual Studio Code, 
+                        to standardise how AI tools access data, reduce integration complexity, breakdown information silos and create an ecosystem of MCP servers and clients.
+                    </p>
+                    <p>
+                        Model Context Protocol enables developers to implement the servers that provide tools for the methods that AI applications or assistants to call, 
+                        resources for structured data the AI can browse or templates for reusable prompt templates in any technology or platform they want. .NET supports 
+                        an MCP server project template which includes example tools but can also provide access to resources including prompts to be used by an AI application 
+                        or assistant.
+                    </p>
+                    <p>
+                        Model Context Protocol can for example manage notes stored in a database, by exposing tools to create, update, delete, get or list them along with any 
+                        additional functionality, where the behaviour and purpose of these tools is surfaced using simple descriptions. To create your own MCP Server in .NET 
+                        to be used by GitHub Copilot in Visual Studio Code then visit <a href="https://tutorialr.com/workshops/dotnet-notes-mcp" target="_blank">tutorialr.com/workshops/dotnet-notes-mcp</a>.
+                    </p>
+                </article>
+            </div>
+            <!-- /Article -->
+        </section>
+        <!-- /Section -->
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="circles"></div>
+        <nav class="navbar bottom navbar-light p-2 bg-articles">
+            <a href="../../"><img src="../../images/footer.svg" alt="RoguePlanetoid" height="30px"></a>
+   
+        </nav>
+    </footer>
+    <!-- /Footer -->
+    <!-- Scripts -->
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- /Scripts-->
+</body>
+
+</html>
