@@ -1,0 +1,216 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="RoguePlanetoid"/>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@rogueplanetoid"/>
+        <meta name="twitter:creator" content="@rogueplanetoid"/>
+        <meta name="twitter:title" content="RoguePlanetoid"/>
+        <meta name="twitter:description" content="Posts, Articles and Podcast"/>
+        <meta name="twitter:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta name="twitter:image:alt" content="Posts, Articles and Podcast"/>
+        <!-- /Twitter -->
+        <!-- Open Graph -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RoguePlanetoid"/>
+        <meta property="og:site_name" content="RoguePlanetoid">
+        <meta property="og:description" content="Posts, Articles and Podcast"/>
+        <meta property="og:image" content="https://www.rogueplanetoid.com/images/card.png"/>
+        <meta property="og:image:width" content="1280"/>
+        <meta property="og:image:height" content="630"/>
+        <!-- /Open Graph -->
+        <link rel="icon" href="../../favicon.ico"/>
+        <link href="../../css/style.css?v=2.0.0" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title>RoguePlanetoid - Articles - DevHub North - Oct 2026</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8038JPY7YN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8038JPY7YN');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Main -->
+        <main>       
+            <!-- Navigation -->	
+            <nav class="navbar top navbar-light navbar-expand-md bg-brand">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rogueplanetoid-navbar" aria-controls="rogueplanetoid-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../">
+                        <img src="../../images/header.svg" alt="RoguePlanetoid" height="50px">
+                    </a>
+                    <div id="rogueplanetoid-navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../posts">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../articles">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-articles active" href="../dev-hub-north-oct-2026/">DevHub North - October 2026</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-articles" href="../../podcast">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comentsys.com" target="_blank">
+                        <img src="../../images/comentsys.svg" alt="Comentsys" height="50px">
+                    </a>
+                </div>
+            </nav>
+            <!-- /Navigation -->     
+            <!-- Section -->               
+            <section class="text-center text-black container">
+                <!-- Article -->
+                <div class="text-start">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">DevHub North - October 2026</h2>
+                        <p class="blog-post-meta">28th October 2026</p>                
+                        <img src="../assets/dev-hub-north.png" class="img-fluid" alt="DevHub North - October 2026">
+                        <h3>MHR - Welcome - Rosie North & Andy Price</h3>
+                        <p>
+                            Rosie welcomed everyone here and spoke about MHR which is a computer software company and focus on HR, payroll, learning and development. Andy mentioned 
+                            they are recruiting for some roles and they have a brand-new finance product which is AI first and have used AI to deliver a great product, they are looking 
+                            to add capacity to their team to double their finance team to start from January such as developers, QA, product managers and more. 
+                        </p>
+                        <h3>Designing and Building Scalable Application - Anthony Porthouse</h3>
+                        <p>
+                            Anthony is a Senior Software Engineer and talked about how architecture choices keep systems responsive as demand, data and failure
+                            grow - scalability is an underdiscussed topic but is important to know what to do. AI helps make delivery faster and architecture needs
+                            more attention. “It works” is a local observation and “Is scales” is a system claim, generated code can solve direct task where load,
+                            contention, state and failure can be left implicit. Vibe coding does not produce ideal code, can have duplicated code an hyper focused
+                            on specific problems but need to have a scalable solution. You will prompt a happy path and prototype features but in production will
+                            have concurrency, got data, slow dependencies and retries need to be considered, you need to describe your architecture up front.
+                        </p>
+                        <p>
+                            Scalability issues are experienced as latency, sometimes you'll see something load fast but as you use it it becomes slower so can have
+                            one user where request completes quickly and the happy path looks healthy but demand arrives and shared resources contend, queues grow
+                            and dependencies slow so then trust erodes as page waits or upload fails and user starts again or leaves. Throughput is useful but
+                            responsiveness is what the user feels, if have badly written software the scalability part will show and this will cause people to
+                            bounce.
+                        </p>
+                        <p>
+                            Topology is not the scaling strategy, microservices or scale up and make smaller things and break things apart but is not really true
+                            as can have a well written monolith that can scale really well but microservices need to have queues and HTTP connections handled
+                            correctly and it is down to what your actual load will be or what you expect it to be. So instead of asking monolith or microservice
+                            but ask where will see contention, what changes will cause issues and what failure boundaries will there be.
+                        </p>
+                        <p>
+                            Scale up buys headroom, scale out buys parallelism, more capacity inside one unit such as more CPU or more memory but will hit cost or
+                            what hardware is capable of doing limit, or can scale out by not having one big thing but more of them where have more units sharing
+                            the work but results in more complexity but can lose an amount of resource each time you spin up a new resource so more small things
+                            you have the more overhead you have, so want to have combination of scale up and scale out where have right-sized instances x enough
+                            instances for load and failure model.
+                        </p>
+                        <p>
+                            C4 makes scaling boundaries visible which defines way to describe system from outside in, look at system context about what does
+                            application do and how it fits with users and other systems and what crosses system boundaries, then container boundaries for which
+                            apps and data stores must scale independently and component boundaries for where responsibilities change inside a container for an
+                            application. Turn every crossing into an explicit contract by finding the boundary, testing independence and designing the contracts,
+                            see where systems are talking and communicating and recognise tight coupling where may have a bottleneck or resilience issue which
+                            could be a monolithic or microservice application so when have those contracts can guarantee consistency and know what scalability
+                            problem looks like.
+                        </p>
+                        <p>
+                            Choose synchronous paths only when the user is waiting, synchronous user when the next user action requires the action now where have
+                            user > API > dependency but where latency and failure are compounded across the whole path. Asynchronous used when work may continue
+                            after the user moves on so can have pub sub approach.
+                        </p>
+                        <p>
+                            Queues absorb bursts, pub / sub multiplies reactions so have a queue with one job and one consumer and have queue built up you can spin
+                            up more workers, where competing consumers increase throughput without increasing pressure on request path. Pub sub with one event but
+                            many reactions where can public what happened and let independent subscribers decide what to do for the specific usage.
+                        </p>
+                        <p>
+                            Eventual consistency needs a designed user experience, the system can be correct over time while the interface is confusing so never
+                            render done while dependent views are catching up, so can say we have your file with accepted and then have processing to show current
+                            state and refresh and then when it is complete to notify or update in place. Make progress, uncertainty and recovery visible.
+                        </p>
+                        <p>
+                            Failure is a workflow, not an exception, you may have message queue that when a worker is deployed fails to handle it, so things will
+                            fail so handle it so every asynchronous path needs to answer what happens when it will fail, can have retry so could have transient
+                            fault with a back off or jitter to stagger requests where bound retries to prevent retry storms and infinite loops, handle once so
+                            idempotency key for safe duplicate with deduplication for at leas once deliver must not double charge or duplicate work. Also
+                            quarantine where have to handle poison messages and dead-letter queues and own this with alerts, inspection and set replay policy.
+                            Replay to prove recovery where reprocessing is an operational feature not a database edit, you need to have a tested recovery method
+                            so observe the whole path and test and verify things work.
+                        </p>
+                        <p>
+                            Scale the bottleneck not the diagram, design for change, you need to know why something is the bottle neck, may be the queue or the
+                            workers so need to understand what the process is, was it concurrency or payload size, where does the state live is that a database or
+                            Redis cache, what boundaries do you need to change, what can be asynchronous - does it need to be immediate and how does failure
+                            recover and scalable systems make load, scale, time and failure implicit.
+                        </p>
+                        <h3>The future of software development - Will North</h3>
+                        <p>
+                            Will is chief security and AI officer and will speak on how AI is changing and will change software development. They are responsible
+                            cybersecurity, AI strategy and research where trying to work out what future of tech will do for their customers such as will they use
+                            a keyboard and screen or smart glasses along with quantum computing.
+                        </p>
+                        <p>
+                            Leverage AI to drive long-term value, MHR is really ambitious and is trying to do more with AI, are not trying to reduce headcount with
+                            AI. Software is critical to them and we are building an insane amount of software and building an AI native application and if can
+                            deliver good quality features faster this will be a game changer. 83% use AI assistants with general chat interfaces or coding
+                            assistants but only 26% use agentic coding where, delegating feature to AI agents. Everyone is using AI but how much value are getting
+                            from this, 5x hype 0.5 reality they have teams doing more than this but many people can be getting more things done faster with AI.
+                        </p>
+                        <p>
+                            The cost of producing plausible code has collapsed the cost of knowing whether to trust it has not, you can get code quite quickly and
+                            it can look good but underneath it may not be as good, scalable or performant. MHR has not let a fully vibe-coded application near
+                            payroll and finance for example. Software developers are critical if want to have trusted code, AI isn't replacing developers, but
+                            role boundaries are blurring, they have product people creating software, UX teams deploying production code and experienced
+                            developers are making product decisions. Shift towards AI builders, they have advert where have end to end ownership of product
+                            across the stack and make meaningful decisions.
+                        </p>
+                        <p>
+                            If roles merging then teams are changing, may be in smaller teams, can't trust what AI is delivering but will start trusting it and
+                            will have these fully autonomous software factories, can have things looking for fixes, look for issues and raise a PR but is getting
+                            close to fully autonomous and also can have customers driving features where can build features and test it and then if something is a
+                            good idea it can be deployed to every customer.
+                        </p>
+                        <p>
+                            Human in the loop, we are at stage where humans have to approve but may be on the loop where monitor and shift when need to make
+                            decisions and can have things based on output rather than hours they work, can have people checking in every now and then to make
+                            decisions. What happens if AI is doing code and we are not involved, software is everywhere from cars to fridges and this won't stop at
+                            all, what things wouldn't have software in them, could have it in plant pots, school bags, running shoes and more.
+                        </p>
+                        <p>
+                            We have this never ending thirst for software so will have more not less and need more software developers not less. AI won't replace
+                            great developers, it will change roles and size of team and people won't be writing code but won't change making decisions, solving
+                            problems.
+                        </p>
+                    </article>
+                </div>
+                <!-- /Article -->
+            </section>
+            <!-- /Section -->     
+        </main>
+        <!-- /Main -->
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+            <div class="circles"></div>  
+            <nav class="navbar bottom navbar-light p-2 bg-articles">
+                <a href="../../"><img src="../../images/footer.svg" alt="RoguePlanetoid" height="30px"></a>
+                
+            </nav>
+        </footer>
+        <!-- /Footer -->
+        <!-- Scripts -->
+        <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- /Scripts-->
+    </body>
+</html>
